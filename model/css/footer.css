@@ -1,0 +1,106 @@
+/* li,
+a {
+    text-decoration: none;
+} */
+
+#footer {
+    background-image: url("https://bdsphankimngoc.com/wp-content/uploads/2019/03/hung-thinh-corp-3c5e92f342614756.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 900px;
+    position: relative;
+}
+
+#title {
+    color: rgb(40, 201, 75);
+    background-color: white;
+    position: relative;
+    top: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#title h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+.cont {
+    display: flex;
+    position: relative;
+    top: 120px;
+    width: 80%;
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.left-cont {
+    height: 400px;
+    background-color: rgb(247, 240, 240);
+    padding: 0 13px;
+}
+
+.right-cont {
+    background-color: rgba(10, 36, 83, 0.82);
+    color: white;
+    text-align: center;
+    border: 3px rgb(182, 224, 30) dashed;
+}
+
+.left-cont ul {
+    padding: 43px 13px;
+}
+
+.right-cont p {
+    padding: 0 10px;
+}
+
+.right-cont input[type=text] {
+    width: 90%;
+    height: 40px;
+    margin: 0px 5px;
+}
+
+.right-cont input[type=submit] {
+    padding: 10px 10px;
+    background-color: rgb(40, 201, 75);
+    color: white;
+}
+
+.right-cont textarea {
+    width: 90%;
+}
+
+.display-img img {
+    margin-top: 10px;
+    width: 40%;
+}
+
+.display-img {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:700px) {
+    .left-cont {
+        height: auto;
+    }
+    .cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    #title h1 {
+        font-size: 15px;
+    }
+    .r-cont-text {
+        display: none;
+    }
+    .right-cont {
+        height: 500px;
+    }
+    #footer {
+        height: 100%;
+    }
+}

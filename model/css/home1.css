@@ -1,0 +1,114 @@
+    @import url(./style.css);
+     :root {
+        --grid-c: repeat(5, auto);
+        --grid-gap: 0 60px;
+        --img-w: 50%
+    }
+    
+    .tab-wrap input[type="radio"] {
+        display: none;
+    }
+    
+    .display-name h1,
+    .select-img label {
+        text-align: center;
+    }
+    
+    .select-img label {
+        font-size: 1.3rem;
+        cursor: pointer;
+        border-radius: 45px;
+        margin: 5px 0px;
+        padding: 10px;
+        border: 2px solid rgb(60, 210, 19);
+        transition: 1s;
+    }
+    
+    .select-img label:hover {
+        background-color: #DAAE37;
+    }
+    
+    .tab-wrap,
+    .display-name {
+        max-width: var(--max-w);
+        margin: 0 auto;
+    }
+    
+    .select-img {
+        display: grid;
+        grid-template-columns: var(--grid-c);
+        gap: var(--grid-gap);
+    }
+    
+    @media screen and (max-width: 1000px) {
+         :root {
+            --grid-c: repeat(3, auto);
+            --grid-gap: 0 30px
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+         :root {
+            --grid-c: repeat(2, auto);
+            --grid-gap: 0 30px;
+            --img-w: 90%
+        }
+    }
+    
+    .sub-img {
+        display: none;
+    }
+    
+    #main {
+        bottom: -450px;
+        width: var(--img-w);
+        height: 400px;
+        position: absolute;
+        /* animation: img-move 2s linear 0s 1 forwards; */
+    }
+    
+    .tab-wrap {
+        position: relative;
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+     :checked+label {
+        background-color: #DAAE37;
+    }
+    
+    @keyframes img-move {
+        0% {
+            opacity: 0;
+            bottom: -1500px;
+        }
+        100% {
+            opacity: 1;
+            bottom: -450px;
+        }
+    }
+    
+    .content {
+        height: 300px;
+        width: 60%;
+        background-color: rgb(248, 242, 242);
+        margin: 0 auto;
+        border-radius: 30px;
+        padding: 20px;
+    }
+    
+    #tit {
+        color: rgb(87, 238, 57);
+        text-align: center;
+    }
+    
+    .back {
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+        width: 100%;
+        height: 600px;
+        position: relative;
+        background-image: url("https://khudothivanphuc.giaodienbds.com/wp-content/uploads/2017/12/van-phuc-slide-3-1-1.jpg");
+        /* background-color: rgba(16, 153, 118, 0.67); */
+    }

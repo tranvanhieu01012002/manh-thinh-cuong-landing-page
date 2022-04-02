@@ -1,0 +1,226 @@
+:root {
+    --bg-cl: #eef8ff;
+    --box-w: 300px;
+    --max-w: 1300px;
+    --bg-text: rgba(11, 109, 43, 0.5);
+    --bg: #ffff;
+    --bg--highlight--project: #F1F1F1;
+    --text-h: 20px;
+    --base-cl: rgb(218, 174, 55);
+}
+
+
+/* slider */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container-pr {
+    max-width: var(--max-w);
+    margin: 0px auto;
+    position: relative;
+    font-size: var(--text-h);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container-slider {
+    max-width: 100%;
+}
+
+.page-container-slider,
+.container-slider,
+.name-project,
+.name-project h2,
+.name-project img {
+    /* background-color: var(--bg--highlight--project); */
+    background-color: #000;
+}
+
+.box-slider {
+    width: var(--box-w);
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    margin: 5px;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+.slide-img {
+    height: 100%;
+}
+
+.slide-img img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    transition: all 1s;
+}
+
+.slide-img:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.detail-box {
+    position: absolute;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(11, 109, 43, 0.5);
+    font-size: large;
+    color: var(--bg-cl);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+/* banner */
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+
+/* ẩn hình ảnh cho phần tử slideshow */
+
+.mySlides {
+    display: none;
+}
+
+
+/* thiết kế nút mũi tên*/
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.3s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* thiết kế nút mũi tên next nằm phía bên phải */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Thiết lập style cho nội dung của mỗi phần tử slideshow */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--bg-text);
+}
+
+
+/* Thiết lập style cho số hiển thị của phần tử */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.name-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-width: var(--max-w);
+}
+
+.name-project img {
+    max-width: 200px;
+}
+
+
+/* button */
+
+.detail-title {
+    display: flex;
+    justify-content: center;
+}
+
+.see-more {
+    position: relative;
+    padding: 5px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+    border-radius: 3px;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    background-color: var(--bg-cl);
+    border: none;
+    border-bottom: 5px solid #27ae60;
+    -webkit-transition: all 0.1s;
+    transition: all 0.1s;
+}
+
+.see-more:hover,
+.see-more:active {
+    -webkit-transform: translate(0px, 5px);
+    -ms-transform: translate(0px, 5px);
+    transform: translate(0px, 5px);
+    border-bottom: 1px solid #2ecc71;
+}
+
+.page-container-slider h2 {
+    color: var(--bg-cl);
+}
+
+.page-container-slider {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1000px) {
+    .page-container-slider {
+        width: 400px;
+    }
+}
+
+.container-pr .container-slider {
+    max-width: 85%;
+    margin: 0 auto;
+}

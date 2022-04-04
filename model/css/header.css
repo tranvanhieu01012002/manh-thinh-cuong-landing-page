@@ -262,9 +262,9 @@ form.example::after {
 }
 .search-container button {
 	position: relative;
-    right: 49px;
-    top: 12px;
-    z-index: 2;
+	right: 49px;
+	top: 12px;
+	z-index: 2;
 }
 .search-container input[type="text"] {
 	margin-top: 12px;
@@ -295,7 +295,7 @@ div#mySidepanel {
 		display: block;
 	}
 	.menu {
-		width: 80%;
+		width: 53%;
 	}
 	.infor {
 		width: 100%;

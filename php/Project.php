@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="./model/css/style.css">
 <div class="page-container-slider">
     <div class="name-project">
         <div>

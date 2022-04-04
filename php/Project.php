@@ -1,8 +1,12 @@
 <link rel="stylesheet" href="./model/css/style.css">
 <div class="page-container-slider">
     <div class="name-project">
-        <h2>Dự án nổi bật</h2>
-        <img src="https://www.cashadvance6online.com/data/archive/img/2477963118.png" alt="">
+        <div>
+            <h2>Dự án nổi bật</h2>
+        </div>
+        <div>
+            <img src="https://www.cashadvance6online.com/data/archive/img/2477963118.png" alt="">
+        </div>
     </div>
     <div class="container-pr">
         <div class="container-slider">

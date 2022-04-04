@@ -1,240 +1,313 @@
 @import url(./style.css);
+:root {
+	--l--reponsive--fonsize-: 15px;
+}
 .header {
-    width: 100%;
-    background-color: white;
-    height: 160px;
-    position: fixed;
-    z-index: 10;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	z-index: 10;
+	height: 130px;
 }
 
 .infor {
-    height: 49px;
-    font-size: 15px;
-    background-color: var(--base-cl);
-    color: white;
+	height: 35px;
+	font-size: 15px;
+	background-color: var(--base-cl);
+	color: white;
 }
 
 .display-info {
-    margin: 0 auto;
-    display: flex;
-    max-width: 1400px;
-    justify-content: space-between;
-    padding-top: 12px;
+	margin: 0 auto;
+	display: flex;
+	max-width: 1400px;
+	justify-content: space-between;
+	padding-top: 6px;
 }
 
 .menu {
-    margin: 0 auto;
-    max-width: var(--max-w);
-    height: 150px;
-    font-size: 20px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
+	margin: 0 auto;
+	max-width: var(--max-w);
+	height: 150px;
+	font-size: 20px;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.logo-image img {
+	width: 190px;
+	height: 95px;
+	object-fit: cover;
+	margin-left: -67px;
+	z-index: 2;
+}
+.search {
+	width: 100%;
+	position: relative;
+	display: flex;
 }
 
-.logo-image img {
-    width: 220px;
-    height: 111px;
-    object-fit: cover;
-    /* margin-left: -40px; */
-    z-index: 2;
+.searchTerm {
+	width: 256px;
+	border: 3px solid var(--base-cl);
+	border-right: none;
+	padding: 5px;
+	height: 40px;
+	border-radius: 5px 0 0 5px;
+	outline: none;
+	color: black;
+}
+
+.searchButton {
+	width: 40px;
+	height: 40px;
+	border: 1px solid var(--base-cl);
+	background: var(--base-cl);
+	text-align: center;
+	color: #fff;
+	border-radius: 0 5px 5px 0;
+	cursor: pointer;
+	font-size: 15px;
 }
 
 .style-4,
 .box,
 .responsive-header {
-    padding-top: 30px;
+	padding-top: 30px;
+	margin-right: -68px;
 }
 
 .menu-4 {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-left: -82px;
 }
 
 .menu-4 * {
-    box-sizing: border-box;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
+	box-sizing: border-box;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
 }
 
 .menu-4 li {
-    display: inline-block;
-    list-style: outside none none;
-    margin: 0 1.5em;
-    overflow: hidden;
+	display: inline-block;
+	list-style: outside none none;
+	margin: 0 1.5em;
+	overflow: hidden;
 }
 
 .menu-4 a {
-    padding: 0.3em 0;
-    color: #212121;
-    position: relative;
-    display: inline-block;
-    letter-spacing: 1px;
-    margin: 0;
-    text-decoration: none;
+	padding: 0.3em 0;
+	color: #212121;
+	position: relative;
+	display: inline-block;
+	letter-spacing: 1px;
+	margin: 0;
+	text-decoration: none;
 }
 
 .menu-4 a:before,
 .menu-4 a:after {
-    position: absolute;
-    -webkit-transition: all 0.35s ease;
-    transition: all 0.35s ease;
+	position: absolute;
+	-webkit-transition: all 0.35s ease;
+	transition: all 0.35s ease;
 }
 
 .menu-4 a:before {
-    bottom: 100%;
-    display: block;
-    height: 3px;
-    width: 100%;
-    content: "";
-    background-color: var(--base-cl);
+	bottom: 100%;
+	display: block;
+	height: 3px;
+	width: 100%;
+	content: "";
+	background-color: var(--base-cl);
 }
 
 .menu-4 a:after {
-    padding: 0.3em 0;
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    content: attr(data-hover);
-    color: #212121;
-    white-space: nowrap;
+	padding: 0.3em 0;
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	content: attr(data-hover);
+	color: #212121;
+	white-space: nowrap;
 }
 
 .menu-4 li:hover a,
 .menu-4 .current a {
-    transform: translateY(100%);
+	transform: translateY(100%);
 }
 
 li {
-    text-decoration: none;
-    list-style-type: none;
-    display: inline;
+	text-decoration: none;
+	list-style-type: none;
+	display: inline;
 }
 
 li a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
-form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: var(--base-cl);
+/* form.example input[type="text"] {
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	width: 80%;
+	background: var(--base-cl);
 }
 
 form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
+	float: left;
+	width: 20%;
+	padding: 10px;
+	background: #2196f3;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-left: none;
+	cursor: pointer;
 }
 
 form.example button:hover {
-    background: #0b7dda;
-    width: 300px;
+	background: #edf0f2;
+	width: 300px;
 }
 
 form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-}
+	content: "";
+	clear: both;
+	display: table;
+} */
 
 .virtual-class {
-    height: 200px;
+	height: 133px;
 }
 
 .style-4 .nav-icon {
-    display: none;
+	display: none;
 }
-
 
 /* right side panel */
 
 .sidepanel {
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    /* height: 250px; */
-    top: 0;
-    right: 0;
-    background-color: #444;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	/* height: 250px; */
+	top: 0;
+	right: 0;
+	background-color: #444;
+	overflow-x: hidden;
+	transition: 0.5s;
+	padding-top: 60px;
+	text-align: center;
 }
 
 .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidepanel a:not(:first-child) {
-    border: solid 1px black;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: var(--l--reponsive--fonsize-);
+	color: #818181;
+	display: block;
+	transition: 0.3s;
 }
 
 .sidepanel a:hover {
-    color: #f1f1f1;
+	background-color: #333333f0;
 }
 
 .sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    /* right: 25px; */
-    font-size: 36px;
+	position: absolute;
+	top: 0;
+	/* right: 25px; */
+	font-size: 36px;
 }
 
 .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: var(--base-cl);
-    color: white;
-    padding: 10px 15px;
-    border: none;
+	font-size: 20px;
+	cursor: pointer;
+	background-color: var(--base-cl);
+	color: white;
+	padding: 10px 15px;
+	border: none;
 }
 
 .openbtn:hover {
-    background-color: #444;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 1000ms linear;
+	background-color: #444;
+	-webkit-transition: background-color 1000ms linear;
+	-ms-transition: background-color 1000ms linear;
+	transition: background-color 1000ms linear;
 }
 
 .responsive-header {
-    display: none;
+	display: none;
+}
+/* search ressponsive */
+.search-container {
+	display: flex;
+
+	width: 100%;
+}
+.search-container button {
+	float: right;
+
+	width: 50px;
+	background: transparent;
+	border: transparent;
+	font-size: 20px;
+	color: var(--base-cl);
+	cursor: pointer;
+	outline: 0;
+}
+.search-container button {
+	position: relative;
+    right: 49px;
+    top: 12px;
+    z-index: 2;
+}
+.search-container input[type="text"] {
+	margin-top: 12px;
+	padding: 10px;
+	margin-left: 124px;
+	width: 70%;
+	outline: none;
+	background: rgb(54 53 48);
+	border: none;
+	border-radius: 56px;
+	font-size: var(--l--reponsive--fonsize-);
+}
+div#mySidepanel {
+	padding-bottom: 74px;
 }
 
+/* ============================== */
+
 @media screen and (max-width: 1200px) {
-    .menu-4,
-    .box {
-        display: none;
-    }
-    .responsive-header {
-        display: block;
-    }
-    .menu {
-        width: 80%;
-    }
-    .infor {
-        width: 100%;
-    }
+	div#mySidepanel {
+		width: 50%;
+	}
+	.menu-4,
+	.box {
+		display: none;
+	}
+	.responsive-header {
+		display: block;
+	}
+	.menu {
+		width: 80%;
+	}
+	.infor {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 800px) {
-    .display-info {
-        display: none;
-        /* flex-direction: column; */
-    }
+	.display-info {
+		display: none;
+		/* flex-direction: column; */
+	}
+	div#mySidepanel {
+		width: 100%;
+	}
 }

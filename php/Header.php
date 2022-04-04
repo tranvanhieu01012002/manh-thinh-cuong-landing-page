@@ -32,22 +32,22 @@
         <div class="responsive-header">
             <div id="mySidepanel" class="sidepanel">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="#">Tran chủ</a>
+                <a href="#">Trang chủ</a>
                 <a href="#">Giới thiệu</a>
                 <a href="#">Nhà</a>
                 <a href="#">Liên hệ</a>
-                <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-                    <input type="text" placeholder="Search.." name="search2">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+                <form class="search-container" action="/action_page.php" >
+                    <input type="text" class="searchTerm" placeholder="Tìm kiếm">
+                    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
                 </form>
             </div>
             <button class="openbtn" onclick="openNav()">☰ </button>
         </div>
         <div class="box">
-            <form action="" class="container-4">
-                <input type="search" id="search" placeholder="Search..." />
-                <button class="icon"><i class="fa fa-search"></i></button>
-            </form>
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="Tìm kiếm">
+                <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+            </div>
         </div>
     </div>
 

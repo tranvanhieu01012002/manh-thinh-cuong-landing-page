@@ -8,7 +8,7 @@
             </div>
             <div class="email">
                 <p><i class="fa fa-envelope-o"></i> Email: manhthinhcuong@gmail.com</p>
-            </div>
+            </div> 
         </div>
 
 

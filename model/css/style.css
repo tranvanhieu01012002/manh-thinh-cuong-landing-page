@@ -216,11 +216,11 @@ a {
 
 @media screen and (max-width:1000px) {
     .page-container-slider {
-        width: 400px;
+        width: 95%;
     }
 }
 
 .container-pr .container-slider {
-    max-width: 85%;
+    max-width: 95%;
     margin: 0 auto;
 }

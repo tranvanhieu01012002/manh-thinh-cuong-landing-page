@@ -6,11 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dự án abc</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./model/css/header.css">
     <link rel="stylesheet" href="./model/css/footer.css">
     <link rel="stylesheet" href="./model/css/home1.css">
-
-
 </head>
 
 <body>
@@ -36,7 +35,7 @@
     <?php
     include "./php/Footer.php";
     ?>
+    <script src="./model/js/swich-img.js"></script>
 </body>
-<script src="./model/js/swich-img.js"></script>
 
 </html>

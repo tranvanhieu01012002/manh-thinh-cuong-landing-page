@@ -15,55 +15,52 @@
         </div>
     </div>
 </div>
-<div class="display-name">
-    <h1>Nhà</h1>
-    <img src="../model/img/hoa.png" alt="">
-</div>
-<div class="tab-wrap">
-    <div class="select-img">
-
-        <input type="radio" name="img-check" id="btn-1">
-        <label id="lb1" for="btn-1">20/12/2022</label>
-
-
-        <input type="radio" name="img-check" id="btn-2">
-        <label id="lb2" for="btn-2">20/2/2022</label>
-
-
-        <input type="radio" name="img-check" id="btn-3">
-        <label id="lb3" for="btn-3">20/1/2022</label>
-
-
-        <input type="radio" name="img-check" id="btn-4">
-        <label id="lb4" for="btn-4">20/10/2022</label>
-
-
-        <input type="radio" name="img-check" id="btn-5">
-        <label id="lb5" for="btn-5">20/9/2022</label>
-
-
+<div class="display-name1">
+    <div>
+        <h1>Nhà</h1>
     </div>
-    <div class="display-img">
-        <img id="imgg1" src="https://anhdep123.com/wp-content/uploads/2020/11/anh-nha-biet-thu-dep-nhat.jpg" alt=""
-            class="sub-img">
-        <img id="imgg2"
-            src="https://xaydungsaoviet.com.vn/wp-content/uploads/2020/11/ob_bf053f_thiet-ke-nha-biet-thu.jpg" alt=""
-            class="sub-img">
-        <img id="imgg3"
-            src="https://betaviet.vn/wp-content/uploads/2019/08/mau-biet-thu-dep-3-tang-tan-co-dien-kt180143.jpg" alt=""
-            class="sub-img">
-        <img id="imgg4" src="https://pdp.edu.vn/wp-content/uploads/2021/05/hinh-anh-ngoi-nha-dep-nha-kinh-hien-dai.jpg"
-            alt="" class="sub-img">
-        <img id="imgg5"
-            src="https://smarthome.worldtech.vn/wp-content/uploads/2017/10/download-hinh-ngoi-nha-1024x684.jpg" alt=""
-            class="sub-img">
-        <img id="main"
-            src="https://smarthome.worldtech.vn/wp-content/uploads/2017/10/download-hinh-ngoi-nha-1024x684.jpg" alt="">
+    <div>
+        <img src="./model/img/hoa.png" alt="">
+    </div>
+</div> -->
+<div class="select-img">
+    <button class="btn-img">20/1/2022</button>
+    <button class="btn-img">20/2/2022</button>
+    <button class="btn-img">20/3/2022</button>
+    <button class="btn-img">20/4/2022</button>
+    <button class="btn-img">20/5/2022</button>
+</div>
+<div class="display-small-slide">
+    <div class="slider-img">
+        <input checked type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=1');"
+            title="Random Picture 1">
+        <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=2');"
+            title="Random Picture 2">
+        <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=3');"
+            title="Random Picture 3">
+        <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=4');"
+            title="Random Picture 4">
+        <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=5');"
+            title="Random Picture 5">
+    </div>
+    <div class="text-monthly-des">
+        <h3>Nhà đẹp</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, aliquid expedita magnam sequi eligendi
+            distinctio eveniet dicta harum cumque unde quo cupiditate iste molestias ex ducimus nam temporibus voluptas
+            atque! Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Vero eos aperiam magni temporibus excepturi exercitationem cumque dolorem libero commodi?
+            Quidem alias officia doloremque, quisquam culpa animi enim commodi qui nesciunt! Sit nam eum nemo ad
+            mollitia fugit autem recusandae
+            perspiciatis, officia eius saepe fugiat quas voluptatem sequi cumque iste suscipit ea earum ipsa aliquam
+            possimus? Voluptatem quo adipisci eius esse! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+            eos aperiam magni temporibus
+            excepturi exercitationem cumque dolorem libero commodi? Quidem alias officia doloremque, quisquam culpa
+            animi enim commodi qui nesciunt! Sit nam eum nemo ad mollitia fugit autem recusandae perspiciatis, officia
+            eius saepe fugiat quas voluptatem
+            sequi cumque iste suscipit ea earum ipsa aliquam possimus? Voluptatem quo adipisci eius esse! Lorem ipsum
+            dolor sit amet consectetur, adipisicing elit. Vero eos aperiam magni temporibus excepturi exercitationem
+            cumque dolorem libero commodi?
+        </p>
     </div>
 </div>
-<div class="virtual-class"></div>
-<br>
-<br>
-
-
-<div class="virtual-class"></div>

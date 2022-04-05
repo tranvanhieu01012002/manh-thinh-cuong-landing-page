@@ -29,35 +29,23 @@ if(isset($_GET['id'])){
 </div>
 <div class="display-small-slide">
     <div class="slider-img">
-        <input checked type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=1');"
-            title="Random Picture 1">
-        <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=2');"
-            title="Random Picture 2">
-        <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=3');"
-            title="Random Picture 3">
-        <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=4');"
-            title="Random Picture 4">
-        <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=5');"
-            title="Random Picture 5">
+    <?php
+        $img = $database -> get_row('select * from timeline_image where id = '.$id.' ;');
+    ?>
+        <input checked type="radio" name="s" style="background-image: url(./Admin/img/<?php echo $img['img_1']?>);"
+            title="Manh Thinh Cuong 1">
+        <input type="radio" name="s" style="background-image: url(./Admin/img/<?php echo $img['img_2']?>);"
+            title="Manh Thinh Cuong 2">
+        <input type="radio" name="s" style="background-image: url(./Admin/img/<?php echo $img['img_3']?>);"
+            title="Manh Thinh Cuong 3">
+        <input type="radio" name="s" style="background-image: url(./Admin/img/<?php echo $img['img_4']?>);"
+            title="Manh Thinh Cuong 4">
+        <input type="radio" name="s" style="background-image: url(./Admin/img/<?php echo $img['img_5']?>);"
+            title="Manh Thinh Cuong 5">
     </div>
     <div class="text-monthly-des">
-        <h3>Nhà đẹp</h3>
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, aliquid expedita magnam sequi eligendi
-            distinctio eveniet dicta harum cumque unde quo cupiditate iste molestias ex ducimus nam temporibus voluptas
-            atque! Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Vero eos aperiam magni temporibus excepturi exercitationem cumque dolorem libero commodi?
-            Quidem alias officia doloremque, quisquam culpa animi enim commodi qui nesciunt! Sit nam eum nemo ad
-            mollitia fugit autem recusandae
-            perspiciatis, officia eius saepe fugiat quas voluptatem sequi cumque iste suscipit ea earum ipsa aliquam
-            possimus? Voluptatem quo adipisci eius esse! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
-            eos aperiam magni temporibus
-            excepturi exercitationem cumque dolorem libero commodi? Quidem alias officia doloremque, quisquam culpa
-            animi enim commodi qui nesciunt! Sit nam eum nemo ad mollitia fugit autem recusandae perspiciatis, officia
-            eius saepe fugiat quas voluptatem
-            sequi cumque iste suscipit ea earum ipsa aliquam possimus? Voluptatem quo adipisci eius esse! Lorem ipsum
-            dolor sit amet consectetur, adipisicing elit. Vero eos aperiam magni temporibus excepturi exercitationem
-            cumque dolorem libero commodi?
+        <h3><?php echo $row['Content'] ?></h3>
+        <p><?php echo $row['Description_detail'] ?>
         </p>
     </div>
 </div>

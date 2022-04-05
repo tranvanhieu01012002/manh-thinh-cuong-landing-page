@@ -1,6 +1,6 @@
+</html>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./model/css/LoginForm.css">
 </head>
-
 <body>
     <div class="login-box">
         <h2>Login</h2>
-        <form action="" method="POST">
+        <form action="Login.php" method="POST">
             <div class="user-box">
                 <input type="text" name="user">
                 <label>Username</label>
@@ -21,15 +20,36 @@
                 <input type="password" name="password">
                 <label>Password</label>
             </div>
-            <a href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                Submit
-            </a>
-        </form>
-    </div>
-</body>
 
+            <div> <a href="">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <input type="submit" name="submit" value="SUBMIT"> 
+                <!-- Submit -->
+            </a>
+            </div>
+        </form>
+    </div>   
+</body>
 </html>
+<?php 
+    include("./connect.php");
+    if(isset($_POST['submit'])){
+        $user = $_POST['user'];
+        $password = $_POST['password'];
+    }
+    $admin_query="select * from admin where user='$user' AND password='$password'";  
+  
+    $run_query=mysqli_query($conn,$admin_query);  
+  
+    if(mysqli_num_rows($run_query)>0)  
+    {  
+        header("Location:http://localhost:8080/Tamxin/Admin/timeline_image/indexAdmin.php");
+    }  
+    else {
+        echo"<script>alert('Admin Details are incorrect..!')</script>";
+        //header("http://localhost:8080/Tamxin/Admin/Web-Xay-Dung-master/Admin/Login.php");
+    } 
+?>

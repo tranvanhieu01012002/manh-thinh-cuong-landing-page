@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -39,13 +38,15 @@
                         dạng nhất thị trường,
                         chúng tôi tự tin sẽ giúp bạn thực hiện giấc mơ sơ hữu BĐS và tối ưu hiệu quả đầu tư.</p>
                     <br>
-                    <input type="text" placeholder="Tên của bạn"> <br> <br>
-                    <input type="text" placeholder="Địa chỉ email của bạn"> <br><br>
-                    <input type="text" placeholder="Số điện thoại của bạn"> <br> <br>
-                    <textarea rows="4" cols="" placeholder="Nội dung yêu cầu dự án..."></textarea>
+                    <form action="./Admin/processEmail.php" method="POST">
+                    <input type="text" name="name" placeholder="Tên của bạn"> <br> <br>
+                    <input type="text" name = "email" placeholder="Địa chỉ email của bạn"> <br><br>
+                    <input type="text" name="number" placeholder="Số điện thoại của bạn"> <br> <br>
+                    <textarea rows="4" cols="" name="request" placeholder="Nội dung yêu cầu dự án..."></textarea>
                     <br> <br>
-                    <input type="submit" value="Liên hệ báo giá">
+                    <input type="submit" name ="add" value="Liên hệ báo giá">
                     <br> <br>
+                    </form>
                 </div>
             </div>
         </div>

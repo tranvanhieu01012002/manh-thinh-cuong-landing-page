@@ -9,14 +9,17 @@
         <div class="cont">
             <div class="left-cont">
                 <div class="display-img">
-                    <img src="./model/img/image.jpg" alt="aaaaaaaaaaaaa">
+                    <img src="./model/img/logo1.png" alt="aaaaaaaaaaaaa">
                 </div>
-                <ul>
-                    <li>Địa chỉ: Chung cư Citizen đường 9A KDC Trung Sơn, xã Bình Hưng, huyện Bình Chánh, TPHCM</li>
+                <ul class="contact">
+                    <h4><strong>Công ty TNHH MTV Mạnh Thịnh Cường</strong></h4>                  
+                    <li>Địa chỉ: 29 Phạm Quang Ảnh, Quận Sơn Trà, TP. Đà Nẵng</li>
                     <br>
-                    <li>Hotline: 093 543 6677</li>
+                    <li>Số điện thoại/FAX: (+84) 852 445 554</li>
                     <br>
-                    <li>Email: bdsphankimngoc@gmail.com</li>gi
+                    <li>Hotline: (+84) 905 22 33 64</li>
+                    <br>
+                    <li>Email: manhthinhcuong@gmail.com</li>
                 </ul>
             </div>
             <div class="right-cont">

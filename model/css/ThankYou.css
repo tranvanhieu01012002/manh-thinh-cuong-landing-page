@@ -1,9 +1,9 @@
 .submit-btn {
-    background-color: #0D52E9;
+    background-color: rgb(40, 201, 75);
     position: relative;
     color: #fff;
     border: none;
-    padding: 1.25em 2em;
+    padding: 1em 1em;
     font-size: 0.75em;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -19,7 +19,7 @@
 }
 
 .submit-btn:hover {
-    background: #0c4ddb;
+    background: rgb(105, 247, 128);
 }
 
 .submit-btn:focus {

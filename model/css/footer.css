@@ -1,8 +1,3 @@
-/* li,
-a {
-    text-decoration: none;
-} */
-
 #footer {
     background-image: url("https://bdsphankimngoc.com/wp-content/uploads/2019/03/hung-thinh-corp-3c5e92f342614756.jpg");
     width: 100%;
@@ -36,9 +31,10 @@ a {
 }
 
 .left-cont {
-    height: auto;
+    width: 42%;
+    height: 380px;
     background-color: rgb(247, 240, 240);
-    padding: 0 13px;
+    padding: 0 2%;
 }
 
 .right-cont {
@@ -49,7 +45,12 @@ a {
 }
 
 .left-cont ul {
-    padding: 43px 13px;
+    padding: -15px 10px;
+    line-height: 30px;
+}
+
+.contact {
+    position: absolute;
 }
 
 .right-cont p {
@@ -73,8 +74,7 @@ a {
 }
 
 .display-img img {
-    margin-top: 10px;
-    width: 40%;
+    width: 50%;
 }
 
 .display-img {

@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- btn back to top -->
+<a id="button"></a>
+<!-- btn back to top -->
 
 <div class="header">
     <div class="infor">
@@ -8,7 +10,7 @@
             </div>
             <div class="email">
                 <p><i class="fa fa-envelope-o"></i> Email: manhthinhcuong@gmail.com</p>
-            </div> 
+            </div>
         </div>
 
 
@@ -62,4 +64,3 @@
 
 </div>
 <div class="virtual-class"></div>
-<script src="./model/js/header.js"></script>

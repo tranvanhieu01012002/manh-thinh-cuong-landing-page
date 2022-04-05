@@ -1,7 +1,7 @@
 var elements = $('.modal-overlay, .modal');
 
-$('button').click(function() {
-    elements.addClass('active');
+$(".submit-btn").click(function() {
+    elements.addClass("active");
 });
 
 $('.close-modal').click(function() {

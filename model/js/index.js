@@ -71,3 +71,18 @@ $(".container-slider-home").slick({
         // instead of a settings object
     ],
 });
+// Js for btn back to top
+var btn = $("#button");
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass("show-btn");
+    } else {
+        btn.removeClass("show-btn");
+    }
+});
+
+btn.on("click", function(e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "300");
+});

@@ -1,4 +1,4 @@
-button {
+.submit-btn {
     background-color: #0D52E9;
     position: relative;
     color: #fff;
@@ -18,11 +18,11 @@ button {
     text-align: center;
 }
 
-button:hover {
+.submit-btn:hover {
     background: #0c4ddb;
 }
 
-button:focus {
+.submit-btn:focus {
     outline: none;
 }
 

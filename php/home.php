@@ -15,14 +15,6 @@
         </div>
     </div>
 </div>
-<div class="display-name1">
-    <div>
-        <h1>Nhà</h1>
-    </div>
-    <div>
-        <img src="./model/img/hoa.png" alt="">
-    </div>
-</div>
 <div class="select-img">
     <button class="btn-img">20/1/2022</button>
     <button class="btn-img">20/2/2022</button>

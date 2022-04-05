@@ -1,4 +1,4 @@
- :root {
+:root {
     --grid-c: repeat(5, auto);
     --grid-gap: 0 60px;
     --img-w: 50%;
@@ -138,12 +138,6 @@ input[name="s"]:checked+input~input:before {
     display: none;
 }
 
-.display-name1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
 .select-img {
     margin: 0 auto;
     width: var(--img-w);
@@ -200,6 +194,10 @@ input[name="s"]:checked+input~input:before {
     border: 2.5px solid black;
     width: var(--width-btn);
     height: 40px;
+}
+
+.btn-img:hover {
+    cursor: pointer;
 }
 
 .activeClick {

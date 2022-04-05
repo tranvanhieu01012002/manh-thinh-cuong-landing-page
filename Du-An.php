@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dự án abc</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="./model/css/header.css">
-    <link rel="stylesheet" href="./model/css/footer.css">
-    <link rel="stylesheet" href="./model/css/home1.css">
+    <link rel="stylesheet" href="./model/css/main.css">
 </head>
 
 <body>
@@ -29,8 +27,6 @@
     <?php
     require_once "./php/home.php";
     ?>
-
-
     <!-- footer -->
     <?php
     include "./php/Footer.php";

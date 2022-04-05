@@ -7,16 +7,21 @@
     --bg--highlight--project: #F1F1F1;
     --text-h: 20px;
     --base-cl: rgb(218, 174, 55);
+    --font-family: 'Roboto', sans-serif;
 }
 
 
 /* slider */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
+}
+
+a {
+    text-decoration: none;
 }
 
 .container-pr {
@@ -24,10 +29,6 @@
     margin: 0px auto;
     position: relative;
     font-size: var(--text-h);
-}
-
-a {
-    text-decoration: none;
 }
 
 .container-slider {
@@ -50,10 +51,6 @@ a {
     overflow: hidden;
     position: relative;
     margin: 5px;
-    /* position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); */
 }
 
 .slide-img {

@@ -20,10 +20,14 @@ if(isset($_GET['id'])){
    
     </div>
 </div>
-<div class="display-name">
-    <h1>Nhà</h1>
-    <img src="../model/img/hoa.png" alt="">
+<div class="select-img">
+    <button class="btn-img">20/1/2022</button>
+    <button class="btn-img">20/2/2022</button>
+    <button class="btn-img">20/3/2022</button>
+    <button class="btn-img">20/4/2022</button>
+    <button class="btn-img">20/5/2022</button>
 </div>
+<<<<<<< HEAD
 <div class="tab-wrap">
     <div class="select-img">
 
@@ -63,11 +67,39 @@ if(isset($_GET['id'])){
         <img id="imgg5" src="./Admin/img/<?php echo $img['img_5']?>" alt="" class="sub-img">
         <img id="main"  src="https://smarthome.worldtech.vn/wp-content/uploads/2017/10/download-hinh-ngoi-nha-1024x684.jpg" alt="">
 
+=======
+<div class="display-small-slide">
+    <div class="slider-img">
+        <input checked type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=1');"
+            title="Random Picture 1">
+        <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=2');"
+            title="Random Picture 2">
+        <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=3');"
+            title="Random Picture 3">
+        <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=4');"
+            title="Random Picture 4">
+        <input type="radio" name="s" style="background-image: url('https://picsum.photos/500/300?random=5');"
+            title="Random Picture 5">
+    </div>
+    <div class="text-monthly-des">
+        <h3>Nhà đẹp</h3>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto, aliquid expedita magnam sequi eligendi
+            distinctio eveniet dicta harum cumque unde quo cupiditate iste molestias ex ducimus nam temporibus voluptas
+            atque! Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Vero eos aperiam magni temporibus excepturi exercitationem cumque dolorem libero commodi?
+            Quidem alias officia doloremque, quisquam culpa animi enim commodi qui nesciunt! Sit nam eum nemo ad
+            mollitia fugit autem recusandae
+            perspiciatis, officia eius saepe fugiat quas voluptatem sequi cumque iste suscipit ea earum ipsa aliquam
+            possimus? Voluptatem quo adipisci eius esse! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
+            eos aperiam magni temporibus
+            excepturi exercitationem cumque dolorem libero commodi? Quidem alias officia doloremque, quisquam culpa
+            animi enim commodi qui nesciunt! Sit nam eum nemo ad mollitia fugit autem recusandae perspiciatis, officia
+            eius saepe fugiat quas voluptatem
+            sequi cumque iste suscipit ea earum ipsa aliquam possimus? Voluptatem quo adipisci eius esse! Lorem ipsum
+            dolor sit amet consectetur, adipisicing elit. Vero eos aperiam magni temporibus excepturi exercitationem
+            cumque dolorem libero commodi?
+        </p>
+>>>>>>> 9cd227ebc2129707f17037b28469afc93d0b9d57
     </div>
 </div>
-<div class="virtual-class"></div>
-<br>
-<br>
-
-
-<div class="virtual-class"></div>

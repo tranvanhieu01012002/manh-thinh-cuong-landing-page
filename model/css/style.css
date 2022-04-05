@@ -7,16 +7,22 @@
     --bg--highlight--project: #F1F1F1;
     --text-h: 20px;
     --base-cl: rgb(218, 174, 55);
+    --font-family: 'Roboto', sans-serif;
 }
 
 
 /* slider */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
 }
 
 .container-pr {
@@ -24,10 +30,6 @@
     margin: 0px auto;
     position: relative;
     font-size: var(--text-h);
-}
-
-a {
-    text-decoration: none;
 }
 
 .container-slider {
@@ -50,10 +52,6 @@ a {
     overflow: hidden;
     position: relative;
     margin: 5px;
-    /* position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); */
 }
 
 .slide-img {
@@ -222,4 +220,53 @@ a {
 .container-pr .container-slider {
     max-width: 85%;
     margin: 0 auto;
+}
+
+
+/* css for btn go to top */
+
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (min-width: 500px) {
+    #button {
+        margin: 30px;
+    }
 }

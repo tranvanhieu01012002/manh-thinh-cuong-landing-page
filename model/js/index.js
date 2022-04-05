@@ -1,4 +1,6 @@
 $(".container-slider").slick({
+    autoplay: true,
+    autoplaySpeed: 1500,
     dots: true,
     infinite: true,
     speed: 300,
@@ -33,6 +35,8 @@ $(".container-slider").slick({
     ],
 });
 $(".container-slider-home").slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
     dots: false,
     infinite: true,
     speed: 300,
@@ -66,4 +70,19 @@ $(".container-slider-home").slick({
         // settings: "unslick"
         // instead of a settings object
     ],
+});
+// Js for btn back to top
+var btn = $("#button");
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass("show-btn");
+    } else {
+        btn.removeClass("show-btn");
+    }
+});
+
+btn.on("click", function(e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "300");
 });

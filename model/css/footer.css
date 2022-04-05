@@ -9,6 +9,7 @@ a {
     background-repeat: no-repeat;
     height: 900px;
     position: relative;
+    background-size: cover;
 }
 
 #title {
@@ -35,7 +36,7 @@ a {
 }
 
 .left-cont {
-    height: 400px;
+    height: auto;
     background-color: rgb(247, 240, 240);
     padding: 0 13px;
 }

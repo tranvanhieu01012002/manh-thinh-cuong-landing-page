@@ -1,4 +1,6 @@
 $(".container-slider").slick({
+    autoplay: true,
+    autoplaySpeed: 1500,
     dots: true,
     infinite: true,
     speed: 300,
@@ -33,6 +35,8 @@ $(".container-slider").slick({
     ],
 });
 $(".container-slider-home").slick({
+    autoplay: true,
+    autoplaySpeed: 3000,
     dots: false,
     infinite: true,
     speed: 300,

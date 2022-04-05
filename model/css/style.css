@@ -59,7 +59,7 @@ a {
 }
 
 .slide-img img {
-    height: 100%;
+    height: 260px;
     object-fit: cover;
     width: 100%;
     transition: all 1s;

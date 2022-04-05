@@ -1,25 +1,3 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="./model/css/footer.css">
-</head>
-
-<body>
-    <!-- <link rel="stylesheet" href="./model/css/footer.css"> -->
-    <div class="container-fluid" id="footer">
-        <div class="container">
-            <div id="title">
-                <h1>ĐĂNG KÍ ĐỂ NHẬN ƯU ĐÃI VÀ TƯ VẤN MIỄN PHÍ</h1>
-=======
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <div class="container-fluid" id="footer">
     <div class="container">
         <div id="title">
@@ -31,7 +9,7 @@
                     <img src="./model/img/logo1.png" alt="aaaaaaaaaaaaa">
                 </div>
                 <ul class="contact">
-                    <h4><strong>Công ty TNHH MTV Mạnh Thịnh Cường</strong></h4>                  
+                    <h4><strong>Công ty TNHH MTV Mạnh Thịnh Cường</strong></h4>
                     <li>Địa chỉ: 29 Phạm Quang Ảnh, Quận Sơn Trà, TP. Đà Nẵng</li>
                     <br>
                     <li>Số điện thoại/FAX: (+84) 852 445 554</li>
@@ -40,7 +18,6 @@
                     <br>
                     <li>Email: manhthinhcuong@gmail.com</li>
                 </ul>
->>>>>>> 9cd227ebc2129707f17037b28469afc93d0b9d57
             </div>
             <div class="right-cont">
                 <br>
@@ -70,32 +47,9 @@
                     <!-- close modal -->
                     <div class="modal-content">
                         <h2 class="text-h1">Cảm ơn bạn đã đăng ký!</h2>
-
-<<<<<<< HEAD
-                    </ul>
-                </div>
-                <div class="right-cont">
-                    <br>
-                    <h2>Nhập thông tin liên hệ </h2>
-                    <br>
-                    <p class="r-cont-text">Chúng tôi đã giúp hàng nghìn khách hàng tìm được dự án ưng ý. Với quỹ hàng đa
-                        dạng nhất thị trường,
-                        chúng tôi tự tin sẽ giúp bạn thực hiện giấc mơ sơ hữu BĐS và tối ưu hiệu quả đầu tư.</p>
-                    <br>
-                    <form action="./Admin/processEmail.php" method="POST">
-                    <input type="text" name="name" placeholder="Tên của bạn"> <br> <br>
-                    <input type="text" name = "email" placeholder="Địa chỉ email của bạn"> <br><br>
-                    <input type="text" name="number" placeholder="Số điện thoại của bạn"> <br> <br>
-                    <textarea rows="4" cols="" name="request" placeholder="Nội dung yêu cầu dự án..."></textarea>
-                    <br> <br>
-                    <input type="submit" name ="add" value="Liên hệ báo giá">
-                    <br> <br>
-                    </form>
-=======
                         <h3>Chúng tôi sẽ Liên hệ bạn sớm nhất.</h3>
                     </div>
                     <!-- content -->
->>>>>>> 9cd227ebc2129707f17037b28469afc93d0b9d57
                 </div>
                 <!-- modal -->
             </div>

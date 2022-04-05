@@ -10,22 +10,22 @@
     <div class="container-pr">
 
         <div class="container-slider">
-        <?php
-        $database = new dph();
-        $row = $database -> get_list('select * from slides;')?>
-        <?php foreach($row as $value):?>
- 
-        <div class="box-slider">
-                <a href="./Du-An.php?id=<?php echo $value['id']?>" >
+            <?php
+            $database = new dph();
+            $row = $database->get_list('select * from slides;') ?>
+            <?php foreach ($row as $value) : ?>
+
+            <div class="box-slider">
+                <a href="./Du-An.php?id=<?php echo $value['id'] ?>">
                     <div class="slide-img">
-                    <img src="./Admin/Img/<?php echo $value['img'] ?>" alt="">
+                        <img src="./Admin/Img/<?php echo $value['img'] ?>" alt="">
                     </div>
                     <div class="detail-box"><?php echo $value['Description'] ?></div>
                 </a>
             </div>
-        <?php endforeach ?>
+            <?php endforeach ?>
 
-        </div>   
+        </div>
     </div>
 </div>
 <div class=" page-container-slider">
@@ -256,4 +256,4 @@
     integrity="
                             sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="
                             anonymous " referrerpolicy=" no-referrer "></script>
-<script src=" ./model/js/index.js "></script>
+<!-- <script src=" ./model/js/index.js "></script> -->

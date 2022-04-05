@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php 
+include ("./Admin/dph.php");
+?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +43,10 @@
 
     <!-- footer -->
     <?php
+
+    //include("./Admin/processEmail.php");
     include "./php/Footer.php";
+
     ?>
     <script src="./model/js/header.js"></script>
     <script src="./model/js/banner.js"></script>

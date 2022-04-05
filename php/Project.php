@@ -8,93 +8,24 @@
         </div>
     </div>
     <div class="container-pr">
+
         <div class="container-slider">
+        <?php
+        $database = new dph();
+        $row = $database -> get_list('select * from slides;')?>
+        <?php foreach($row as $value):?>
+ 
+        <div class="box-slider">
+                <a href="./Du-An.php?id=<?php echo $value['id']?>" >
+                    <div class="slide-img">
+                    <img src="./Admin/Img/<?php echo $value['img'] ?>" alt="">
+                    </div>
+                    <div class="detail-box"><?php echo $value['Description'] ?></div>
+                </a>
+            </div>
+        <?php endforeach ?>
 
-            <div class="box-slider">
-                <a href="./Du-An.php?id=1">
-                    <div class="slide-img">
-                        <img src="./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg" alt="">
-                    </div>
-                    <div class="detail-box">aaaaaaaaa</div>
-                </a>
-            </div>
-
-            <div class="box-slider">
-                <a href="./Du-An.php?id=1">
-                    <div class="slide-img">
-                        <img src="./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg" alt="">
-                    </div>
-                    <div class="detail-box">aaaaaaaaa</div>
-                </a>
-            </div>
-            <div class="box-slider">
-                <a href="./Du-An.php?id=1">
-                    <div class="slide-img">
-                        <img src="./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg" alt="">
-                    </div>
-                    <div class="detail-box">aaaaaaaaa</div>
-                </a>
-            </div>
-            <div class="box-slider">
-                <a href="./Du-An.php?id=1">
-                    <div class="slide-img">
-                        <img src="./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg" alt="">
-                    </div>
-                    <div class="detail-box">aaaaaaaaa</div>
-                </a>
-            </div>
-            <div class="box-slider">
-                <a href="./Du-An.php?id=1">
-                    <div class="slide-img">
-                        <img src="./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg" alt="">
-                    </div>
-                    <div class="detail-box">aaaaaaaaa à sdf sdaf sdf asdf asdf Lorem, ipsum dolor sit amet consectetur
-                        adipisicing elit. Repellat recusandae ullam accusamus? Nesciunt omnis dignissimos quaerat
-                        voluptate exercitationem? Odit ipsum aut neque commodi itaque
-                        ea sunt sapiente amet accusantium temporibus.</div>
-                </a>
-            </div>
-            <div class="box-slider">
-                <a href="./Du-An.php?id=1">
-                    <div class="slide-img">
-                        <img src="./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg alt=" ">
-                        </div>
-                        <div class=" detail-box ">aaaaaaaaa</div>
-                    </a>
-                </div>
-                <div class=" box-slider ">
-                    <a href=" ./Du-An.php?id=1">
-                        <div class=" slide-img ">
-                            <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                        </div>
-                        <div class=" detail-box ">aaaaaaaaa</div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href="./Du-An.php?id=1">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">aaaaaaaaa</div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1 ">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">aaaaaaaaa</div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href="./Du-An.php?id=1">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">aaaaaaaaa</div>
-                </a>
-            </div>
-        </div>
+        </div>   
     </div>
 </div>
 <div class=" page-container-slider">

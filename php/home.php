@@ -1,18 +1,23 @@
+<?php
+if(isset($_GET['id'])){
+    $id = $_GET['id'];
+}
+?>
 <div class="back">
     <div class="content">
+        <?php
+        $database = new dph();
+        $row = $database -> get_row('select * from slides where id = '.$id.' ;')
+        ?>
         <div id="tit">
-            <h1>KHU ĐÔ THỊ VẠN PHÚC</h1>
+            <h1><?php echo $row['Description'] ?></h1>
         </div>
         <div id="tit"><img src="https://khudothivanphuc.giaodienbds.com/wp-content/uploads/2017/12/bullet_bg.png"
                 alt=""></div>
         <div id="dis">
-            <p>Từ bao đời nay, sông Sài Gòn đã là tuyến giao thông huyết mạch, giữ dấu ấn quan trọng trong văn hóa Sài
-                Gòn – Gia Định.</p>
-            <p>Và nay, Sài Gòn là một chứng nhân cho sự phát triển phồn vinh với hàng loạt công trình ven sông – niềm tự
-                hào của thành phố. Được sông Sài Gòn ôm trọn 3 mặt, khu đô thị Vạn Phúc đã kiến tạo nên những không gian
-                sống đẳng cấp, những tiện nghi hoàn hảo, làm nên những giá trị mới cho dòng sông lịch sử mà không hề mất
-                đi sự huyền ảo vốn có.</p>
+            <p><?php echo $row['Description_detail']?></p>
         </div>
+
     </div>
 </div>
 <div class="select-img">

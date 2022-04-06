@@ -56,3 +56,17 @@
         </div>
     </div>
 </div>
+<?php
+if (isset($_GET["check"])){
+    if($_GET["check"] == 1){
+         echo '
+     <script src="./model/js/model_success.js"></script>
+    '; 
+    }
+    else{
+        echo '
+     <script src="./model/js/model_fail.js"></script>
+    ';
+    } 
+}
+?>

@@ -10,13 +10,13 @@
                 </div>
                 <ul class="contact">
                     <h4><strong>Công ty TNHH MTV Mạnh Thịnh Cường</strong></h4>
-                    <li>Địa chỉ: 29 Phạm Quang Ảnh, Quận Sơn Trà, TP. Đà Nẵng</li>
+                    <li><strong> Địa chỉ:</strong> 29 Phạm Quang Ảnh, Quận Sơn Trà, TP. Đà Nẵng</li>
                     <br>
-                    <li>Số điện thoại/FAX: (+84) 852 445 554</li>
+                    <li><strong> Số điện thoại/FAX:</strong> (+84) 852 445 554</li>
                     <br>
-                    <li>Hotline: (+84) 905 22 33 64</li>
+                    <li><strong> Hotline:</strong> (+84) 905 22 33 64</li>
                     <br>
-                    <li>Email: manhthinhcuong@gmail.com</li>
+                    <li><strong> Email:</strong> manhthinhcuong@gmail.com</li>
                 </ul>
             </div>
             <div class="right-cont">

@@ -12,8 +12,6 @@
                 <p><i class="fa fa-envelope-o"></i> Email: manhthinhcuong@gmail.com</p>
             </div>
         </div>
-
-
     </div>
     <div class="menu">
         <div class="logo-image">
@@ -37,7 +35,7 @@
                 }
                 ?>
 
-                <li><a href="#" data-hover="Liên hệ">Liên hệ</a></li>
+                <li><a href="#footer" data-hover="Liên hệ">Liên hệ</a></li>
             </ul>
         </nav>
         <div class="responsive-header">
@@ -46,7 +44,7 @@
                 <a href="./Trang-Chu.php">Trang chủ</a>
                 <a href="#">Giới thiệu</a>
                 <a href="#">Nhà</a>
-                <a href="#">Liên hệ</a>
+                <a href="#footer">Liên hệ</a>
                 <form class="search-container" action="/action_page.php">
                     <input type="text" class="searchTerm" placeholder="Tìm kiếm">
                     <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>

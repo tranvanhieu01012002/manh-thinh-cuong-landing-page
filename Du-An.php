@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php 
-    include ("./Admin/dph.php");
-    ?>
+<?php
+include("./Admin/dph.php");
+?>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,6 +20,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
         integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./model/css/main.css">
 </head>
 
@@ -42,10 +46,20 @@
     <?php
     include "./php/Footer.php";
     ?>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "
+        integrity="
+                            sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="
+                            anonymous " referrerpolicy=" no-referrer "></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js "
+        integrity="
+                            sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="
+                            anonymous " referrerpolicy=" no-referrer "></script>
     <script src="./model/js/swich-img.js"></script>
     <script src="./model/js/header.js"></script>
     <script src="./model/js/banner.js"></script>
-    <script src="./model/js/footer.js"></script>
+    <script src="./model/js/index.js"></script>
+
+
 </body>
 
 </html>

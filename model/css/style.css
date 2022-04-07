@@ -41,8 +41,8 @@ a {
 .name-project,
 .name-project h2,
 .name-project img {
-    /* background-color: var(--bg--highlight--project); */
-    background-color: #000;
+    background-color: #fff;
+    /* background-color: #000; */
 }
 
 .box-slider {
@@ -59,7 +59,7 @@ a {
 }
 
 .slide-img img {
-    height: 100%;
+    height: 260px;
     object-fit: cover;
     width: 100%;
     transition: all 1s;
@@ -180,30 +180,23 @@ a {
 
 .see-more {
     position: relative;
-    padding: 5px;
-    margin: 0px 10px 10px 0px;
-    float: left;
-    border-radius: 3px;
-    font-size: 20px;
-    color: #000;
-    text-decoration: none;
-    background-color: var(--bg-cl);
-    border: none;
-    border-bottom: 5px solid #27ae60;
-    -webkit-transition: all 0.1s;
-    transition: all 0.1s;
+    background-color: #fff;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0px;
+    border: 2.5px solid black;
+    width: var(--width-btn);
+    height: 40px;
 }
 
 .see-more:hover,
 .see-more:active {
-    -webkit-transform: translate(0px, 5px);
-    -ms-transform: translate(0px, 5px);
-    transform: translate(0px, 5px);
-    border-bottom: 1px solid #2ecc71;
+    cursor: pointer;
+    background-color: var(--base-cl);
 }
 
 .page-container-slider h2 {
-    color: var(--bg-cl);
+    /* color: var(--bg-cl); */
 }
 
 .page-container-slider {
@@ -218,7 +211,7 @@ a {
 }
 
 .container-pr .container-slider {
-    max-width: 85%;
+    max-width: 95%;
     margin: 0 auto;
 }
 
@@ -268,5 +261,11 @@ a {
 @media (min-width: 500px) {
     #button {
         margin: 30px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .container-pr .container-slider {
+        max-width: 85%;
     }
 }

@@ -34,7 +34,8 @@
     width: 42%;
     height: 380px;
     background-color: rgb(247, 240, 240);
-    padding: 0 2%;
+    /* padding: 0 2%; */
+    padding-left: 3.5%;
 }
 
 .right-cont {
@@ -82,6 +83,8 @@
     justify-content: center;
 }
 
+
+/* 
 @media screen and (max-width:700px) {
     .left-cont {
         height: auto;
@@ -103,5 +106,120 @@
     }
     #footer {
         height: 100%;
+    }
+} */
+
+@media only screen and (max-width: 46.1875em) {
+    .cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        top: 120px;
+        width: 80%;
+        margin: 0 auto;
+        /* gap: 15px; */
+    }
+    .left-cont {
+        width: 100%;
+        height: 150px;
+        background-color: rgb(247, 240, 240);
+        margin-top: -21%;
+    }
+    .contact h4 {
+        text-align: center;
+        font-size: 13px;
+        margin-left: -8px;
+    }
+    .contact {
+        margin-left: 10px;
+        margin-top: 11px;
+    }
+    .display-img {
+        display: none;
+    }
+    .left-cont ul {
+        line-height: 20px;
+        font-size: 10px;
+        padding-right: 12px;
+    }
+    .right-cont {
+        width: 100%;
+        height: 543px;
+        text-align: center;
+        border: 3px rgb(182, 224, 30) dashed;
+        font-size: small;
+    }
+    .right-cont h2 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 63.9375em) and (min-width: 46.25em) {
+    .cont {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        top: 120px;
+        width: 80%;
+        margin: 0 auto;
+        gap: 15px;
+    }
+    .left-cont {
+        height: 260px;
+        background-color: rgb(247, 240, 240);
+        padding: 10px;
+        margin-top: -10%;
+        width: 476px;
+        padding-left: 10px;
+    }
+    .contact h4 {
+        text-align: center;
+        font-size: 15px;
+    }
+    .contact {
+        /* margin-left: 41px; */
+        margin-top: -26px;
+        padding-left: 27px;
+    }
+    .display-img img {
+        width: 35%;
+        height: 120px;
+        margin-left: 9px;
+    }
+    .left-cont ul {
+        line-height: 22px;
+        font-size: 15px;
+    }
+    /* ----------------- */
+    .right-cont {
+        width: 100%;
+        height: 440px;
+        text-align: center;
+        border: 3px rgb(182, 224, 30) dashed;
+        font-size: small;
+    }
+    .right-cont h2 {
+        font-size: 20px;
+    }
+    .right-cont p {
+        padding: 0 10px;
+    }
+    .right-cont input[type=text] {
+        width: 86%;
+        height: 40px;
+        margin: -3px 0px;
+    }
+    .right-cont input[type=submit] {
+        padding: 10px 10px;
+        background-color: rgb(40, 201, 75);
+        color: white;
+    }
+    .right-cont textarea {
+        width: 86%;
+        height: 61px;
     }
 }

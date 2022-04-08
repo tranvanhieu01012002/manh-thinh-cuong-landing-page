@@ -28,13 +28,13 @@
                     chúng tôi tự tin sẽ giúp bạn thực hiện giấc mơ sơ hữu BĐS và tối ưu hiệu quả đầu tư.</p>
                 <br>
                 <form action="./Admin/processEmail.php" method="POST">
-                <input type="text"  name="name" placeholder="Tên của bạn"> <br> <br>
-                <input type="text" name = "email" placeholder="Địa chỉ email của bạn"> <br><br>
-                <input type="text"name="number" placeholder="Số điện thoại của bạn"> <br> <br>
-                <textarea rows="4" cols="" name="request" placeholder="Nội dung yêu cầu dự án..."></textarea>
-                <br> <br>
-                <button class="submit-btn" type="submit" name ="add" value="">Liên hệ báo giá</button>
-                <br> <br>
+                    <input type="text" name="name" placeholder="Tên của bạn"> <br> <br>
+                    <input type="text" name="email" placeholder="Địa chỉ email của bạn"> <br><br>
+                    <input type="text" name="number" placeholder="Số điện thoại của bạn"> <br> <br>
+                    <textarea rows="4" cols="" name="request" placeholder="Nội dung yêu cầu dự án..."></textarea>
+                    <br> <br>
+                    <button class="submit-btn" type="submit" name="add">Liên hệ báo giá</button>
+                    <br> <br>
                 </form>
             </div>
             <div class="modal-overlay">
@@ -46,14 +46,14 @@
                             </path>
                         </svg>
                     </a>
-                     
+
                     <div class="modal-content">
                         <h2 class="text-h1">Cảm ơn bạn đã đăng ký!</h2>
                         <h3>Chúng tôi sẽ Liên hệ bạn sớm nhất.</h3>
                     </div>
                     <!-- content -->
                 </div>
-               
+
             </div>
         </div>
     </div>

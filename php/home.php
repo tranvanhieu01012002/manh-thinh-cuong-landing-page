@@ -2,32 +2,41 @@
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 }
+$database = new dph();
+$row = $database->get_row('select * from slides where id = ' . $id . ' ;');
+$rowTimeLine = $database->get_row('select * from timeline where id = ' . $id . ' ;');
 ?>
 <div class="back">
+    <img class="imgback"
+        src="https://khudothivanphuc.giaodienbds.com/wp-content/uploads/2017/12/van-phuc-slide-3-1-1.jpg" alt="">
     <div class="content">
-        <?php
-        $database = new dph();
-        $row = $database->get_row('select * from slides where id = ' . $id . ' ;')
-        ?>
-        <div id="tit">
+        <div class="title">
             <h1><?php echo $row['Description'] ?></h1>
         </div>
-        <div id="tit"><img src="https://khudothivanphuc.giaodienbds.com/wp-content/uploads/2017/12/bullet_bg.png"
-                alt=""></div>
-        <div id="dis">
-            <p><?php echo $row['Description_detail'] ?></p>
+        <div class="decoration"><img
+                src="https://khudothivanphuc.giaodienbds.com/wp-content/uploads/2017/12/bullet_bg.png" alt=""></div>
+        <div class="description">
+            <?php echo $row['Description_detail'] ?>
         </div>
-
     </div>
 </div>
-
 <div class="select-img">
-    <button class="btn-img">20/1/2022</button>
-    <button class="btn-img">20/2/2022</button>
+    <?php
+    $i = -1;
+    foreach($rowTimeLine as $ele){
+        $i++;
+        if($i== 0){
+            continue;
+        }
+        echo '<button class="btn-img">' . $ele . '</button>';
+    }
+    ?>
+    <!-- <button class="btn-img">20/2/2022</button>
     <button class="btn-img">20/3/2022</button>
     <button class="btn-img">20/4/2022</button>
-    <button class="btn-img">20/5/2022</button>
+    <button class="btn-img">20/5/2022</button> -->
 </div>
+
 <div class="display-small-slide">
     <div class="slider-img">
         <?php
@@ -35,13 +44,13 @@ if (isset($_GET['id'])) {
         ?>
         <input checked type="radio" name="s" style="background-image: url(./Admin/img/<?php echo $img['img_1'] ?>);"
             title="Manh Thinh Cuong 1">
-        <input type="radio" name="s" style="background-image: url(./Admin/img/<?php echo $img['img_2'] ?>);"
+        <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_2'] ?>');"
             title="Manh Thinh Cuong 2">
-        <input type="radio" name="s" style="background-image: url(./Admin/img/<?php echo $img['img_3'] ?>);"
+        <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_3'] ?>');"
             title="Manh Thinh Cuong 3">
-        <input type="radio" name="s" style="background-image: url(./Admin/img/<?php echo $img['img_4'] ?>);"
+        <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_4'] ?>');"
             title="Manh Thinh Cuong 4">
-        <input type="radio" name="s" style="background-image: url(./Admin/img/<?php echo $img['img_5'] ?>);"
+        <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_5'] ?>');"
             title="Manh Thinh Cuong 5">
     </div>
     <div class="text-monthly-des">

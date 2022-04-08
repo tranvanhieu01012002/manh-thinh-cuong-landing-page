@@ -11,8 +11,17 @@ if(isset($_POST['add'])){
             'number' => $_POST['number'],
             'request' => $_POST['request']
         ));
-        header("Location:http://localhost:8080/Tamxin/manh-thinh-cuong-landing-page/Admin/Customer/indexAdmin.php");
-    }   
+        echo '
+        <script src="./model/js/model_success.js"></script>
+       '; 
+        //header("Location:http://localhost:8080/Tamxin/manh-thinh-cuong-landing-page/Trang-Chu.php");
+    } 
+    else{
+        echo '
+        <script src="./model/js/model_fail.js"></script>
+       ';
+    }
+
     
 }
 ?>

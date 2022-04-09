@@ -1,39 +1,38 @@
 :root {
-    --bg-cl: #eef8ff;
-    --box-w: 300px;
-    --max-w: 1300px;
-    --bg-text: rgba(11, 109, 43, 0.5);
-    --bg: #ffff;
-    --bg--highlight--project: #F1F1F1;
-    --text-h: 20px;
-    --base-cl: rgb(218, 174, 55);
-    --font-family: 'Roboto', sans-serif;
+	--bg-cl: #eef8ff;
+	--box-w: 300px;
+	--max-w: 1300px;
+	--bg-text: rgba(11, 109, 43, 0.5);
+	--bg: #ffff;
+	--bg--highlight--project: #f1f1f1;
+	--text-h: 20px;
+	--base-cl: rgb(218, 174, 55);
+	--font-family: "Roboto", sans-serif;
 }
-
 
 /* slider */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: var(--font-family);
-    box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	font-family: var(--font-family);
+	box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .container-pr {
-    max-width: var(--max-w);
-    margin: 0px auto;
-    position: relative;
-    font-size: var(--text-h);
+	max-width: var(--max-w);
+	margin: 0 0 20px auto;
+	position: relative;
+	font-size: var(--text-h);
 }
 
 .container-slider {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 .page-container-slider,
@@ -41,231 +40,222 @@ a {
 .name-project,
 .name-project h2,
 .name-project img {
-    background-color: #fff;
-    /* background-color: #000; */
+	background-color: #fff;
+	/* background-color: #000; */
 }
 
 .box-slider {
-    width: var(--box-w);
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-    margin: 5px;
+	width: var(--box-w);
+	box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	overflow: hidden;
+	position: relative;
+	margin: 5px;
 }
 
 .slide-img {
-    height: 100%;
+	height: 100%;
 }
 
 .slide-img img {
-    height: 260px;
-    object-fit: cover;
-    width: 100%;
-    transition: all 1s;
+	height: 260px;
+	object-fit: cover;
+	width: 100%;
+	transition: all 1s;
 }
 
 .slide-img:hover img {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
 
 .detail-box {
-    position: absolute;
-    bottom: 0px;
-    height: 60px;
-    width: 100%;
-    background-color: rgba(11, 109, 43, 0.5);
-    font-size: large;
-    color: var(--bg-cl);
-    text-transform: capitalize;
-    text-align: center;
+	position: absolute;
+	bottom: 0px;
+	height: 60px;
+	width: 100%;
+	background-color: rgba(11, 109, 43, 0.5);
+	font-size: large;
+	color: var(--bg-cl);
+	text-transform: capitalize;
+	text-align: center;
 }
-
 
 /* banner */
 
 .slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
+	max-width: 100%;
+	position: relative;
+	margin: auto;
 }
-
 
 /* ẩn hình ảnh cho phần tử slideshow */
 
 .mySlides {
-    display: none;
+	display: none;
 }
-
 
 /* thiết kế nút mũi tên*/
 
 .prev,
 .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 30px;
-    transition: 0.3s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 30px;
+	transition: 0.3s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
 }
-
 
 /* thiết kế nút mũi tên next nằm phía bên phải */
 
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+	right: 0;
+	border-radius: 3px 0 0 3px;
 }
-
 
 /* hiệu ứng thay đổi background khi hover vào nút mũi tên*/
 
 .prev:hover,
 .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.8);
 }
-
 
 /* Thiết lập style cho nội dung của mỗi phần tử slideshow */
 
 .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    background-color: var(--bg-text);
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+	background-color: var(--bg-text);
 }
-
 
 /* Thiết lập style cho số hiển thị của phần tử */
 
 .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    width: 100%;
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .name-project {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .name-project img {
-    max-width: 200px;
+	max-width: 200px;
 }
-
 
 /* button */
 
 .detail-title {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .see-more {
-    position: relative;
-    background-color: #fff;
-    text-align: center;
-    justify-content: center;
-    margin: 10px 0px;
-    border: 2.5px solid black;
-    width: var(--width-btn);
-    height: 40px;
+	position: relative;
+	background-color: #fff;
+	text-align: center;
+	justify-content: center;
+	margin: 10px 0px;
+	border: 2.5px solid black;
+	width: var(--width-btn);
+	height: 40px;
 }
 
 .see-more:hover,
 .see-more:active {
-    cursor: pointer;
-    background-color: var(--base-cl);
+	cursor: pointer;
+	background-color: var(--base-cl);
 }
 
 .page-container-slider h2 {
-    /* color: var(--bg-cl); */
+	/* color: var(--bg-cl); */
 }
 
 .page-container-slider {
-    max-width: 90%;
-    margin: 0 auto;
+	max-width: 90%;
+	margin: 0 auto;
 }
 
-@media screen and (max-width:1000px) {
-    .page-container-slider {
-        width: 95%;
-    }
+@media screen and (max-width: 1000px) {
+	.page-container-slider {
+		width: 95%;
+	}
 }
 
 .container-pr .container-slider {
-    max-width: 95%;
-    margin: 0 auto;
+	max-width: 95%;
+	margin: 0 auto;
 }
-
 
 /* css for btn go to top */
 
 #button {
-    display: inline-block;
-    background-color: #FF9800;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: background-color .3s, opacity .5s, visibility .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 1000;
+	display: inline-block;
+	background-color: #ff9800;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1000;
 }
 
 #button::after {
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
+	content: "\f077";
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 2em;
+	line-height: 50px;
+	color: #fff;
 }
 
 #button:hover {
-    cursor: pointer;
-    background-color: #333;
+	cursor: pointer;
+	background-color: #333;
 }
 
 #button:active {
-    background-color: #555;
+	background-color: #555;
 }
 
 #button.show-btn {
-    opacity: 1;
-    visibility: visible;
+	opacity: 1;
+	visibility: visible;
 }
 
 @media (min-width: 500px) {
-    #button {
-        margin: 30px;
-    }
+	#button {
+		margin: 30px;
+	}
 }
 
-@media screen and (max-width:500px) {
-    .container-pr .container-slider {
-        max-width: 85%;
-    }
+@media screen and (max-width: 500px) {
+	.container-pr .container-slider {
+		max-width: 85%;
+	}
 }

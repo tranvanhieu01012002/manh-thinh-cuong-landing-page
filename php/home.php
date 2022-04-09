@@ -54,7 +54,7 @@ $rowTimeLine = $database->get_row('select * from timeline where id = ' . $id . '
             title="Manh Thinh Cuong 5">
     </div>
     <div class="text-monthly-des">
-        <h3><?php echo $row['Content'] ?></h3>
+        <h4><?php echo $row['Content'] ?></h4>
         <p><?php echo $row['Description_detail'] ?>
         </p>
     </div>

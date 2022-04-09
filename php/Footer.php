@@ -25,7 +25,7 @@
                 <br>
                 <p class="r-cont-text">Chúng tôi đã giúp hàng nghìn khách hàng tìm được dự án ưng ý. Với quỹ hàng đa
                     dạng nhất thị trường,
-                    chúng tôi tự tin sẽ giúp bạn thực hiện giấc mơ sơ hữu BĐS và tối ưu hiệu quả đầu tư.</p>
+                    chúng tôi tự tin sẽ giúp bạn thực hiện giấc mơ sở hữu BĐS và tối ưu hiệu quả đầu tư.</p>
                 <br>
                 <form action="./Admin/processEmail.php" method="POST">
                     <input type="text" name="name" placeholder="Tên của bạn"> <br> <br>
@@ -48,8 +48,8 @@
                     </a>
 
                     <div class="modal-content">
-                        <h2 class="text-h1">Cảm ơn bạn đã đăng ký!</h2>
-                        <h3>Chúng tôi sẽ Liên hệ bạn sớm nhất.</h3>
+                        <h2 class="text-h2">Cảm ơn bạn đã đăng ký!</h2>
+                        <h3>Chúng tôi sẽ liên hệ bạn sớm nhất.</h3>
                     </div>
                     <!-- content -->
                 </div>

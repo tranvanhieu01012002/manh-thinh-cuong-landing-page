@@ -14,7 +14,7 @@
     transition: background 0.25s cubic-bezier(0.55, 0, 0.1, 1);
 }
 
-.text-h1 {
+.text-h2 {
     text-align: center;
 }
 
@@ -44,10 +44,10 @@
         -ms-flex-pack: center;
         justify-content: center;
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top: 40%;
+        left: 10%;
+        width: 80%;
+        height: 50%;
         z-index: 5;
         background-color: rgba(0, 0, 0, 0.6);
         opacity: 0;
@@ -149,6 +149,12 @@
     opacity: 1;
 }
 
+h2,
+h3 {
+    text-align: center;
+    font-size: 1.9rem;
+}
+
 
 /**
     * Mobile styling
@@ -158,12 +164,16 @@
     h1 {
         font-size: 1.5rem;
     }
+    h2,
+    h3 {
+        font-size: 1.2rem;
+    }
     .modal {
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        top: 50%;
+        left: 10%;
+        width: 80%;
+        height: 30%;
         -webkit-overflow-scrolling: touch;
         border-radius: 0;
         -webkit-transform: scale(1.1);
@@ -172,6 +182,9 @@
     }
     .close-modal {
         right: 20px !important;
+    }
+    .modal .modal-content h3 {
+        text-align: center;
     }
 }
 

@@ -3,7 +3,7 @@
     --grid-gap: 0 60px;
     --img-w: 50%;
     --width-btn: auto;
-    --width-content: 500px;
+    --width-content: 600px;
     --padding-content: 30px;
     --font-size: 15px;
     --width-decoration: 100%;
@@ -48,7 +48,7 @@ justify-content: center; */
 }
 
 .title {
-    font-size: var(--font-size);
+    text-align: center;
 }
 
 @media screen and (max-width: 800px) {

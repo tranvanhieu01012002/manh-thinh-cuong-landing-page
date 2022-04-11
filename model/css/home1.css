@@ -179,7 +179,7 @@ input[name="s"]:checked+input~input:before {
     gap: var(--grid-gap);
 }
 
-.display-small-slide {
+.content-detail-text-slider {
     display: flex;
     justify-content: space-around;
     width: 70%;

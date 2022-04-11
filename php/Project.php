@@ -33,7 +33,7 @@
         <h2>Căn hộ</h2>
         <img src=" https://www.cashadvance6online.com/data/archive/img/2477963118.png " alt=" ">
     </div>
-    <div class=" container-pr ">
+    <div class="container-pr">
         <div class=" container-slider-home ">
 
             <div class=" box-slider ">
@@ -129,8 +129,8 @@
         </div>
     </div>
 </div>
-<div class=" page-container-slider">
-    <div class=" container-pr ">
+<div class="page-container-slider">
+    <div class="container-pr">
         <div class=" container-slider-home ">
             <div class=" box-slider ">
                 <a href="./Du-An.php?id=1">

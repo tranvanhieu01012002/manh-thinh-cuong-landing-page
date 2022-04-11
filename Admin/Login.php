@@ -1,6 +1,7 @@
 </html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./model/css/LoginForm.css">
 </head>
+
 <body>
     <div class="login-box">
         <h2>Login</h2>
@@ -22,17 +24,18 @@
             </div>
 
             <div> <a href="">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <input type="submit" name="submit" value="SUBMIT"> 
-                <!-- Submit -->
-            </a>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <input type="submit" name="submit" value="SUBMIT">
+                    <!-- Submit -->
+                </a>
             </div>
         </form>
-    </div>   
+    </div>
 </body>
+
 </html>
 <?php 
     include("./connect.php");
@@ -43,10 +46,11 @@
     $admin_query="select * from admin where user='$user' AND password='$password'";  
   
     $run_query=mysqli_query($conn,$admin_query);  
-  
+ 
     if(mysqli_num_rows($run_query)>0)  
     {  
-        header("Location:http://localhost:8080/Tamxin/Admin/timeline_image/indexAdmin.php");
+        header("Location:./sildes/indexAdmin.php");
+        
     }  
     else {
         echo"<script>alert('Admin Details are incorrect..!')</script>";

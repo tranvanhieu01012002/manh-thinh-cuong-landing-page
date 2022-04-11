@@ -37,23 +37,20 @@
 </body>
 
 </html>
-<?php 
-    include("./connect.php");
-    if(isset($_POST['submit'])){
-        $user = $_POST['user'];
-        $password = $_POST['password'];
-    }
-    $admin_query="select * from admin where user='$user' AND password='$password'";  
-  
-    $run_query=mysqli_query($conn,$admin_query);  
- 
-    if(mysqli_num_rows($run_query)>0)  
-    {  
-        header("Location:./sildes/indexAdmin.php");
-        
-    }  
-    else {
-        echo"<script>alert('Admin Details are incorrect..!')</script>";
-        //header("http://localhost:8080/Tamxin/Admin/Web-Xay-Dung-master/Admin/Login.php");
-    } 
+<?php
+include("./connect.php");
+if (isset($_POST['submit'])) {
+    $user = $_POST['user'];
+    $password = $_POST['password'];
+}
+$admin_query = "select * from admin where user='$user' AND password='$password'";
+
+$run_query = mysqli_query($conn, $admin_query);
+
+if (mysqli_num_rows($run_query) > 0) {
+    header("Location:./sildes/indexAdmin.php");
+} else {
+    echo "<script>alert('Admin Details are incorrect..!')</script>";
+    //header("http://localhost:8080/Tamxin/Admin/Web-Xay-Dung-master/Admin/Login.php");
+}
 ?>

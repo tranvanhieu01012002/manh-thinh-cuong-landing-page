@@ -48,11 +48,15 @@ document.addEventListener(
             if (highPage > hightBlockTxt) {
                 if (statusBlock == "no") {
                     addAnimation(txt, "animationMove");
+                    $(".text-monthly-des h4").addClass("animationMoveLeft");
                     statusBlock = "yes";
                 }
             } else if (highPage < hightBlockTxt) {
                 if (statusBlock == "yes") {
                     removeAnimation(txt, "animationMove");
+                    $(".text-monthly-des h4").removeClass(
+                        "animationMoveLeft"
+                    );
                     statusBlock = "no";
                 }
             }
@@ -70,11 +74,11 @@ var removeAnimation = (text, animation) => {
 $(document).ready(() => {
     $("button").click(function() {
         $(".text-monthly-des p").removeClass("animationMove");
-        $(".text-monthly-des h3").removeClass("animationMoveLeft");
+        $(".text-monthly-des h4").removeClass("animationMoveLeft");
         setTimeout(function() {
-            $(".text-monthly-des h3").addClass("animationMoveLeft");
+            $(".text-monthly-des h4").addClass("animationMoveLeft");
             $(".text-monthly-des p").addClass("animationMove");
-        }, 100);
+        }, 200);
         $("button").removeClass("activeClick");
         $(this).addClass("activeClick");
     });

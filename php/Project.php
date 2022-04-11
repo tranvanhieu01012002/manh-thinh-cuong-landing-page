@@ -30,7 +30,7 @@
 </div>
 <div class=" page-container-slider">
     <div class=" name-project ">
-        <h2>căn hộ</h2>
+        <h2>Căn hộ</h2>
         <img src=" https://www.cashadvance6online.com/data/archive/img/2477963118.png " alt=" ">
     </div>
     <div class=" container-pr ">

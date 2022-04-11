@@ -15,7 +15,7 @@
     </div>
     <div class="menu">
         <div class="logo-image">
-            <img src="./model/img/image.jpg" alt="">
+            <img src="./model/img/logo1.png" alt="">
         </div>
         <nav class="style-4">
             <ul class="menu-4">

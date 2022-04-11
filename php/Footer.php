@@ -1,4 +1,6 @@
-
+<?php
+require_once ("./Admin/dph.php");
+?>
 <div class="container-fluid" id="footer">
     <div class="container">
         <div class="cont">
@@ -25,7 +27,7 @@
                     dạng nhất thị trường,
                     chúng tôi tự tin sẽ giúp bạn thực hiện giấc mơ sở hữu BĐS và tối ưu hiệu quả đầu tư.</p>
                 <br>
-                <form action="./Admin/processEmail.php" method="POST">
+                <form id="form1"action="./Admin/processEmail.php" method="POST" enctype="multipart/form-data">
                     <input type="text" name="name" placeholder="Tên của bạn"> <br> <br>
                     <input type="text" name="email" placeholder="Địa chỉ email của bạn"> <br><br>
                     <input type="text" name="number" placeholder="Số điện thoại của bạn"> <br> <br>

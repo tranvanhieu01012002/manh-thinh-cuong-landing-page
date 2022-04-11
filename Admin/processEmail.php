@@ -1,6 +1,6 @@
 <?php 
-require_once("dph.php");
-//include("./Admin/dph.php");
+require ("dph.php");
+require ("./indexs.php");
 $dpb = new dph();
 if(isset($_POST['add'])){
     if(!empty($_POST['name'])&& !empty($_POST['email'])&& !empty($_POST['number']) && !empty($_POST['request'])){
@@ -10,10 +10,12 @@ if(isset($_POST['add'])){
             'number' => $_POST['number'],
             'request' => $_POST['request']
         ));
+        //require ("./Admin/indexs.php");
+        sendEmail();
         header("Location: ../Trang-Chu.php?check=1");
+        
     } else {
         header("Location: ../Trang-Chu.php?check=0");
     }
 }
-
 ?>

@@ -1,8 +1,5 @@
 <div class="container-fluid" id="footer">
     <div class="container">
-        <div id="title">
-            <h1>ĐĂNG KÍ ĐỂ NHẬN ƯU ĐÃI VÀ TƯ VẤN MIỄN PHÍ</h1>
-        </div>
         <div class="cont">
             <div class="left-cont">
                 <div class="display-img">

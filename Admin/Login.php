@@ -46,7 +46,7 @@
   
     if(mysqli_num_rows($run_query)>0)  
     {  
-        header("Location:http://localhost:8080/Tamxin/Admin/timeline_image/indexAdmin.php");
+        header("Location:./timeline_image/indexAdmin.php");
     }  
     else {
         echo"<script>alert('Admin Details are incorrect..!')</script>";

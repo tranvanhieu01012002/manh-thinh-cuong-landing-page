@@ -40,7 +40,8 @@ include("./Admin/dph.php");
     <!-- Banner -->
 
     <?php
-    require_once "./php/home.php";
+    include "./php/home.php";
+    //require_once "./php/home.php";
     ?>
     <!-- footer -->
     <?php

@@ -1,10 +1,10 @@
 <?php
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
-}
-$database = new dph();
-$row = $database->get_row('select * from slides where id = ' . $id . ' ;');
-$rowTimeLine = $database->get_row('select * from timeline where id = ' . $id . ' ;');
+    if (isset($_GET['id'])) {
+        $id = $_GET['id'];
+    }
+    $database = new dph();
+    $row = $database->get_row('select * from slides where id = ' . $id . ' ;');
+    $rowTimeLine = $database->get_row('select * from timeline where id = ' . $id . ' ;');
 ?>
 <div class="back">
     <img class="imgback"

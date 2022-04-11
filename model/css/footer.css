@@ -2,12 +2,13 @@
     background-image: url("https://bdsphankimngoc.com/wp-content/uploads/2019/03/hung-thinh-corp-3c5e92f342614756.jpg");
     width: 100%;
     background-repeat: no-repeat;
-    height: 900px;
+    height: 650px;
     position: relative;
     background-size: cover;
 }
 
-#title {
+
+/* #title {
     color: rgb(40, 201, 75);
     background-color: white;
     position: relative;
@@ -18,12 +19,12 @@
 
 #title h1 {
     text-align: center;
-}
+} */
 
 .cont {
     display: flex;
     position: relative;
-    top: 120px;
+    top: 60px;
     width: 80%;
     margin: 0 auto;
     gap: 15px;
@@ -34,9 +35,11 @@
     height: 300px;
     background-color: rgb(247, 240, 240);
     padding-left: 3.5%;
+    /* margin-top: -2%; */
 }
 
 .right-cont {
+    /* margin-top: -2%; */
     background-color: rgba(10, 36, 83, 0.82);
     color: white;
     text-align: center;
@@ -87,16 +90,23 @@
 }
 
 @media only screen and (max-width: 46.1875em) {
+    #footer {
+        background-image: url("https://bdsphankimngoc.com/wp-content/uploads/2019/03/hung-thinh-corp-3c5e92f342614756.jpg");
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 730px;
+        position: relative;
+        background-size: cover;
+    }
     .cont {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         position: relative;
-        top: 120px;
+        top: 90px;
         width: 80%;
         margin: 0 auto;
-        /* gap: 15px; */
     }
     .left-cont {
         width: 100%;
@@ -123,7 +133,7 @@
     }
     .right-cont {
         width: 100%;
-        height: 530px;
+        height: 520px;
         text-align: center;
         border: 3px rgb(182, 224, 30) dashed;
         font-size: small;
@@ -133,14 +143,25 @@
     }
 }
 
+
+/* Ipad Air*/
+
 @media only screen and (max-width: 63.9375em) and (min-width: 46.25em) {
+    #footer {
+        background-image: url("https://bdsphankimngoc.com/wp-content/uploads/2019/03/hung-thinh-corp-3c5e92f342614756.jpg");
+        width: 100%;
+        background-repeat: no-repeat;
+        height: 780px;
+        position: relative;
+        background-size: cover;
+    }
     .cont {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         position: relative;
-        top: 120px;
+        top: 100px;
         width: 80%;
         margin: 0 auto;
         gap: 15px;

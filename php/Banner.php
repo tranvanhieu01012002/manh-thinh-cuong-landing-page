@@ -9,7 +9,7 @@
 
     </div>
     <div class="mySlides fade">
-        <img src="https://iweb.tatthanh.com.vn/pic/18/banner/01.jpg  ">
+        <img src="https://iweb.tatthanh.com.vn/pic/18/banner/01.jpg">
 
     </div>
     <div class="mySlides fade ">

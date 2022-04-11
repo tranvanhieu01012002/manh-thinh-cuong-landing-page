@@ -1,0 +1,171 @@
+#container {
+    font-family: "Montserrat", sans-serif;
+    line-height: 2rem;
+}
+
+#container #img-intr {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.centered {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bolder;
+}
+
+.intr {
+    margin-top: 10%;
+    padding-left: -5%;
+    padding-right: 4%;
+}
+
+.intr img {
+    margin-left: 42%;
+    height: auto;
+    width: 20%;
+}
+
+.intr .text-intr p {
+    text-align: justify;
+    width: 70%;
+    margin-left: 17%;
+}
+
+@keyframes introduce {
+    from {
+        bottom: 0px;
+    }
+    to {
+        bottom: 100px;
+    }
+}
+
+.intr {
+    animation-name: introduce;
+    animation-duration: 2s;
+    animation-direction: normal;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
+
+/* css  */
+
+.content-row-large {
+    display: flex;
+    justify-content: space-around;
+    margin-top: -4%;
+    margin-left: -5%;
+    text-align: justify;
+}
+
+.text-box {
+    height: 480px;
+    width: 680px;
+}
+
+.content-row-large .icon-box img {
+    width: 10%;
+    height: auto;
+    margin-left: 27%;
+    margin-top: -38%;
+}
+
+
+/* #icon-sumenh {
+    width: 8%;
+    height: auto;
+    margin-left: 31%;
+    margin-top: -24%;
+} */
+
+.content-left {
+    width: 100%;
+}
+
+.box-top {
+    margin-bottom: 1%;
+}
+
+.content-right {
+    width: 100%;
+}
+
+.text-content,
+.title-text {
+    margin-left: 40%;
+}
+
+.text-content {
+    margin-top: -20%;
+}
+
+#text-intr li {
+    display: list-item;
+    list-style-position: inside;
+}
+
+
+/* .text-content li {
+    display: list-item;
+    list-style-position: inside;
+} */
+
+.text-box .title-text {
+    margin-left: -5%;
+    margin-bottom: 18%;
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+#text-tl {
+    margin-left: -2%;
+}
+
+#title-gtr {
+    margin-bottom: 15%;
+    margin-left: -10%;
+}
+
+
+/* -------------- */
+
+@keyframes move {
+    from {
+        right: 0px;
+    }
+    to {
+        right: 100px;
+    }
+}
+
+.content-right {
+    animation-name: move;
+    animation-duration: 2s;
+    animation-direction: normal;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
+@keyframes left-move {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 100px;
+    }
+}
+
+.content-left {
+    animation-name: left-move;
+    animation-duration: 3s;
+    animation-direction: normal;
+    position: relative;
+    animation-fill-mode: forwards;
+}

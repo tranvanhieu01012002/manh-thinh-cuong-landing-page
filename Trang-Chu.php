@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+session_start();
 include("./Admin/dph.php");
 ?>
 
@@ -55,6 +56,8 @@ include("./Admin/dph.php");
     <script src="./model/js/header.js"></script>
     <script src="./model/js/banner.js"></script>
     <script src="./model/js/index.js"></script>
+    <script src="./model/js/getUserInfo.js"></script>
+
 
 </body>
 

@@ -23,9 +23,9 @@
 <div class="select-img">
     <?php
     $i = -1;
-    foreach($rowTimeLine as $ele){
+    foreach ($rowTimeLine as $ele) {
         $i++;
-        if($i== 0){
+        if ($i == 0) {
             continue;
         }
         echo '<button class="btn-img">' . $ele . '</button>';
@@ -38,25 +38,27 @@
 </div>
 
 <div class="display-small-slide">
-    <div class="slider-img">
-        <?php
-        $img = $database->get_row('select * from timeline_image where id = ' . $id . ' ;');
-        ?>
-        <input checked type="radio" name="s" style="background-image: url(./Admin/img/<?php echo $img['img_1'] ?>);"
-            title="Manh Thinh Cuong 1">
-        <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_2'] ?>');"
-            title="Manh Thinh Cuong 2">
-        <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_3'] ?>');"
-            title="Manh Thinh Cuong 3">
-        <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_4'] ?>');"
-            title="Manh Thinh Cuong 4">
-        <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_5'] ?>');"
-            title="Manh Thinh Cuong 5">
-    </div>
-    <div class="text-monthly-des">
-        <h4><?php echo $row['Content'] ?></h4>
-        <p><?php echo $row['Description_detail'] ?>
-        </p>
+    <div class="content-detail-text-slider">
+        <div class="slider-img">
+            <?php
+            $img = $database->get_row('select * from timeline_image where id = ' . $id . ' ;');
+            ?>
+            <input checked type="radio" name="s" style="background-image: url(./Admin/img/<?php echo $img['img_1'] ?>);"
+                title="Manh Thinh Cuong 1">
+            <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_2'] ?>');"
+                title="Manh Thinh Cuong 2">
+            <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_3'] ?>');"
+                title="Manh Thinh Cuong 3">
+            <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_4'] ?>');"
+                title="Manh Thinh Cuong 4">
+            <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_5'] ?>');"
+                title="Manh Thinh Cuong 5">
+        </div>
+        <div class="text-monthly-des">
+            <h4><?php echo $row['Content'] ?></h4>
+            <p><?php echo $row['Description_detail'] ?>
+            </p>
+        </div>
     </div>
 </div>
 

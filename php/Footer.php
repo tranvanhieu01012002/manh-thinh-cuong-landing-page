@@ -1,5 +1,5 @@
 <?php
-require_once ("./Admin/dph.php");
+require_once("./Admin/dph.php");
 ?>
 <div class="container-fluid" id="footer">
     <div class="container">
@@ -27,13 +27,28 @@ require_once ("./Admin/dph.php");
                     dạng nhất thị trường,
                     chúng tôi tự tin sẽ giúp bạn thực hiện giấc mơ sở hữu BĐS và tối ưu hiệu quả đầu tư.</p>
                 <br>
-                <form id="form1"action="./Admin/processEmail.php" method="POST" enctype="multipart/form-data">
+                <form id="form1" action="./Admin/processEmail.php" method="POST" enctype="multipart/form-data">
                     <input type="text" name="name" placeholder="Tên của bạn"> <br> <br>
                     <input type="text" name="email" placeholder="Địa chỉ email của bạn"> <br><br>
                     <input type="text" name="number" placeholder="Số điện thoại của bạn"> <br> <br>
                     <textarea rows="4" cols="" name="request" placeholder="Nội dung yêu cầu dự án..."></textarea>
                     <br> <br>
-                    <button class="submit-btn" type="submit" name="add">Liên hệ báo giá</button>
+                    <div class="area-btn">
+                        <button class="submit-btn" type="submit" name="add">Liên hệ báo giá</button>
+                        <?php
+                        if (isset($_SESSION['FB_ID']) && $_SESSION['FB_ID'] != "") {
+                            echo "welcome :" . $_SESSION['FB_NAME'];
+                            echo "<br>";
+                        ?>
+                        <a class="submit-btn" href="logout.php">Logout</a>
+                        <?php
+                        } else {
+                        ?>
+                        <a class="submit-btn" onclick="fbLogin()" href="javascript:void(0)">Login with FB</a>
+                        <?php
+                        }
+                        ?>
+                    </div>
                     <br> <br>
                 </form>
             </div>
@@ -59,16 +74,15 @@ require_once ("./Admin/dph.php");
     </div>
 </div>
 <?php
-if (isset($_GET["check"])){
-    if($_GET["check"] == 1){
-         echo '
+if (isset($_GET["check"])) {
+    if ($_GET["check"] == 1) {
+        echo '
      <script src="./model/js/model_success.js"></script>
-    '; 
-    }
-    else{
+    ';
+    } else {
         echo '
      <script src="./model/js/model_fail.js"></script>
     ';
-    } 
+    }
 }
 ?>

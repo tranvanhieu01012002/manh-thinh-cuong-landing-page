@@ -23,13 +23,13 @@
                 if (!isset($_GET["id"])) {
                 ?>
                 <li class="current"><a href="./Trang-Chu.php" data-hover="Trang chủ">Trang chủ</a></li>
-                <li><a href="#" data-hover="Giới thiệu">Giới thiệu</a></li>
+                <li><a href="./IntroducePage.php" data-hover="Giới thiệu">Giới thiệu</a></li>
                 <li><a href="#" data-hover="Nhà">Nhà</a></li>
                 <?php
                 } else {
                 ?>
                 <li><a href="./Trang-Chu.php" data-hover="Trang chủ">Trang chủ</a></li>
-                <li><a href="#" data-hover="Giới thiệu">Giới thiệu</a></li>
+                <li><a href="./IntroducePage.php" data-hover="Giới thiệu">Giới thiệu</a></li>
                 <li class="current"><a href="#" data-hover="Nhà">Nhà</a></li>
                 <?php
                 }
@@ -42,7 +42,7 @@
             <div id="mySidepanel" class="sidepanel">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="./Trang-Chu.php">Trang chủ</a>
-                <a href="#">Giới thiệu</a>
+                <a href="./IntroducePage.php">Giới thiệu</a>
                 <a href="#">Nhà</a>
                 <a href="#footer">Liên hệ</a>
                 <form class="search-container" action="/action_page.php">

@@ -1,9 +1,9 @@
 
 <div id="container">
-    <img id="img-intr" src="../model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg" atl="abc">
+    <img id="img-intr" src="./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg" atl="abc">
     <div class="centered">GIỚI THIỆU</div>
     <div class="intr">
-        <img src="../model/img/logo1.png">
+        <img src="./model/img/logo1.png">
         <div class="text-intr">
             <p ><strong>Công ty TNHH MTV Mạnh Thịnh Cường</strong> là đơn vị uy tín trong lĩnh vực tư vấn, 
             phân phối và tiếp thị Bất động sản tại thành phố Hồ Chí Minh. Với đội ngũ nhân viên chuyên nghiệp, năng động, 
@@ -30,7 +30,7 @@
                     <div class="text-box">
                         <h3 class="title-text" id="text-tl">THÀNH LẬP</h3>
                         <div class="icon-box">
-                            <img id="icon-t" src="../model/img/icon-thanhlap.svg" alt="">
+                            <img id="icon-t" src="./model/img/icon-thanhlap.svg" alt="">
                         </div>
                         <div class="text-content" id="text-intr">
                             <ul>
@@ -48,7 +48,7 @@
                     <div class="text-box">
                     <h3 class="title-text">TẦM NHÌN</h3>
                         <div class="icon-box">                            
-                            <img  id="icon-t" src="../model/img/icon-tamnhin.svg" alt="">
+                            <img  id="icon-t" src="./model/img/icon-tamnhin.svg" alt="">
                         </div>
                         <div class="text-content">
                             <ul>
@@ -65,7 +65,7 @@
                     <div class="text-box">
                         <h3 class="title-text">SỨ MỆNH</h3>
                         <div class="icon-box">                        
-                            <img id="icon-t" src="../model/img/icon-sumenh.svg" alt="">
+                            <img id="icon-t" src="./model/img/icon-sumenh.svg" alt="">
                         </div>
                         <div class="text-content">
                             <ul>
@@ -78,7 +78,7 @@
                     <div class="text-box">
                         <h3 class="title-text" id="title-gtr" >GIÁ TRỊ</h3>
                         <div class="icon-box">
-                            <img id="icon-t" src="../model/img/icon-giatri.svg" alt="">
+                            <img id="icon-t" src="./model/img/icon-giatri.svg" alt="">
                         </div>
                         <div class="text-content">
                             <ul>

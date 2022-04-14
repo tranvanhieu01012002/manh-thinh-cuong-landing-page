@@ -83,3 +83,33 @@ $(document).ready(() => {
         $(this).addClass("activeClick");
     });
 });
+
+// var statusIntr = "no";
+// document.addEventListener(
+//     "DOMContentLoaded",
+//     function() {
+//         var intrTxt = document.querySelector(".content-row-large");
+//         var hightIntrTxt = intrTxt.offsetTop - 100;
+//         var txt = document.querySelector(".content-row-large");
+//         window.addEventListener("scroll", function() {
+//             var hightPage = window.pageYOffset;
+//             if (hightPage > hightIntrTxt) {
+//                 if (statusIntr == "no") {
+//                     // addAnimation(txt, "animationMove");
+//                     $(".content-row-large .content-right .box-top .text-box").addClass("move");
+//                     $(".content-row-large .content-left .box-top .text-box").addClass("left-move");
+//                     statusIntr = "yes";
+//                 }
+//             } else if (hightPage < hightIntrTxt) {
+//                 if (statusIntr == "yes") {
+//                     removeAnimation(txt, "move");
+//                     $(".content-row-large .content-left").removeClass(
+//                         "anstatusIntrimationMoveLeft"
+//                     );
+//                     statusIntr = "no";
+//                 }
+//             }
+//         });
+//     },
+//     false
+// );

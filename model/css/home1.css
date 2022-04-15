@@ -208,24 +208,9 @@ input[name="s"]:checked+input~input:before {
     padding: 0px 20px 20px 0px;
 }
 
-.btn-img {
-    background-color: #fff;
-    text-align: center;
-    justify-content: center;
-    /* margin: 10px 0px; */
-    border: 2.5px solid black;
-    width: var(--width-btn);
-    height: 50px;
-    padding: 0px 10px;
-    margin: 10px auto;
-}
-
-.btn-img:hover {
-    cursor: pointer;
-}
-
 .activeClick {
-    background-color: var(--base-cl);
+    background-color: rgb(90, 90, 194);
+    color: black;
 }
 
 @media screen and (max-width: 1000px) {

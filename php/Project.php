@@ -246,7 +246,10 @@
 
         </div>
         <div class="btn-area">
-            <a href="#"class="see-more"> Xem thêm</a>
+            <div class="btn-root">
+                <a href="#">Xem thêm</a>
+                <span></span>
+            </div>
         </div>
     </div>
   

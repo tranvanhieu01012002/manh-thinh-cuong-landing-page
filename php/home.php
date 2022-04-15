@@ -20,7 +20,7 @@
         </div>
     </div>
 </div>
-<div class="select-img">
+<div class="select-img ">
     <?php
     $i = -1;
     foreach ($rowTimeLine as $ele) {
@@ -28,9 +28,10 @@
         if ($i == 0) {
             continue;
         }
-        echo '<button class="btn-img">' . $ele . '</button>';
+        echo '<button class="btn-root">' . $ele . '<span></span></button>';
     }
     ?>
+   
     <!-- <button class="btn-img">20/2/2022</button>
     <button class="btn-img">20/3/2022</button>
     <button class="btn-img">20/4/2022</button>

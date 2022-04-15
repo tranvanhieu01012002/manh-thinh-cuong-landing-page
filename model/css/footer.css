@@ -38,12 +38,6 @@
     margin: 0px 5px;
 }
 
-.right-cont input[type=submit] {
-    padding: 10px 10px;
-    background-color: rgb(40, 201, 75);
-    color: white;
-}
-
 .right-cont textarea {
     width: 90%;
 }
@@ -105,6 +99,8 @@
         margin-left: 0px;
     }
 }
+
+
 /* @media only screen and (max-width: 46.1875em) {
 .cont {
 display: flex;

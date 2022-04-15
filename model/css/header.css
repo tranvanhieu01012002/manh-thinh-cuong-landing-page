@@ -28,7 +28,7 @@
 
 .menu {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
     height: 150px;
     font-size: 20px;
     border-radius: 10px;
@@ -40,7 +40,6 @@
     width: 194px;
     height: 100px;
     object-fit: cover;
-    margin-left: -132px;
     z-index: 2;
 }
 

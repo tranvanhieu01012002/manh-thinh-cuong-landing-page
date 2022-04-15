@@ -27,7 +27,7 @@ require_once ("./Admin/dph.php");
                         <input type="text" name="number" placeholder="Số điện thoại của bạn"> <br> <br>
                         <textarea rows="4" cols="" name="request" placeholder="Nội dung yêu cầu dự án..."></textarea>
                         <br> <br>
-                        <button class="submit-btn" type="submit" name="add">Liên hệ báo giá</button>
+                        <button class="btn-root btn-submit" type="submit" name="add">Liên hệ báo giá  <span></span></button>
                         <br> <br>
                     </form>
                 </div>

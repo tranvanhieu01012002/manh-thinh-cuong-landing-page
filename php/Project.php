@@ -237,7 +237,7 @@
                         <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
                     </div>
                     <div class=" detail-box ">
-                        <div class=" detail-title "><button class=" see-more "> Xem thêm</button>
+                        <div class=" detail-title ">
                         </div>
                         <div class=" detail-content ">111111111444444444444</div>
                     </div>
@@ -245,7 +245,11 @@
             </div>
 
         </div>
+        <div class="btn-area">
+            <a href="#"class="see-more"> Xem thêm</a>
+        </div>
     </div>
+  
 </div>
 
 <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js "

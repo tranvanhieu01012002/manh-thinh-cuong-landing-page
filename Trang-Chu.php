@@ -26,7 +26,6 @@ include("./Admin/dph.php");
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./model/css/main.css">
 
-
 </head>
 
 <body>

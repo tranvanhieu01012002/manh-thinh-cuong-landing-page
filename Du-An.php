@@ -23,7 +23,8 @@ include("./Admin/dph.php");
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="./model/css/main.css">
+    
+        <link rel="stylesheet" href="./model/css/main.css">
 </head>
 
 <body>
@@ -68,13 +69,6 @@ include("./Admin/dph.php");
     <div class="virtual-class"></div>
     
     <!-- Header -->
-
-    <!-- Banner -->
-    <?php
-    include "./php/Banner.php";
-    ?>
-    <!-- Banner -->
-
     <?php
     include "./php/home.php";
     //require_once "./php/home.php";

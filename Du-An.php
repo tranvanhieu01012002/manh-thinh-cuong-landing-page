@@ -23,7 +23,8 @@ include("./Admin/dph.php");
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="./model/css/main.css">
+    
+        <link rel="stylesheet" href="./model/css/main.css">
 </head>
 
 <body>
@@ -31,14 +32,43 @@ include("./Admin/dph.php");
     <?php
     include "./php/Header.php";
     ?>
+    <div class="menu">
+        <div class="logo-image">
+            <img src="./model/img/logo1.png" alt="">
+        </div>
+        <nav class="style-4">
+            <ul class="menu-4">
+                <li ><a href="./Trang-Chu.php" data-hover="Trang chủ">Trang chủ</a></li>
+                <li ><a href="./IntroducePage.php" data-hover="Giới thiệu">Giới thiệu</a></li>
+                <li class="current"><a href="./House.php" data-hover="Nhà">Nhà</a></li>
+                <li><a href="#footer" data-hover="Liên hệ">Liên hệ</a></li>
+            </ul>
+        </nav>
+        <div class="responsive-header">
+            <div id="mySidepanel" class="sidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="./Trang-Chu.php">Trang chủ</a>
+                <a href="./IntroducePage.php">Giới thiệu</a>
+                <a href="./House.php">Nhà</a>
+                <a href="#footer">Liên hệ</a>
+                <form class="search-container" action="/action_page.php">
+                    <input type="text" class="searchTerm" placeholder="Tìm kiếm">
+                    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <button class="openbtn" onclick="openNav()">☰ </button>
+        </div>
+        <div class="box">
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="Tìm kiếm">
+                <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="virtual-class"></div>
+    
     <!-- Header -->
-
-    <!-- Banner -->
-    <?php
-    include "./php/Banner.php";
-    ?>
-    <!-- Banner -->
-
     <?php
     include "./php/home.php";
     //require_once "./php/home.php";

@@ -1,4 +1,3 @@
-
 <div id="container">
     <img id="img-intr" src="./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg" atl="abc">
     <div class="centered">GIỚI THIỆU</div>

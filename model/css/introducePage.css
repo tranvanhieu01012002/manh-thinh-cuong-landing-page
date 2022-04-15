@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  #container {
      font-family: "Montserrat", sans-serif;
      line-height: 2rem;
@@ -89,6 +90,10 @@
         width: 70%;
         margin-left: 17%;
     }
+=======
+#container {
+    line-height: 2rem;
+>>>>>>> 6daef8d8b30fed27317340afee91b943ad8c526b
 }
 
 @media screen and (max-width:830px) {

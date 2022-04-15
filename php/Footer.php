@@ -33,10 +33,10 @@ require_once ("./Admin/dph.php");
                 </div>
                 <div class="contact"> 
                     <div id="add">
-                        <i class="fas fa-map-marker-alt"></i>Địa chỉ: 29 Phạm Quang Ảnh, Quận Sơn Trà, TP. Đà Nẵng
+                        Địa chỉ: 29 Phạm Quang Ảnh, Quận Sơn Trà, TP. Đà Nẵng
                     </div>
-                    <div><i class='fas fa-phone' ></i>Số điện thoại/FAX: (+84) 852 445 554</div>
-                    <div><i class='fas fa-phone-volume' ></i>Hotline: (+84) 905 22 33 64</div>
+                    <div>Số điện thoại/FAX: (+84) 852 445 554</div>
+                    <div>Hotline: (+84) 905 22 33 64</div>
 
                 </div>
             

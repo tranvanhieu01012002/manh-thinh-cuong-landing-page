@@ -7,13 +7,14 @@
     --bg--highlight--project: #f1f1f1;
     --text-h: 20px;
     --base-cl: rgb(218, 174, 55);
-    --font-family: "Roboto", sans-serif;
+    --font-family: 'Montserrat', sans-serif;
 }
 
 
 /* slider */
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -47,11 +48,11 @@ a {
 
 .box-slider {
     width: var(--box-w);
-    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     overflow: hidden;
     position: relative;
-    margin: 5px;
+    margin: 20px;
 }
 
 .slide-img {
@@ -195,12 +196,11 @@ a {
     background-color: var(--base-cl);
 }
 
-.page-container-slider h2 {
-    /* color: var(--bg-cl); */
-}
+
 
 .page-container-slider {
     max-width: 90%;
+    padding-top: 10px;
     margin: 0 auto;
 }
 
@@ -249,7 +249,6 @@ a {
 
 #button::after {
     content: "\f077";
-    font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
     font-size: 2em;

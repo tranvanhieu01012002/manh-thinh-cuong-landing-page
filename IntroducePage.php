@@ -31,12 +31,12 @@ include("./Admin/dph.php");
 <body>
     <!-- Header -->
     <?php
-    include "./php/Header.php";
+        include "./php/Header.php";
     ?>
     <!-- Header -->
 
    <?php
-    include "./php/introducePage.php";
+        include "./php/introducePage.php";
    ?>
 
 

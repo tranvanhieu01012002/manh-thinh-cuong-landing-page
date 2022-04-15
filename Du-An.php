@@ -39,7 +39,7 @@ include("./Admin/dph.php");
             <ul class="menu-4">
                 <li ><a href="./Trang-Chu.php" data-hover="Trang chủ">Trang chủ</a></li>
                 <li ><a href="./IntroducePage.php" data-hover="Giới thiệu">Giới thiệu</a></li>
-                <li class="current"><a href="./Houses.php" data-hover="Nhà">Nhà</a></li>
+                <li class="current"><a href="./House.php" data-hover="Nhà">Nhà</a></li>
                 <li><a href="#footer" data-hover="Liên hệ">Liên hệ</a></li>
             </ul>
         </nav>
@@ -48,7 +48,7 @@ include("./Admin/dph.php");
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="./Trang-Chu.php">Trang chủ</a>
                 <a href="./IntroducePage.php">Giới thiệu</a>
-                <a href="#">Nhà</a>
+                <a href="./House.php">Nhà</a>
                 <a href="#footer">Liên hệ</a>
                 <form class="search-container" action="/action_page.php">
                     <input type="text" class="searchTerm" placeholder="Tìm kiếm">

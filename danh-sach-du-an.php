@@ -69,18 +69,18 @@ include("./Admin/dph.php");
     </div>
     </div>
 	<div class="virtual-class"></div>
-
 	<?php
 
 	include "./php/house.php";
 	?>
     <!-- Banner -->
   	<!-- footer -->
-	<div class="virtual-class"></div>
+	
     <?php
 	
 
     //include("./Admin/processEmail.php");
+    include("./php/Footer.php");
     ?>
     <script src="./model/js/header.js"></script>
     <script src="./model/js/banner.js"></script>

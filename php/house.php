@@ -1,7 +1,5 @@
 
-<div class="content">
-	<div class="virtual-class"></div>
-	<div class="virtual-class"></div>
+<div class="content-l">
 	<div class="content-oject">
 		<figure class="effect-bubba">
 			<img src="./model/img/18.jpg" alt="img02"/>

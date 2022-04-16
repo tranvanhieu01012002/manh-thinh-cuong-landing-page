@@ -3,8 +3,8 @@
     --grid-gap: 0 60px;
     --img-w: 50%;
     --width-btn: auto;
-    --width-content: 600px;
-    --padding-content: 30px;
+    --width-content: 70%;
+    --padding-content: 10px;
     --font-size: 15px;
     --width-decoration: 100%;
     --display-txt: flex;
@@ -61,7 +61,9 @@ td:nth-child(odd) {
 }
 
 .content .description {
-    width: 30em;
+    width: 24.6em;
+    overflow: scroll;
+    height: auto;
 }
 
 .hr-style {
@@ -101,6 +103,9 @@ td:nth-child(odd) {
     td:nth-child(odd) {
         width: 10em;
         text-align: left;
+    }
+    .content .description {
+        width: 90%;
     }
 }
 
@@ -274,6 +279,10 @@ input[name="s"]:checked+input~input:before {
         --grid-c: repeat(3, auto);
         --grid-gap: 0 30px;
         --txt-w: 200px;
+    }
+    .slider-img {
+        width: 50em;
+        height: 20em;
     }
 }
 

@@ -1,4 +1,3 @@
-
 <div class="content-l">
 	<div class="content-oject">
 		<figure class="effect-bubba">

@@ -8,7 +8,7 @@
 			<figcaption>
 				<h5>JAHALARA VILA</h5>
 				<p>Sed ut perspiciatis unde omnis iste natus
-						error sit voluptatem accusan natus accusan natus</p>
+						error sit voluptatem accusan natus</p>
 				<div class="btn-root">
 					<a href="#">Xem thêm</a>
 					<span></span>
@@ -20,7 +20,7 @@
 			<figcaption>
 				<h5>JAHALARA VILA</h5>
 				<p>Sed ut perspiciatis unde omnis iste natus
-						error sit voluptatem accusan natus accusan natus</p>
+						error sit voluptatem accusan natus</p>
 				<div class="btn-root">
 					<a href="#">Xem thêm</a>
 					<span></span>
@@ -32,7 +32,7 @@
 			<figcaption>
 				<h5>JAHALARA VILA</h5>
 				<p>Sed ut perspiciatis unde omnis iste natus
-						error sit voluptatem accusan natus accusan natus</p>
+						error sit voluptatem accusan natus </p>
 				<div class="btn-root">
 					<a href="#">Xem thêm</a>
 					<span></span>
@@ -44,7 +44,7 @@
 			<figcaption>
 				<h5>JAHALARA VILA</h5>
 				<p>Sed ut perspiciatis unde omnis iste natus
-						error sit voluptatem accusan natus accusan natus</p>
+						error sit voluptatem accusan natus</p>
 				<div class="btn-root">
 					<a href="#">Xem thêm</a>
 					<span></span>
@@ -56,7 +56,7 @@
 			<figcaption>
 				<h5>JAHALARA VILA</h5>
 				<p>Sed ut perspiciatis unde omnis iste natus
-						error sit voluptatem accusan natus accusan natus</p>
+						error sit voluptatem accusan natus </p>
 					<div class="btn-root">
 					<a href="#">Xem thêm</a>
 					<span></span>
@@ -68,7 +68,7 @@
 			<figcaption>
 				<h5>JAHALARA VILA</h5>
 				<p>Sed ut perspiciatis unde omnis iste natus
-						error sit voluptatem accusan natus accusan natus</p>
+						error sit voluptatem accusan natus </p>
 					<div class="btn-root">
 					<a href="#">Xem thêm</a>
 					<span></span>

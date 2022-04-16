@@ -14,7 +14,6 @@
             $database = new dph();
             $row = $database->get_list('select * from slides;') ?>
             <?php foreach ($row as $value) : ?>
-
             <div class="box-slider">
                 <a href="./Du-An.php?id=<?php echo $value['id'] ?>">
                     <div class="slide-img">

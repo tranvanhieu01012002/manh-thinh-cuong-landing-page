@@ -13,11 +13,113 @@
         <div class="title">
             <h1><?php echo $row['Description'] ?></h1>
         </div>
+        <div class="display-project-info">
+            <table class="info-project">
+                <tbody>
+                    <tr>
+                        <td>
+                            Tên dự án
+                        </td>
+                        <td>
+                            Lorem ipsum dolor sit amet 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mã dự án
+                        </td>
+                        <td>
+                            Lorem ipsum dolor 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Diên tích
+                        </td>
+                        <td>
+                            Lorem ipsum dolor 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Tổng diện tích xây dựng
+                        </td>
+                        <td>
+                            Lorem ipsum dolor 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Tên khách hàng
+                        </td>
+                        <td>
+                            Lorem ipsum dolor 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Địa chỉ
+                        </td>
+                        <td>
+                            Lorem ipsum dolor 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Quận
+                        </td>
+                        <td>
+                            Lorem ipsum dolor 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Loại xây dựng
+                        </td>
+                        <td>
+                            Lorem ipsum dolor 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Ngày bắt đầu
+                        </td>
+                        <td>
+                            Lorem ipsum dolor 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Ngày bàn giao
+                        </td>
+                        <td>
+                            Lorem ipsum dolor 
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td>
+                            Mô tả
+                        </td>
+                        <td> -->
+                        <?php 
+                        // echo $row['Description_detail'] 
+                        ?>
+                        <!-- </td>
+                    </tr> -->
+                </tbody>
+            </table>
+         <div class="hr-style">
+
+         </div>
+            <div class="description">
+                <h3>Mô tả dự án</h3>
+                <?php
+                echo $row['Description_detail']
+                ?>
+            </div>
+        </div>
         <div class="decoration"><img
                 src="https://khudothivanphuc.giaodienbds.com/wp-content/uploads/2017/12/bullet_bg.png" alt=""></div>
-        <div class="description">
-            <?php echo $row['Description_detail'] ?>
-        </div>
     </div>
 </div>
 <div class="select-img ">
@@ -31,11 +133,6 @@
         echo '<button class="btn-root">' . $ele . '<span></span></button>';
     }
     ?>
-   
-    <!-- <button class="btn-img">20/2/2022</button>
-    <button class="btn-img">20/3/2022</button>
-    <button class="btn-img">20/4/2022</button>
-    <button class="btn-img">20/5/2022</button> -->
 </div>
 
 <div class="display-small-slide">

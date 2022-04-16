@@ -82,6 +82,7 @@ include("./Admin/dph.php");
     //include("./Admin/processEmail.php");
     include("./php/Footer.php");
     ?>
+    
     <script src="./model/js/header.js"></script>
     <script src="./model/js/banner.js"></script>
     <script src="./model/js/index.js"></script>

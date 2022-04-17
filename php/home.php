@@ -177,7 +177,7 @@
             <?php foreach ($row as $value) : ?>
 
             <div class="box-slider">
-                <a href="./Du-An.php?id=<?php echo $value['id'] ?>">
+                <a href="./Du-An.php?id=<?php echo $value['id_project'] ?>">
                     <div class="slide-img">
                         <img src="./Admin/Img/<?php echo $value['img'] ?>" alt="">
                     </div>

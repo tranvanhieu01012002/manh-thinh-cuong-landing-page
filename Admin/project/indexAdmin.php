@@ -45,13 +45,6 @@
                 </a>
             </li>
             <li>
-                <!-- <a href="#" class="active"> -->
-                <a href="../project/indexAdmin.php">
-                    <i class='bx bx-grid-alt'></i>
-                    <span class="links_name">Project</span>
-                </a>
-            </li>
-            <li>
                 <a href="../timeline_image/indexAdmin.php">
                     <i class='bx bx-box'></i>
                     <span class="links_name">Time_Line_Image</span>
@@ -65,7 +58,7 @@
                 </a>
             </li>
             <li>
-                <a href="../sildes/indexAdmin.php">
+                <a href="../project/indexAdmin.php">
                     <i class='bx bx-pie-chart-alt-2'></i>
                     <span class="links_name">House</span>
                 </a>

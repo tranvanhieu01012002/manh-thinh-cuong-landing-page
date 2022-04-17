@@ -52,18 +52,20 @@ include("./Admin/dph.php");
                 <a href="./IntroducePage.php">Giới thiệu</a>
                 <a href="./danh-sach-du-an.php">Nhà</a>
                 <a href="#footer">Liên hệ</a>
-                <form class="search-container" action="/action_page.php">
-                    <input type="text" class="searchTerm" placeholder="Tìm kiếm">
+                <form class="search-container" action="./danh-sach-du-an.php" method="GET">
+                    <input type="text" name = "search" class="searchTerm" placeholder="Tìm kiếm">
                     <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
                 </form>
             </div>
             <button class="openbtn" onclick="openNav()">☰ </button>
         </div>
         <div class="box">
-            <div class="search">
-                <input type="text" class="searchTerm" placeholder="Tìm kiếm">
-                <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
-            </div>
+            <form action="./danh-sach-du-an.php" method="GET">
+                <div class="search">
+                    <input type="text" name="search" class="searchTerm" placeholder="Tìm kiếm">
+                    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
         </div>
     </div>
     </div>

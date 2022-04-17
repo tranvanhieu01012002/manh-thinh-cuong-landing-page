@@ -12,17 +12,19 @@
         <div class="container-slider">
             <?php
             $database = new dph();
-            $row = $database->get_list('select * from slides;') ?>
+            $row = $database->get_list('select * from project;') ?>
             <?php foreach ($row as $value) : ?>
-            <div class="box-slider">
-                <a href="./Du-An.php?id=<?php echo $value['id'] ?>">
-                    <div class="slide-img">
-                        <img src="./Admin/Img/<?php echo $value['img'] ?>" alt="">
-                    </div>
-                    <div class="detail-box"><?php echo $value['Description'] ?></div>
-                </a>
-            </div>
-            <?php endforeach ?>
+                <?php if($value['outstanding'] == "yes"){ ?>
+                    <div class="box-slider">
+                    <a href="./Du-An.php?id=<?php echo $value['id_project'] ?>">
+                        <div class="slide-img">
+                            <img src="./Admin/img/<?php echo $value['img'] ?>" alt="">
+                        </div>
+                        <div class="detail-box"><?php echo $value['Description'] ?></div>
+                    </a>
+                </div>
+            <?php } ?>
+          <?php endforeach ?>
 
         </div>
     </div>
@@ -34,222 +36,37 @@
     </div>
     <div class="container-pr">
         <div class=" container-slider-home ">
-
+        <?php foreach ($row as $value) : ?>
             <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1 ">
+                <a href=" ./Du-An.php?id=<?php echo $value['id_project'] ?>" >
                     <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
+                        <img src=" ./Admin/img/<?php echo $value['img'] ?>">
                     </div>
                     <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
+                        <div class=" detail-title "><?php echo $value['Description'] ?></div>
                     </div>
                 </a>
             </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1 ">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1 ">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1 ">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-
-
+        <?php endforeach ?>
         </div>
     </div>
 </div>
 <div class="page-container-slider">
     <div class="container-pr">
-        <div class=" container-slider-home ">
+    <div class=" container-slider-home ">
+        <?php foreach ($row as $value) : ?>
             <div class=" box-slider ">
-                <a href="./Du-An.php?id=1">
+                <a href=" ./Du-An.php?id=<?php echo $value['id_project'] ?>" >
                     <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
+                        <img src=" ./Admin/img/<?php echo $value['img'] ?>">
                     </div>
                     <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
+                        <div class=" detail-title "><?php echo $value['Description'] ?></div>
                     </div>
                 </a>
             </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1 ">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1 ">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1 ">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1 ">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1 ">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href=" ./Du-An.php?id=1 ">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href="./Du-An.php?id=1">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">aaaaaaaaa</div>
-                        <div class=" detail-content ">4444444444444444444444</div>
-                    </div>
-                </a>
-            </div>
-            <div class=" box-slider ">
-                <a href="./Du-An.php?id=1">
-                    <div class=" slide-img ">
-                        <img src=" ./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg " alt=" ">
-                    </div>
-                    <div class=" detail-box ">
-                        <div class=" detail-title ">
-                        </div>
-                        <div class=" detail-content ">111111111444444444444</div>
-                    </div>
-                </a>
-            </div>
-
-        </div>
-        <div class="btn-area">
-            <div class="btn-root">
-                <a href="#">Xem thêm</a>
-                <span></span>
-            </div>
-        </div>
+        <?php endforeach ?>
+        </div>  
     </div>
   
 </div>

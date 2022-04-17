@@ -3,7 +3,7 @@
         $id = $_GET['id'];
     }
     $database = new dph();
-    $row = $database->get_row('select * from slides where id = ' . $id . ' ;');
+    $row = $database->get_row('select * from project where id_project = ' . $id . ' ;');
     $rowTimeLine = $database->get_row('select * from timeline where id = ' . $id . ' ;');
 ?>
 <div class="back">
@@ -21,7 +21,7 @@
                             Tên dự án
                         </td>
                         <td>
-                            Lorem ipsum dolor sit amet 
+                            <?php echo $row["name_project"] ?>
                         </td>
                     </tr>
                     <tr>
@@ -29,15 +29,15 @@
                             Mã dự án
                         </td>
                         <td>
-                            Lorem ipsum dolor 
+                        <?php echo $row["project_code"] ?>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            Diên tích
+                            Diện tích
                         </td>
                         <td>
-                            Lorem ipsum dolor 
+                        <?php echo $row["land_area"] ?>
                         </td>
                     </tr>
                     <tr>
@@ -45,7 +45,7 @@
                         Tổng diện tích xây dựng
                         </td>
                         <td>
-                            Lorem ipsum dolor 
+                        <?php echo $row["total_cons_area"] ?> 
                         </td>
                     </tr>
                     <tr>
@@ -53,7 +53,7 @@
                         Tên khách hàng
                         </td>
                         <td>
-                            Lorem ipsum dolor 
+                        <?php echo $row["name_cus"] ?>
                         </td>
                     </tr>
                     <tr>
@@ -61,7 +61,7 @@
                         Địa chỉ
                         </td>
                         <td>
-                            Lorem ipsum dolor 
+                        <?php echo $row["address"] ?>
                         </td>
                     </tr>
                     <tr>
@@ -69,7 +69,7 @@
                         Quận
                         </td>
                         <td>
-                            Lorem ipsum dolor 
+                        <?php echo $row["district"] ?>
                         </td>
                     </tr>
                     <tr>
@@ -77,7 +77,7 @@
                         Loại xây dựng
                         </td>
                         <td>
-                            Lorem ipsum dolor 
+                        <?php echo $row["construc_type"] ?>
                         </td>
                     </tr>
                     <tr>
@@ -85,7 +85,7 @@
                         Ngày bắt đầu
                         </td>
                         <td>
-                            Lorem ipsum dolor 
+                        <?php echo $row["start"] ?>
                         </td>
                     </tr>
                     <tr>
@@ -93,7 +93,7 @@
                         Ngày bàn giao
                         </td>
                         <td>
-                            Lorem ipsum dolor 
+                        <?php echo $row["delivery"] ?>
                         </td>
                     </tr>
                     <!-- <tr>
@@ -153,9 +153,10 @@
                 title="Manh Thinh Cuong 5">
         </div>
         <div class="text-monthly-des">
-            <h4><?php echo $row['Content'] ?></h4>
+            <h4><?php echo $row['Description'] ?></h4>
             <p><?php echo $row['Description_detail'] ?>
             </p>
+            
         </div>
     </div>
 </div>
@@ -176,7 +177,7 @@
         <div class="container-slider">
             <?php
             $database = new dph();
-            $row = $database->get_list('select * from slides;') ?>
+            $row = $database->get_list('select * from project;') ?>
             <?php foreach ($row as $value) : ?>
 
             <div class="box-slider">

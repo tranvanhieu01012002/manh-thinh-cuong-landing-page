@@ -3,77 +3,46 @@
 	<div class="virtual-class"></div>
 	<div class="virtual-class"></div>
 	<div class="content-oject">
-		<figure class="effect-bubba">
-			<img src="./model/img/18.jpg" alt="img02"/>
-			<figcaption>
-				<h5>JAHALARA VILA</h5>
-				<p>Sed ut perspiciatis unde omnis iste natus
-						error sit voluptatem accusan natus accusan natus</p>
-				<div class="btn-root">
-					<a href="#">Xem thêm</a>
-					<span></span>
-				</div>
-			</figcaption>			 
-		</figure>
-		<figure class="effect-bubba">
-			<img src="./model/img/18.jpg" alt="img02"/>
-			<figcaption>
-				<h5>JAHALARA VILA</h5>
-				<p>Sed ut perspiciatis unde omnis iste natus
-						error sit voluptatem accusan natus accusan natus</p>
-				<div class="btn-root">
-					<a href="#">Xem thêm</a>
-					<span></span>
-				</div>
-			</figcaption>			
-		</figure>
-		<figure class="effect-bubba">
-			<img src="./model/img/18.jpg" alt="img02"/>
-			<figcaption>
-				<h5>JAHALARA VILA</h5>
-				<p>Sed ut perspiciatis unde omnis iste natus
-						error sit voluptatem accusan natus accusan natus</p>
-				<div class="btn-root">
-					<a href="#">Xem thêm</a>
-					<span></span>
-				</div>
-			</figcaption>			
-		</figure>
-		<figure class="effect-bubba">
-			<img src="./model/img/18.jpg" alt="img02"/>
-			<figcaption>
-				<h5>JAHALARA VILA</h5>
-				<p>Sed ut perspiciatis unde omnis iste natus
-						error sit voluptatem accusan natus accusan natus</p>
-				<div class="btn-root">
-					<a href="#">Xem thêm</a>
-					<span></span>
-				</div>
-			</figcaption>			
-		</figure>
-		<figure class="effect-bubba">
-			<img src="./model/img/18.jpg"alt="img02"/>
-			<figcaption>
-				<h5>JAHALARA VILA</h5>
-				<p>Sed ut perspiciatis unde omnis iste natus
-						error sit voluptatem accusan natus accusan natus</p>
-					<div class="btn-root">
-					<a href="#">Xem thêm</a>
-					<span></span>
-				</div>
-			</figcaption>			
-		</figure>
-		<figure class="effect-bubba">
-			<img src="./model/img/18.jpg" alt="img16"/>
-			<figcaption>
-				<h5>JAHALARA VILA</h5>
-				<p>Sed ut perspiciatis unde omnis iste natus
-						error sit voluptatem accusan natus accusan natus</p>
-					<div class="btn-root">
-					<a href="#">Xem thêm</a>
-					<span></span>
-				</div>
-			</figcaption>			
-		</figure>
+	<?php
+            $database = new dph();
+            $row = $database->get_list('select * from project;') ?>
+            <?php foreach ($row as $value) : ?>
+			<figure class="effect-bubba">
+			<img src="./Admin/img/<?php echo $value['img']?>" alt="img02"/>
+					<figcaption>
+						<h5><?php echo $value['Description']?></h5>
+						<div class="btn-root">
+							<a href="./Du-An.php?id=<?php echo $value['id_project'] ?>">Xem thêm</a>
+							<span></span>
+						</div>
+					</figcaption>			 
+		    </figure>
+    <?php endforeach ?>
 	</div>
 </div>
+<?php
+if(isset($_GET['search'])){?>
+<?php $search = $_GET['search']; ?>
+	<div class="content">
+	<div class="virtual-class"></div>
+	<div class="virtual-class"></div>
+	<div class="content-oject">
+	<?php
+            $database = new dph();
+            $row = $database->get_list('select * from project where Description LIKE "%'.$search.'%"  or Description LIKE "%'.$search.'%" or district LIKE "%'.$search.'%" or construc_type LIKE "%'.$search.'%" or outstanding	 LIKE "%'.$search.'%" ;') ?>
+            <?php foreach ($row as $value) : ?>
+			<figure class="effect-bubba">
+			<img src="./Admin/img/<?php echo $value['img']?>" alt="img02"/>
+					<figcaption>
+						<h5><?php echo $value['Description']?></h5>
+						<div class="btn-root">
+							<a href="./Du-An.php?id=<?php echo $value['id_project'] ?>">Xem thêm</a>
+							<span></span>
+						</div>
+					</figcaption>			 
+		    </figure>
+    <?php endforeach ?>
+	</div>
+</div>
+<?php
+} ?>	

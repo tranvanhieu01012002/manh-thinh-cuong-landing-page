@@ -53,7 +53,7 @@ include("./Admin/dph.php");
                 <a href="./IntroducePage.php">Giới thiệu</a>
                 <a href="./danh-sach-du-an.php">Nhà</a>
                 <a href="#footer">Liên hệ</a>
-                <form class="search-container" action="/action_page.php">
+                <form class="search-container" action="./danh-sach-du-an.php">
                     <input type="text" class="searchTerm" placeholder="Tìm kiếm">
                     <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
                 </form>
@@ -61,10 +61,12 @@ include("./Admin/dph.php");
             <button class="openbtn" onclick="openNav()">☰ </button>
         </div>
         <div class="box">
-            <div class="search">
-                <input type="text" class="searchTerm" placeholder="Tìm kiếm">
-                <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
-            </div>
+            <form action="./danh-sach-du-an.php" method="GET">
+                <div class="search">
+                    <input type="text" name="search" class="searchTerm" placeholder="Tìm kiếm">
+                    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                </div>  
+            </form>
         </div>
     </div>
     </div>
@@ -75,7 +77,7 @@ include("./Admin/dph.php");
     include "./php/Banner.php";
     ?>
     <!-- Banner -->
-
+    
     <?php
     include "./php/Project.php";
     ?>

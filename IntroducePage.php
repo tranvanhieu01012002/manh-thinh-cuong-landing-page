@@ -5,7 +5,7 @@ include("./Admin/dph.php");
 ?>
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ web xây dựng</title>
@@ -25,7 +25,6 @@ include("./Admin/dph.php");
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./model/css/main.css">
 
-
 </head>
 
 <body>
@@ -35,7 +34,7 @@ include("./Admin/dph.php");
     ?>
         <div class="menu">
         <div class="logo-image">
-            <img src="./model/img/logo1.png" alt="">
+        <a href="./Trang-Chu.php"><img src="./model/img/logo1.png" alt=""></a>
         </div>
         <nav class="style-4">
             <ul class="menu-4">
@@ -85,8 +84,11 @@ include("./Admin/dph.php");
     include "./php/Footer.php";
     ?>
     <script src="./model/js/header.js"></script>
-    <script src="./model/js/banner.js"></script>
-    <script src="./model/js/index.js"></script>
+ 
+    <!-- <script src="./model/js/index.js"></script> -->
+    <script src="./model/js/animationIntro.js"></script>
+
+    
 
 </body>
 

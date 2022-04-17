@@ -35,3 +35,37 @@
         transform: scale(1.05);
     }
 }
+
+.animationMoveOnlyLeft {
+    animation: animationOnlyLeft 1.5s forwards;
+}
+
+@keyframes animationOnlyLeft {
+    0% {
+        transform: translateX(600px);
+        opacity: 0
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.animationMoveRight {
+    animation: animationRight 1.5s forwards;
+}
+
+@keyframes animationRight {
+    0% {
+        transform: translateX(-600px);
+        opacity: 0
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}

@@ -69,6 +69,7 @@ include("./Admin/dph.php");
             </form>
         </div>
     </div>
+        </div>
     </div>
     <div class="virtual-class"></div>
     

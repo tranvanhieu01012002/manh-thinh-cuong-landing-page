@@ -192,6 +192,7 @@ a {
     overflow: hidden;
     z-index: 1;
     transition: 0.5s;
+    margin: 10px 0px;
 }
 
 .btn-root span {
@@ -321,4 +322,36 @@ a {
         font-size: 0.7em;
         padding: 5px 10px;
     } */
+}
+
+
+/*  */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.filter {
+    background-color: rgb(253, 250, 250);
+}
+
+.select_option {
+    padding: 10px;
+    text-align: center;
+}
+
+.select_option select {
+    width: auto;
+    height: 30px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.select_option input[type=text] {
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
 }

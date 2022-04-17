@@ -108,9 +108,8 @@
                     </tr> -->
                 </tbody>
             </table>
-         <div class="hr-style">
-
-         </div>
+            <div class="hr-style">
+            </div>
             <div class="description">
                 <h3>Mô tả dự án</h3>
                 <?php
@@ -166,10 +165,7 @@
 <div class="page-container-slider">
     <div class="name-project">
         <div>
-            <h2>Dự án tương tự</h2>
-        </div>
-        <div>
-            <img src="https://www.cashadvance6online.com/data/archive/img/2477963118.png" alt="">
+            <h2>Quận:</h2>
         </div>
     </div>
     <div class="container-pr">

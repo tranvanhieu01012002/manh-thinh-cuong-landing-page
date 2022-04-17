@@ -66,7 +66,7 @@
         </ul>
     </div>
     <section class="home-section">
-        <nav>
+    <nav>
             <div class="sidebar-button">
                 <i class='bx bx-menu sidebarBtn'></i>
                 <span class="dashboard">Manh Thinh Cuong</span>
@@ -81,7 +81,7 @@
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="">Logout</a>
+                        <a class="dropdown-item" >Logout</a>
                     </div>
                 </li>
             </ul>
@@ -94,9 +94,9 @@
     </section>
    
    <!-- ---------------------------------JS------------------------------------------------------------- -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./JS/productmrD.js"></script> 
-    <script src="./JS/admin.js"></script>
+    <script src="./JS/admin.js"></script> -->
     <link rel="stylesheet" href="./CSS/style.css">
 </body>
 </html>

@@ -49,14 +49,15 @@ document.addEventListener(
                 if (statusBlock == "no") {
                     addAnimation(txt, "animationMove");
                     $(".text-monthly-des h4").addClass("animationMoveLeft");
+                    $(".slider-img").addClass("animationMoveRight")
                     statusBlock = "yes";
                 }
             } else if (highPage < hightBlockTxt) {
                 if (statusBlock == "yes") {
                     removeAnimation(txt, "animationMove");
-                    $(".text-monthly-des h4").removeClass(
-                        "animationMoveLeft"
-                    );
+                    $(".text-monthly-des h4").
+                    removeClass("animationMoveLeft");
+                    $(".slider-img").removeClass("animationMoveRight")
                     statusBlock = "no";
                 }
             }
@@ -75,41 +76,46 @@ $(document).ready(() => {
     $("button").click(function() {
         $(".text-monthly-des p").removeClass("animationMove");
         $(".text-monthly-des h4").removeClass("animationMoveLeft");
+        $(".slider-img").removeClass("animationMoveRight")
         setTimeout(function() {
             $(".text-monthly-des h4").addClass("animationMoveLeft");
             $(".text-monthly-des p").addClass("animationMove");
+            $(".slider-img").addClass("animationMoveRight")
         }, 200);
         $("button").removeClass("activeClick");
         $(this).addClass("activeClick");
     });
 });
+// call ajax
+var getInfoWithMonth = () => {
 
-// var statusIntr = "no";
-// document.addEventListener(
-//     "DOMContentLoaded",
-//     function() {
-//         var intrTxt = document.querySelector(".content-row-large");
-//         var hightIntrTxt = intrTxt.offsetTop - 100;
-//         var txt = document.querySelector(".content-row-large");
-//         window.addEventListener("scroll", function() {
-//             var hightPage = window.pageYOffset;
-//             if (hightPage > hightIntrTxt) {
-//                 if (statusIntr == "no") {
-//                     // addAnimation(txt, "animationMove");
-//                     $(".content-row-large .content-right .box-top .text-box").addClass("move");
-//                     $(".content-row-large .content-left .box-top .text-box").addClass("left-move");
-//                     statusIntr = "yes";
-//                 }
-//             } else if (hightPage < hightIntrTxt) {
-//                 if (statusIntr == "yes") {
-//                     removeAnimation(txt, "move");
-//                     $(".content-row-large .content-left").removeClass(
-//                         "anstatusIntrimationMoveLeft"
-//                     );
-//                     statusIntr = "no";
-//                 }
-//             }
-//         });
-//     },
-//     false
-// );
+    }
+    // var statusIntr = "no";
+    // document.addEventListener(
+    //     "DOMContentLoaded",
+    //     function() {
+    //         var intrTxt = document.querySelector(".content-row-large");
+    //         var hightIntrTxt = intrTxt.offsetTop - 100;
+    //         var txt = document.querySelector(".content-row-large");
+    //         window.addEventListener("scroll", function() {
+    //             var hightPage = window.pageYOffset;
+    //             if (hightPage > hightIntrTxt) {
+    //                 if (statusIntr == "no") {
+    //                     // addAnimation(txt, "animationMove");
+    //                     $(".content-row-large .content-right .box-top .text-box").addClass("move");
+    //                     $(".content-row-large .content-left .box-top .text-box").addClass("left-move");
+    //                     statusIntr = "yes";
+    //                 }
+    //             } else if (hightPage < hightIntrTxt) {
+    //                 if (statusIntr == "yes") {
+    //                     removeAnimation(txt, "move");
+    //                     $(".content-row-large .content-left").removeClass(
+    //                         "anstatusIntrimationMoveLeft"
+    //                     );
+    //                     statusIntr = "no";
+    //                 }
+    //             }
+    //         });
+    //     },
+    //     false
+    // );

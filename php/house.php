@@ -1,7 +1,4 @@
-
-<div class="content">
-	<div class="virtual-class"></div>
-	<div class="virtual-class"></div>
+<div class="content-l">
 	<div class="content-oject">
 	<?php
             $database = new dph();

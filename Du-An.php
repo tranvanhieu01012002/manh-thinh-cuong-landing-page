@@ -34,7 +34,7 @@ include("./Admin/dph.php");
     ?>
     <div class="menu">
         <div class="logo-image">
-            <img src="./model/img/logo1.png" alt="">
+        <a href="./Trang-Chu.php"><img src="./model/img/logo1.png" alt=""></a>
         </div>
         <nav class="style-4">
             <ul class="menu-4">

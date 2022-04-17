@@ -38,7 +38,7 @@ include("./Admin/dph.php");
     <!-- Header -->
     <div class="menu">
         <div class="logo-image">
-            <img src="./model/img/logo1.png" alt="">
+           <a href="./Trang-Chu.php"><img src="./model/img/logo1.png" alt=""></a>
         </div>
         <nav class="style-4">
             <ul class="menu-4">
@@ -73,19 +73,20 @@ include("./Admin/dph.php");
     </div>
     </div>
 	<div class="virtual-class"></div>
-
 	<?php
 
 	include "./php/house.php";
 	?>
     <!-- Banner -->
   	<!-- footer -->
-	<div class="virtual-class"></div>
+	
     <?php
 	
 
     //include("./Admin/processEmail.php");
+    include("./php/Footer.php");
     ?>
+    
     <script src="./model/js/header.js"></script>
     <script src="./model/js/banner.js"></script>
     <script src="./model/js/index.js"></script>

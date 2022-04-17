@@ -31,7 +31,7 @@
 
 </head>
 <body>
-    <div class="sidebar">
+    <div class="sidebar" id="backgound-color">
         <div class="logo-details">
             <!-- <i class='bx bxl-c-plus-plus bx-tada'></i> -->
             <span class="logo_name"><img src="./Img/logo.png" alt="" width="200px" height="100px"></span>
@@ -67,7 +67,7 @@
     </div>
     <section class="home-section">
         <nav>
-            <div class="sidebar-button">
+            <div class="sidebar-button" >
                 <i class='bx bx-menu sidebarBtn'></i>
                 <span class="dashboard">Manh Thinh Cuong</span>
             </div>
@@ -81,7 +81,7 @@
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" onclick="logout()">Logout</a>
+                        <a class="dropdown-item">Logout</a>
                     </div>
                 </li>
             </ul>
@@ -94,9 +94,10 @@
     </section>
    
    <!-- ---------------------------------JS------------------------------------------------------------- -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./JS/productmrD.js"></script> 
-    <script src="./JS/admin.js"></script>
+    <script src="./JS/admin.js"></script> -->
+    <script src="../model/js/indexAdmin-sidebar.js"></script>
     <link rel="stylesheet" href="./CSS/style.css">
 </body>
 </html>

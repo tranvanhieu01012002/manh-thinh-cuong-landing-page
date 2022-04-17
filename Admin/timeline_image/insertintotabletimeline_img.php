@@ -15,7 +15,7 @@ if(isset($_POST['add'])){
             'img_5' => $filename_4
             
         ));
-        header("Location:http://localhost:8080/Tamxin/Admin/timeline_image/indexAdmin.php");
+        header("Location: ./indexAdmin.php");
       
     
 }
@@ -33,7 +33,7 @@ if(isset($_POST['update'])){
             'img_4' => $filename_3,
             'img_5' => $filename_4
         ),'id = '.$id.'');
-        header("Location:http://localhost:8080/Tamxin/Admin/timeline_image/indexAdmin.php");     
+        header("Location: ./indexAdmin.php");     
         
     
 }

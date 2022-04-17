@@ -84,9 +84,9 @@ include("./Admin/dph.php");
     include "./php/Footer.php";
     ?>
     <script src="./model/js/header.js"></script>
-    <script src="./model/js/banner.js"></script>
-    <script src="./model/js/index.js"></script>
-    <script src="./model/js/swich-img.js"></script>
+ 
+    <!-- <script src="./model/js/index.js"></script> -->
+    <script src="./model/js/animationIntro.js"></script>
 
     
 

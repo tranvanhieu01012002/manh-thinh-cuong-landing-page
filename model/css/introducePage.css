@@ -11,7 +11,7 @@
 
 .centered {
     position: absolute;
-    top: 23%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -110,14 +110,13 @@
     }
 }
 
-
-/* #col-right {
+#col-right {
     animation-name: move;
     animation-duration: 3s;
     animation-direction: normal;
     position: relative;
     animation-fill-mode: forwards;
-} */
+}
 
 @keyframes left-move {
     from {
@@ -128,14 +127,13 @@
     }
 }
 
-
-/* #col-left {
+#col-left {
     animation-name: left-move;
     animation-duration: 3s;
     animation-direction: normal;
     position: relative;
     animation-fill-mode: forwards;
-} */
+}
 
 
 /* --------------------------------------------reponsive------------------------------------------- */
@@ -154,7 +152,7 @@
     }
     .centered {
         position: absolute;
-        top: 23%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
@@ -215,7 +213,7 @@
     }
     .centered {
         position: absolute;
-        top: 19%;
+        top: 28%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
@@ -280,7 +278,7 @@
     }
     .centered {
         position: absolute;
-        top: 30%;
+        top: 34%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
@@ -357,7 +355,7 @@
     }
     .centered {
         position: absolute;
-        top: 30%;
+        top: 33%;
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;

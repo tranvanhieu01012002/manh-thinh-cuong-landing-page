@@ -1,5 +1,5 @@
 <div id="container">
-    <img id="img-intr" src="./model/img/19154732-nha-ong-2-tang-3-phong-ngu-1.jpg" atl="abc">
+    <img id="img-intr" src="./model/img/intr2.jpg" atl="abc">
     <div class="centered">GIỚI THIỆU</div>
     <div class="intr">
         <img src="./model/img/logo1.png">

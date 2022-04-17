@@ -11,7 +11,7 @@ if(isset($_POST['add'])){
             'Timeline_5' => $_POST['timeline_5'],
         ));
         echo("Post thành công");
-        header("Location:http://localhost:8080/Tamxin/Admin/timeline/indexAdmin.php");
+        header("Location: ./indexAdmin.php");
     }   
     
 }
@@ -25,7 +25,7 @@ if(isset($_POST['update'])){
                 'Timeline_4' => $_POST['timeline_4'],
                 'Timeline_5' => $_POST['timeline_5'],
             ),'id = '.$id.'');
-            header("Location:http://localhost:8080/Tamxin/Admin/timeline/indexAdmin.php");
+            header("Location: ./indexAdmin.php");
         }       
         
     

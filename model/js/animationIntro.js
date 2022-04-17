@@ -9,13 +9,17 @@ document.addEventListener(
             var highPage = window.pageYOffset;
             if (highPage > hightBlockTxt) {
                 if (statusBlock == "no") {
-                    $(".col-item:nth-child(even)").addClass("animationMoveLeft");
+                    $(".col-item:nth-child(even)").addClass("animationMoveOnlyLeft");
+                    $(".col-item:nth-child(odd)").addClass("animationMoveRight");
+                    $(".text-intr").addClass("animationMove");
                     statusBlock = "yes";
                 }
             } else if (highPage < hightBlockTxt) {
                 if (statusBlock == "yes") {
                     $(".col-item:nth-child(even)").
-                    removeClass("animationMoveLeft");
+                    removeClass("animationMoveOnlyLeft");
+                    $(".col-item:nth-child(odd)").removeClass("animationMoveRight");
+                    $(".text-intr").removeClass("animationMove");
                     statusBlock = "no";
                 }
             }

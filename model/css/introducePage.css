@@ -51,13 +51,14 @@
     }
 }
 
-.intr {
+
+/* .intr {
     animation-name: introduce;
     animation-duration: 2s;
     animation-direction: normal;
     position: relative;
     animation-fill-mode: forwards;
-}
+} */
 
 .content-row-large {
     width: 100%;

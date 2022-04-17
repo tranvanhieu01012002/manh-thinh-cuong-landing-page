@@ -5,7 +5,7 @@ include("./Admin/dph.php");
 ?>
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ web xây dựng</title>
@@ -25,7 +25,6 @@ include("./Admin/dph.php");
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./model/css/main.css">
 
-
 </head>
 
 <body>
@@ -35,7 +34,7 @@ include("./Admin/dph.php");
     ?>
         <div class="menu">
         <div class="logo-image">
-            <img src="./model/img/logo1.png" alt="">
+        <a href="./Trang-Chu.php"><img src="./model/img/logo1.png" alt=""></a>
         </div>
         <nav class="style-4">
             <ul class="menu-4">
@@ -52,7 +51,7 @@ include("./Admin/dph.php");
                 <a href="./IntroducePage.php">Giới thiệu</a>
                 <a href="./danh-sach-du-an.php">Nhà</a>
                 <a href="#footer">Liên hệ</a>
-                <form class="search-container" action="/action_page.php">
+                <form class="search-container" action="./danh-sach-du-an.php">
                     <input type="text" class="searchTerm" placeholder="Tìm kiếm">
                     <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
                 </form>
@@ -60,10 +59,12 @@ include("./Admin/dph.php");
             <button class="openbtn" onclick="openNav()">☰ </button>
         </div>
         <div class="box">
-            <div class="search">
-                <input type="text" class="searchTerm" placeholder="Tìm kiếm">
-                <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
-            </div>
+        <form action="./danh-sach-du-an.php" method="post">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Tìm kiếm">
+                    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
         </div>
     </div>
     </div>
@@ -85,6 +86,9 @@ include("./Admin/dph.php");
     <script src="./model/js/header.js"></script>
     <script src="./model/js/banner.js"></script>
     <script src="./model/js/index.js"></script>
+    <script src="./model/js/swich-img.js"></script>
+
+    
 
 </body>
 

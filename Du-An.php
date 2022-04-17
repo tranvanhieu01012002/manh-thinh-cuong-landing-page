@@ -34,7 +34,7 @@ include("./Admin/dph.php");
     ?>
     <div class="menu">
         <div class="logo-image">
-            <img src="./model/img/logo1.png" alt="">
+        <a href="./Trang-Chu.php"><img src="./model/img/logo1.png" alt=""></a>
         </div>
         <nav class="style-4">
             <ul class="menu-4">
@@ -59,10 +59,12 @@ include("./Admin/dph.php");
             <button class="openbtn" onclick="openNav()">☰ </button>
         </div>
         <div class="box">
-            <div class="search">
-                <input type="text" class="searchTerm" placeholder="Tìm kiếm">
-                <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
-            </div>
+        <form action="./danh-sach-du-an.php" method="post">
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Tìm kiếm">
+                    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
         </div>
     </div>
     </div>

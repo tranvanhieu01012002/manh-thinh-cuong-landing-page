@@ -110,13 +110,14 @@
     }
 }
 
-#col-right {
+
+/* #col-right {
     animation-name: move;
     animation-duration: 3s;
     animation-direction: normal;
     position: relative;
     animation-fill-mode: forwards;
-}
+} */
 
 @keyframes left-move {
     from {
@@ -127,13 +128,14 @@
     }
 }
 
-#col-left {
+
+/* #col-left {
     animation-name: left-move;
     animation-duration: 3s;
     animation-direction: normal;
     position: relative;
     animation-fill-mode: forwards;
-}
+} */
 
 
 /* --------------------------------------------reponsive------------------------------------------- */

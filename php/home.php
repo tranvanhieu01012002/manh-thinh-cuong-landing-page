@@ -3,7 +3,7 @@
         $id = $_GET['id'];
     }
     $database = new dph();
-    $row = $database->get_row('select * from slides where id = ' . $id . ' ;');
+    $row = $database->get_row('select * from project where id_project = ' . $id . ' ;');
     $rowTimeLine = $database->get_row('select * from timeline where id = ' . $id . ' ;');
 ?>
 <div class="back">
@@ -13,14 +13,115 @@
         <div class="title">
             <h1><?php echo $row['Description'] ?></h1>
         </div>
+        <div class="display-project-info">
+            <table class="info-project">
+                <tbody>
+                    <tr>
+                        <td>
+                            Tên dự án
+                        </td>
+                        <td>
+                            <?php echo $row["name_project"] ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mã dự án
+                        </td>
+                        <td>
+                        <?php echo $row["project_code"] ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Diện tích
+                        </td>
+                        <td>
+                        <?php echo $row["land_area"] ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Tổng diện tích xây dựng
+                        </td>
+                        <td>
+                        <?php echo $row["total_cons_area"] ?> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Tên khách hàng
+                        </td>
+                        <td>
+                        <?php echo $row["name_cus"] ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Địa chỉ
+                        </td>
+                        <td>
+                        <?php echo $row["address"] ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Quận
+                        </td>
+                        <td>
+                        <?php echo $row["district"] ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Loại xây dựng
+                        </td>
+                        <td>
+                        <?php echo $row["construc_type"] ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Ngày bắt đầu
+                        </td>
+                        <td>
+                        <?php echo $row["start"] ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        Ngày bàn giao
+                        </td>
+                        <td>
+                        <?php echo $row["delivery"] ?>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td>
+                            Mô tả
+                        </td>
+                        <td> -->
+                        <?php 
+                        // echo $row['Description_detail'] 
+                        ?>
+                        <!-- </td>
+                    </tr> -->
+                </tbody>
+            </table>
+            <div class="hr-style">
+            </div>
+            <div class="description">
+                <h3>Mô tả dự án</h3>
+                <?php
+                echo $row['Description_detail']
+                ?>
+            </div>
+        </div>
         <div class="decoration"><img
                 src="https://khudothivanphuc.giaodienbds.com/wp-content/uploads/2017/12/bullet_bg.png" alt=""></div>
-        <div class="description">
-            <?php echo $row['Description_detail'] ?>
-        </div>
     </div>
 </div>
-<div class="select-img">
+<div class="select-img ">
     <?php
     $i = -1;
     foreach ($rowTimeLine as $ele) {
@@ -28,13 +129,9 @@
         if ($i == 0) {
             continue;
         }
-        echo '<button class="btn-img">' . $ele . '</button>';
+        echo '<button class="btn-root">' . $ele . '<span></span></button>';
     }
     ?>
-    <!-- <button class="btn-img">20/2/2022</button>
-    <button class="btn-img">20/3/2022</button>
-    <button class="btn-img">20/4/2022</button>
-    <button class="btn-img">20/5/2022</button> -->
 </div>
 
 <div class="display-small-slide">
@@ -55,9 +152,10 @@
                 title="Manh Thinh Cuong 5">
         </div>
         <div class="text-monthly-des">
-            <h4><?php echo $row['Content'] ?></h4>
+            <h4><?php echo $row['Description'] ?></h4>
             <p><?php echo $row['Description_detail'] ?>
             </p>
+            
         </div>
     </div>
 </div>
@@ -67,10 +165,7 @@
 <div class="page-container-slider">
     <div class="name-project">
         <div>
-            <h2>Dự án tương tự</h2>
-        </div>
-        <div>
-            <img src="https://www.cashadvance6online.com/data/archive/img/2477963118.png" alt="">
+            <h2>Quận:</h2>
         </div>
     </div>
     <div class="container-pr">
@@ -78,7 +173,7 @@
         <div class="container-slider">
             <?php
             $database = new dph();
-            $row = $database->get_list('select * from slides;') ?>
+            $row = $database->get_list('select * from project;') ?>
             <?php foreach ($row as $value) : ?>
 
             <div class="box-slider">

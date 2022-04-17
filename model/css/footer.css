@@ -38,12 +38,6 @@
     margin: 0px 5px;
 }
 
-.right-cont input[type=submit] {
-    padding: 10px 10px;
-    background-color: rgb(40, 201, 75);
-    color: white;
-}
-
 .right-cont textarea {
     width: 90%;
 }
@@ -52,6 +46,8 @@
     display: grid;
     grid-template-columns: 40% 30% 30%;
     background-color: #ffcd00;
+    padding: 10px;
+    margin-left: 5px;
     /* text-align: center; */
 }
 

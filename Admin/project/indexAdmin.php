@@ -45,6 +45,13 @@
                 </a>
             </li>
             <li>
+                <!-- <a href="#" class="active"> -->
+                <a href="../project/indexAdmin.php">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Project</span>
+                </a>
+            </li>
+            <li>
                 <a href="../timeline_image/indexAdmin.php">
                     <i class='bx bx-box'></i>
                     <span class="links_name">Time_Line_Image</span>
@@ -63,10 +70,11 @@
                     <span class="links_name">House</span>
                 </a>
             </li>
+            
         </ul>
     </div>
     <section class="home-section">
-    <nav>
+        <nav>
             <div class="sidebar-button">
                 <i class='bx bx-menu sidebarBtn'></i>
                 <span class="dashboard">Manh Thinh Cuong</span>
@@ -81,7 +89,7 @@
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" >Logout</a>
+                        <a class="dropdown-item" onclick="logout()">Logout</a>
                     </div>
                 </li>
             </ul>
@@ -89,14 +97,14 @@
         </nav>
         <br><br><br>
         <?php
-            include "timeline.php"
+            include "project.php"
         ?>
     </section>
    
    <!-- ---------------------------------JS------------------------------------------------------------- -->
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./JS/productmrD.js"></script> 
-    <script src="./JS/admin.js"></script> -->
+    <script src="./JS/admin.js"></script>
     <link rel="stylesheet" href="./CSS/style.css">
 </body>
 </html>

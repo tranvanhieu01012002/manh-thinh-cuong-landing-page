@@ -5,7 +5,7 @@ include("./Admin/dph.php");
 ?>
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang chủ web xây dựng</title>
@@ -25,23 +25,22 @@ include("./Admin/dph.php");
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="./model/css/main.css">
 
-
 </head>
 
 <body>
     <!-- Header -->
     <?php
-    include "./php/Header.php";
+        include "./php/Header.php";
     ?>
         <div class="menu">
         <div class="logo-image">
-            <img src="./model/img/logo1.png" alt="">
+        <a href="./Trang-Chu.php"><img src="./model/img/logo1.png" alt=""></a>
         </div>
         <nav class="style-4">
             <ul class="menu-4">
                 <li ><a href="./Trang-Chu.php" data-hover="Trang chủ">Trang chủ</a></li>
                 <li class="current" ><a href="./IntroducePage.php" data-hover="Giới thiệu">Giới thiệu</a></li>
-                <li ><a href="./Du-An.php" data-hover="Nhà">Nhà</a></li>
+                <li ><a href="./danh-sach-du-an.php" data-hover="Nhà">Nhà</a></li>
                 <li><a href="#footer" data-hover="Liên hệ">Liên hệ</a></li>
             </ul>
         </nav>
@@ -50,20 +49,22 @@ include("./Admin/dph.php");
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="./Trang-Chu.php">Trang chủ</a>
                 <a href="./IntroducePage.php">Giới thiệu</a>
-                <a href="./Du-An.php">Nhà</a>
+                <a href="./danh-sach-du-an.php">Nhà</a>
                 <a href="#footer">Liên hệ</a>
-                <form class="search-container" action="/action_page.php">
-                    <input type="text" class="searchTerm" placeholder="Tìm kiếm">
+                <form class="search-container" action="./danh-sach-du-an.php" method="GET">
+                    <input type="text" name = "search" class="searchTerm" placeholder="Tìm kiếm">
                     <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
                 </form>
             </div>
             <button class="openbtn" onclick="openNav()">☰ </button>
         </div>
         <div class="box">
-            <div class="search">
-                <input type="text" class="searchTerm" placeholder="Tìm kiếm">
-                <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
-            </div>
+            <form action="./danh-sach-du-an.php" method="GET">
+                <div class="search">
+                    <input type="text" name="search" class="searchTerm" placeholder="Tìm kiếm">
+                    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
         </div>
     </div>
     </div>
@@ -72,7 +73,7 @@ include("./Admin/dph.php");
     <!-- Header -->
 
    <?php
-    include "./php/introducePage.php";
+        include "./php/introducePage.php";
    ?>
 
 
@@ -83,8 +84,11 @@ include("./Admin/dph.php");
     include "./php/Footer.php";
     ?>
     <script src="./model/js/header.js"></script>
-    <script src="./model/js/banner.js"></script>
-    <script src="./model/js/index.js"></script>
+ 
+    <!-- <script src="./model/js/index.js"></script> -->
+    <script src="./model/js/animationIntro.js"></script>
+
+    
 
 </body>
 

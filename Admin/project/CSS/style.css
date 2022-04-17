@@ -2,9 +2,8 @@
     position: fixed;
     height: 100%;
     width: 320px;
-    background: #ffcd00;
+    background: #e6d691;
     transition: all 0.5s ease;
-    font-family: "Montserrat", sans-serif;
 }
 
 .sidebar .logo-details {
@@ -49,12 +48,12 @@
     transition: all 0.4s ease;
 }
 
-.sidebar .nav-links li a:active {
-    background: #eaeaea;
+.sidebar .nav-links li a.active {
+    background: #081D45;
 }
 
 .sidebar .nav-links li a:hover {
-    color: #eaeaea;
+    background: #f3bc07;
 }
 
 .sidebar .nav-links li i {
@@ -260,8 +259,8 @@ nav .search-box .bx-search {
 }
 
 #home-content .box .cart.three {
-    /* background: #ffcd00;
-    background: #ffcd00; */
+    color: #ffc233;
+    background: #ffe8b3;
 }
 
 #home-content .box .cart.four {

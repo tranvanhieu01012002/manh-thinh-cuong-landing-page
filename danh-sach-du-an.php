@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <?php
@@ -36,13 +38,13 @@ include("./Admin/dph.php");
     <!-- Header -->
     <div class="menu">
         <div class="logo-image">
-            <img src="./model/img/logo1.png" alt="">
+           <a href="./Trang-Chu.php"><img src="./model/img/logo1.png" alt=""></a>
         </div>
         <nav class="style-4">
             <ul class="menu-4">
-                <li class="current"><a href="./Trang-Chu.php" data-hover="Trang chủ">Trang chủ</a></li>
+                <li><a href="./Trang-Chu.php" data-hover="Trang chủ">Trang chủ</a></li>
                 <li><a href="./IntroducePage.php" data-hover="Giới thiệu">Giới thiệu</a></li>
-                <li><a href="./danh-sach-du-an.php" data-hover="Nhà">Nhà</a></li>
+                <li class="current"><a href="./House.php" data-hover="Nhà">Nhà</a></li>
                 <li><a href="#footer" data-hover="Liên hệ">Liên hệ</a></li>
             </ul>
         </nav>
@@ -51,10 +53,10 @@ include("./Admin/dph.php");
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="./Trang-Chu.php">Trang chủ</a>
                 <a href="./IntroducePage.php">Giới thiệu</a>
-                <a href="./danh-sach-du-an.php">Nhà</a>
+                <a href="#">Nhà</a>
                 <a href="#footer">Liên hệ</a>
                 <form class="search-container" action="./danh-sach-du-an.php">
-                    <input type="text" class="searchTerm" placeholder="Tìm kiếm">
+                    <input type="text" name="search" class="searchTerm" placeholder="Tìm kiếm">
                     <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
                 </form>
             </div>
@@ -65,36 +67,31 @@ include("./Admin/dph.php");
                 <div class="search">
                     <input type="text" name="search" class="searchTerm" placeholder="Tìm kiếm">
                     <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
-                </div>  
+                </div>
             </form>
         </div>
     </div>
-        </div>
     </div>
-    <div class="virtual-class"></div>
-    
-    <!-- Banner -->
-    <?php
-    include "./php/Banner.php";
-    ?>
-    <!-- Banner -->
-    
-    <?php
-    include "./php/Project.php";
-    ?>
+	<div class="virtual-class"></div>
+	<?php
 
-
-    <!-- footer -->
+	include "./php/house.php";
+	?>
+    <!-- Banner -->
+  	<!-- footer -->
+	
     <?php
+	
 
     //include("./Admin/processEmail.php");
-    include "./php/Footer.php";
+    include("./php/Footer.php");
     ?>
+    
     <script src="./model/js/header.js"></script>
     <script src="./model/js/banner.js"></script>
     <script src="./model/js/index.js"></script>
     <script src="./model/js/getUserInfo.js"></script>
-
+<img src="" alt="">
 
 </body>
 

@@ -91,6 +91,8 @@ include("./Admin/dph.php");
     <script src="./model/js/header.js"></script>
     <script src="./model/js/banner.js"></script>
     <script src="./model/js/index.js"></script>
+    <script src="./model/js/call-ajax.php"></script>
+
 
 
 </body>

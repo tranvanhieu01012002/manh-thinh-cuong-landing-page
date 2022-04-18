@@ -129,7 +129,7 @@
         if ($i == 0) {
             continue;
         }
-        echo '<button class="btn-root">' . $ele . '<span></span></button>';
+        echo '<button value="'.$i.'" class="btn-root">' . $ele . '<span></span></button>';
     }
     ?>
 </div>

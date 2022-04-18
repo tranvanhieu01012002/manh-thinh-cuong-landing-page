@@ -44,7 +44,10 @@
                     <span class="links_name">Time_Line</span>
                 </a>
             </li>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2c33b38627b8c378f9c95025c3ce2606ed07231c
             <li>
                 <a href="../timeline_image/indexAdmin.php">
                     <i class='bx bx-box'></i>
@@ -83,7 +86,7 @@
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="#">Settings</a><a class="dropdown-item" href="#">Activity Log</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" onclick="logout()">Logout</a>
+                        <a class="dropdown-item" href="../logout.php">Logout</a>
                     </div>
                 </li>
             </ul>

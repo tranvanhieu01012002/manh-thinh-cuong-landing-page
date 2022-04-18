@@ -10,7 +10,7 @@ if(isset($_POST['add'])){
             'Description' => $_POST['des'],
             'Description_detail' => $_POST['desdetail']
         ));
-        header("Location:http://localhost:8080/Tamxin/Admin/sildes/indexAdmin.php");
+        header("Location: ./indexAdmin.php");
     }   
     
 }
@@ -24,7 +24,7 @@ if(isset($_POST['update'])){
                 'Description' => $_POST['des'],
                 'Description_detail' => $_POST['desdetail']
             ),'id = '.  $id.'');
-            header("Location:http://localhost:8080/Tamxin/Admin/sildes/indexAdmin.php");
+            header("Location: ./indexAdmin.php");
         }       
         
     

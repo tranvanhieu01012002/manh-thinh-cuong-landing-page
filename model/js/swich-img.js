@@ -74,6 +74,7 @@ var removeAnimation = (text, animation) => {
 
 $(document).ready(() => {
     $("button").click(function() {
+        getInfoWithMonth($(this).val());
         $(".text-monthly-des p").removeClass("animationMove");
         $(".text-monthly-des h4").removeClass("animationMoveLeft");
         $(".slider-img").removeClass("animationMoveRight")
@@ -87,8 +88,17 @@ $(document).ready(() => {
     });
 });
 // call ajax
-var getInfoWithMonth = () => {
-
+var getInfoWithMonth = (text) => {
+        $.ajax({
+            url: "./php/call-ajax.php",
+            type: "POST",
+            dataType: "text",
+            data: { data: text },
+            success: function(result) {
+                // $(".slider-img").html(result);
+                console.log(result);
+            }
+        })
     }
     // var statusIntr = "no";
     // document.addEventListener(

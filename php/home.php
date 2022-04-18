@@ -96,16 +96,6 @@
                         <?php echo $row["delivery"] ?>
                         </td>
                     </tr>
-                    <!-- <tr>
-                        <td>
-                            Mô tả
-                        </td>
-                        <td> -->
-                        <?php 
-                        // echo $row['Description_detail'] 
-                        ?>
-                        <!-- </td>
-                    </tr> -->
                 </tbody>
             </table>
             <div class="hr-style">

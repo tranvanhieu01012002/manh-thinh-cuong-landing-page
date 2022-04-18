@@ -32,42 +32,71 @@ include("./Admin/dph.php");
     <?php
         include "./php/Header.php";
     ?>
+    <div class="display-menu">
         <div class="menu">
-        <div class="logo-image">
-        <a href="./Trang-Chu.php"><img src="./model/img/logo1.png" alt=""></a>
-        </div>
-        <nav class="style-4">
-            <ul class="menu-4">
-                <li ><a href="./Trang-Chu.php" data-hover="Trang chủ">Trang chủ</a></li>
-                <li class="current" ><a href="./IntroducePage.php" data-hover="Giới thiệu">Giới thiệu</a></li>
-                <li ><a href="./danh-sach-du-an.php" data-hover="Nhà">Nhà</a></li>
-                <li><a href="#footer" data-hover="Liên hệ">Liên hệ</a></li>
-            </ul>
-        </nav>
-        <div class="responsive-header">
-            <div id="mySidepanel" class="sidepanel">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <a href="./Trang-Chu.php">Trang chủ</a>
-                <a href="./IntroducePage.php">Giới thiệu</a>
-                <a href="./danh-sach-du-an.php">Nhà</a>
-                <a href="#footer">Liên hệ</a>
-                <form class="search-container" action="./danh-sach-du-an.php" method="GET">
-                    <input type="text" name = "search" class="searchTerm" placeholder="Tìm kiếm">
-                    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+            <div class="logo-image">
+                <a href="./Trang-Chu.php"><img src="./model/img/logo1.png" alt=""></a>
+            </div>
+            <nav class="style-4">
+                <ul class="menu-4">
+                    <li ><a href="./Trang-Chu.php" data-hover="Trang chủ">Trang chủ</a></li>
+                    <li class="current" ><a href="./IntroducePage.php" data-hover="Giới thiệu">Giới thiệu</a></li>
+                    <li ><a href="./danh-sach-du-an.php" data-hover="Nhà">Nhà</a></li>
+                    <li><a href="#footer" data-hover="Liên hệ">Liên hệ</a></li>
+                </ul>
+            </nav>
+            <div class="responsive-header">
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    <a href="./Trang-Chu.php">Trang chủ</a>
+                    <a href="./IntroducePage.php">Giới thiệu</a>
+                    <a href="./danh-sach-du-an.php">Nhà</a>
+                    <a href="#footer">Liên hệ</a>
+                    <form class="search-container" action="./danh-sach-du-an.php" method="GET">
+                        <input type="text" name = "search" class="searchTerm" placeholder="Tìm kiếm">
+                        <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+                <button class="openbtn" onclick="openNav()">☰ </button>
+            </div>
+            <div class="box">
+                <form action="./danh-sach-du-an.php" method="GET">
+                    <div class="search">
+                        <input type="text" name="search" class="searchTerm" placeholder="Tìm kiếm">
+                        <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                    </div>
                 </form>
             </div>
-            <button class="openbtn" onclick="openNav()">☰ </button>
         </div>
-        <div class="box">
-            <form action="./danh-sach-du-an.php" method="GET">
-                <div class="search">
-                    <input type="text" name="search" class="searchTerm" placeholder="Tìm kiếm">
-                    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+            <div class="filter">
+                <div class="select_option">
+                    <select name="" id="type">
+                        <option selected disabled>Loại xây dựng</option>
+                        <option value="">Loại 1</option>
+                        <option value="">Loại 2</option>
+                        <option value="">Loại 3</option>
+                        <option value="">Loại 4</option>
+                    </select>
+                    <select name="" id="year">
+                        <option selected disabled>Năm xây dựng</option>
+                        <option value="">2022</option>
+                        <option value="">2020 </option>
+                        <option value="">2019 </option>
+                        <option value="">2018 </option>
+                    </select>
+                    <select name="" id="district">
+                        <option selected disabled>Quận</option>
+                        <option value="">Hoà Khánh</option>
+                        <option value="">Liên Chiểu </option>
+                        <option value="">Sơn Trà</option>
+                        <option value="">Hải Châu</option>
+                    </select>
+                    <input type="text" name="" placeholder="Tổng diện tích">
+                    <img  src="./model/img/funnel-fill.svg" alt="">
                 </div>
-            </form>
-        </div>
+            </div>
     </div>
-    </div>
+</div>
     <div class="virtual-class"></div>
     
     <!-- Header -->

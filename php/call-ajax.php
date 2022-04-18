@@ -1,6 +1,7 @@
 <?php
 include("../Admin/dph.php");
 
+
 if(isset($_POST["data"])){
     $dataa = new dph();
     $row = $dataa->get_row("select * from text_time_line where id = '31'");
@@ -12,6 +13,6 @@ if(isset($_POST["data"])){
         }
         $i++;
     }
-    echo $i;
 }
+
 ?>

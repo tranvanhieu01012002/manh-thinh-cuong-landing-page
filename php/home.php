@@ -165,7 +165,7 @@
 <div class="page-container-slider">
     <div class="name-project">
         <div>
-            <h2>Quận:</h2>
+            <h2>Quận</h2>
         </div>
     </div>
     <div class="container-pr">
@@ -177,7 +177,7 @@
             <?php foreach ($row as $value) : ?>
 
             <div class="box-slider">
-                <a href="./Du-An.php?id=<?php echo $value['id'] ?>">
+                <a href="./Du-An.php?id=<?php echo $value['id_project'] ?>">
                     <div class="slide-img">
                         <img src="./Admin/Img/<?php echo $value['img'] ?>" alt="">
                     </div>

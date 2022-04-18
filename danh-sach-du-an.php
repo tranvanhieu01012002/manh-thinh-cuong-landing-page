@@ -57,7 +57,7 @@ include("./Admin/dph.php");
                 <a href="#footer">Liên hệ</a>
                 <form class="search-container" action="./danh-sach-du-an.php">
                     <input type="text" name="search" class="searchTerm" placeholder="Tìm kiếm">
-                    <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
+                        <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
                 </form>
             </div>
             <button class="openbtn" onclick="openNav()">☰ </button>
@@ -84,7 +84,7 @@ include("./Admin/dph.php");
 	
 
     //include("./Admin/processEmail.php");
-    include("./php/Footer.php");
+    // include("./php/Footer.php");
     ?>
     
     <script src="./model/js/header.js"></script>

@@ -58,7 +58,7 @@
                 </a>
             </li>
             <li>
-                <a href="../sildes/indexAdmin.php">
+                <a href="../project/indexAdmin.php">
                     <i class='bx bx-pie-chart-alt-2'></i>
                     <span class="links_name">House</span>
                 </a>

@@ -42,6 +42,9 @@ if(isset($_GET['search'])){?>
 							<a href="./Du-An.php?id=<?php echo $value['id_project'] ?>">Xem thêm</a>
 							<span></span>
 						</div>
+
+
+						
 					</figcaption>			 
 		    </figure>
     <?php endforeach ?>

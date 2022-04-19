@@ -78,7 +78,7 @@ include("./Admin/dph.php");
         include "./php/introducePage.php";
    ?>
 
-
+<hr >
     <!-- footer -->
     <?php
 

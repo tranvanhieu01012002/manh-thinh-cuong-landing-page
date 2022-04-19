@@ -155,7 +155,9 @@
 <div class="page-container-slider">
     <div class="name-project">
         <div>
-            <h2>Quận</h2>
+            <h2><?php $district = $row["district"];
+            echo $district;
+            ?></h2>
         </div>
     </div>
     <div class="container-pr">
@@ -163,8 +165,8 @@
         <div class="container-slider">
             <?php
             $database = new dph();
-            $row = $database->get_list('select * from project;') ?>
-            <?php foreach ($row as $value) : ?>
+            $district__home = $database->get_list('select * from project where district= "'.$district.'";') ?>
+            <?php foreach ($district__home as $value) : ?>
 
             <div class="box-slider">
                 <a href="./Du-An.php?id=<?php echo $value['id_project'] ?>">

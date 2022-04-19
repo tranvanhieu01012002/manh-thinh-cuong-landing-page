@@ -9,7 +9,7 @@
         var moneyFormat = wNumb({
             decimals: 0,
             thousand: ',',
-            prefix: 'm<sup>2</sup>:'
+            prefix: ''
         });
         noUiSlider.create(rangeSlider, {
             start: [100, 200],
@@ -26,10 +26,8 @@
         rangeSlider.noUiSlider.on('update', function(values, handle) {
             document.getElementById('slider-range-value1').innerHTML = values[0];
             document.getElementById('slider-range-value2').innerHTML = values[1];
-            document.getElementsByName('min-value').value = moneyFormat.from(
-                values[0]);
-            document.getElementsByName('max-value').value = moneyFormat.from(
-                values[1]);
+            document.getElementById('min-value').setAttribute("value", values[0]);
+            document.getElementById('max-value').setAttribute("value", values[1]);
         });
     });
 

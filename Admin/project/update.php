@@ -44,7 +44,14 @@ include("../dph.php") ?>
         <label for="email"><b>Địa chỉ:</b></label>
         <input type="text" value="<?php echo $row['address'] ?>" name="address" required>
         <label for="email"><b>Quận:</b></label>
-        <input type="text" value="<?php echo $row['district'] ?>" name="district" required>
+        <select name="district">
+        <option value="Sơn Trà">Sơn Trà</option>
+        <option value="Liên Chiểu">Liên Chiểu</option>
+        <option value="Thanh Khê">Thanh Khê</option>
+        <option value="Hải Châu">Hải châu</option>
+        <option value="Cẩm Lệ">Cẩm Lệ</option>
+        <option value="Hòa Vang">Hòa Vang</option>
+        </select>
         <label for="email"><b>Loại xây dựng:</b></label>
         <select name="construc_type">
           <option value="nhao">Nhà ở</option>

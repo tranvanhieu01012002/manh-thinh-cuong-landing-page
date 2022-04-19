@@ -12,11 +12,11 @@
             prefix: 'm<sup>2</sup>:'
         });
         noUiSlider.create(rangeSlider, {
-            start: [100, 5000],
+            start: [100, 200],
             step: 1,
             range: {
-                'min': [10],
-                'max': [10000]
+                'min': [0],
+                'max': [500]
             },
             format: moneyFormat,
             connect: true

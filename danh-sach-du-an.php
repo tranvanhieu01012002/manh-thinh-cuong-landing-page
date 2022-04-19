@@ -45,7 +45,7 @@ include("./Admin/dph.php");
             <ul class="menu-4">
                 <li><a href="./Trang-Chu.php" data-hover="Trang chủ">Trang chủ</a></li>
                 <li><a href="./IntroducePage.php" data-hover="Giới thiệu">Giới thiệu</a></li>
-                <li class="current"><a href="./House.php" data-hover="Nhà">Nhà</a></li>
+                <li class="current"><a href="#" data-hover="Nhà">Nhà</a></li>
                 <li><a href="#footer" data-hover="Liên hệ">Liên hệ</a></li>
             </ul>
         </nav>
@@ -75,26 +75,32 @@ include("./Admin/dph.php");
     <form action="./danh-sach-du-an.php">
             <div class="filter">
                 <div class="select_option">
-                    <select name="" id="type">
+                    <select name="type" id="type">
                         <option selected disabled>Loại xây dựng</option>
-                        <option value="">Loại 1</option>
-                        <option value="">Loại 2</option>
-                        <option value="">Loại 3</option>
-                        <option value="">Loại 4</option>
+                        <option value="Nhà ở">Nhà ở</option>
+                        <option value="Biệt thự">Biệt thự</option>
+                        <option value="Cao tầng">Nhà cao tầng</option>
+                        <option value="Nhà vườn">Nhà vườn</option>
+                        <option value="Chung cư">Chung cư</option>
+                        <option value="Nhà hồ bơi">Nhà có hồ bơi</option>
                     </select>
-                    <select name="" id="year">
+                    <select name="year" id="year">
                         <option selected disabled>Năm xây dựng</option>
                         <option value="">2022</option>
                         <option value="">2020 </option>
                         <option value="">2019 </option>
                         <option value="">2018 </option>
+                        <option value="">2017</option>
+                        <option value="">2016 </option>
                     </select>
-                    <select name="" id="district">
+                    <select name="district" id="district">
                         <option selected disabled>Quận</option>
-                        <option value="">Hoà Khánh</option>
-                        <option value="">Liên Chiểu </option>
-                        <option value="">Sơn Trà</option>
-                        <option value="">Hải Châu</option>
+                        <option value="Sơn Trà">Sơn Trà</option>
+                        <option value="Liên Chiểu">Liên Chiểu</option>
+                        <option value="Thanh Khê">Thanh Khê</option>
+                        <option value="Hải Châu">Hải châu</option>
+                        <option value="Cẩm Lệ">Cẩm Lệ</option>
+                        <option value="Hòa Vang">Hòa Vang</option>
                     </select>
                     <div class="filter-main">
                         <div class="row">
@@ -120,7 +126,7 @@ include("./Admin/dph.php");
                         </div>
                     </div>  
                   <div>
-                  <button>Lọc</button>
+                  <button style="margin:0px" class="btn-root">Lọc<span></span></button>
                   </div>
                 </div>
             </div>
@@ -139,7 +145,7 @@ include("./Admin/dph.php");
 	
 
     //include("./Admin/processEmail.php");
-    include("./php/Footer.php");
+    // include("./php/Footer.php");
     ?>
     
     <script src="./model/js/header.js"></script>

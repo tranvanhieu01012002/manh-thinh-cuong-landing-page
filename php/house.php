@@ -14,10 +14,12 @@ if(isset($_GET['search'])){?>
 			<img src="./Admin/img/<?php echo $value['img']?>" alt="img02"/>
 					<figcaption>
 						<h5><?php echo $value['Description']?></h5>
-						<div class="btn-root">
-							<a href="./Du-An.php?id=<?php echo $value['id_project'] ?>">Xem thêm</a>
-							<span></span>
-						</div>
+						<a href="./Du-An.php?id=<?php echo $value['id_project'] ?>">
+							<div style="padding: 20px 0px;" class="btn-root">
+								Xem thêm ne
+								<span></span>
+							</div>
+						</a>
 					</figcaption>			 
 		    </figure>
     <?php endforeach ?>

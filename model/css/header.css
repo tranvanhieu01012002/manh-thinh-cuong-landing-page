@@ -44,12 +44,15 @@
     height: 130px;
 }
 
+
 .infor {
-    height: 35px;
+    color: black;
+    height: 39px;
     font-size: 15px;
     background-color: var(--l--yellow-color);
-    color: white;
+    /* color: white; */
 }
+
 
 .display-info {
     margin: 0px 20px;
@@ -70,8 +73,9 @@
 }
 
 .logo-image img {
-    width: 194px;
-    height: 94px;
+    width: 204px;
+    height: 105px;
+    margin-left: -69px;
     object-fit: cover;
     z-index: 2;
 }
@@ -80,8 +84,9 @@
     width: 100%;
     position: relative;
     display: flex;
+    font-size: 15px;
+    margin-right: 12px;
 }
-
 .searchTerm {
     width: 256px;
     border: 3px solid var(--l--yellow-color);

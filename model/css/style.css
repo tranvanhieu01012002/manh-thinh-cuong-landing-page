@@ -65,6 +65,7 @@ a {
     object-fit: cover;
     width: 100%;
     transition: all 1s;
+    filter: brightness(80%);
 }
 
 .slide-img:hover img {
@@ -177,6 +178,7 @@ a {
 
 .detail-title {
     display: flex;
+    margin-top: 15px;
     justify-content: center;
 }
 

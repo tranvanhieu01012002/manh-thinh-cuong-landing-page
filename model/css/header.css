@@ -8,9 +8,10 @@
 }
 
 .filter .select_option img {
-    height: 16px;
-    width: 10px;
-    border: 2px solid black;
+    height: 40px;
+    width: 30px;
+    border: 2px solid var(--base-cl);
+    padding: 5px 10px;
 }
 
 .select_option {

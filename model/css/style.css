@@ -267,7 +267,7 @@ a {
 }
 
 #button::after {
-    content: "\f077";
+    content: "\2191";
     font-weight: normal;
     font-style: normal;
     font-size: 2em;
@@ -281,12 +281,13 @@ a {
 }
 
 #button:active {
-    background-color: #555;
+    background-color: rgb(19, 18, 18);
 }
 
 #button.show-btn {
     opacity: 1;
     visibility: visible;
+    background-color: #ffc107;
 }
 
 

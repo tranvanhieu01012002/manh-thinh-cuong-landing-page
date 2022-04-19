@@ -43,6 +43,10 @@ td:nth-child(odd) {
     justify-content: space-around;
 }
 
+.info-project {
+    width: 48%;
+}
+
 .content {
     width: var(--width-content);
     max-height: 50em;
@@ -61,8 +65,7 @@ td:nth-child(odd) {
 }
 
 .content .description {
-    width: 24.6em;
-    /* overflow: scroll; */
+    width: 48%;
     height: auto;
 }
 
@@ -81,7 +84,7 @@ td:nth-child(odd) {
 }
 
 td:nth-child(odd) {
-    width: 12em;
+    width: 50%;
     text-align: left;
 }
 

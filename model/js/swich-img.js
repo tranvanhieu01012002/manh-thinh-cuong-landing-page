@@ -95,8 +95,7 @@ var getInfoWithMonth = (text) => {
             dataType: "text",
             data: { data: text },
             success: function(result) {
-                // $(".slider-img").html(result);
-                console.log(result);
+                $(".text-monthly-des p").text(result);
             }
         })
     }

@@ -48,6 +48,8 @@ $admin_query = "select * from admin where user='$user' AND password='$password'"
 $run_query = mysqli_query($conn, $admin_query);
 
 if (mysqli_num_rows($run_query) > 0) {
+    session_start();
+    $_SESSION["login"] = 1;
     header("Location:./project/indexAdmin.php");
 } else {
     echo "<script>alert('Hãy Đăng Nhập Tài Khoản Admin của bạn..!')</script>";

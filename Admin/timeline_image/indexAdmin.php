@@ -31,12 +31,22 @@
 
 </head>
 <body>
-    <div class="sidebar" id="backgound-color">
+ <?php 
+   session_start();
+   if(isset($_SESSION["login"])){?>
+             <div class="sidebar" id="backgound-color">
         <div class="logo-details">
             <!-- <i class='bx bxl-c-plus-plus bx-tada'></i> -->
             <span class="logo_name"><img src="./Img/logo.png" alt="" width="200px" height="100px"></span>
         </div>
         <ul class="nav-links">
+            <li>
+                <!-- <a href="#" class="active"> -->
+                <a href="../thong_ke/indexAdmin.php">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Statistical</span>
+                </a>
+            </li>
             <li>
                 <!-- <a href="#" class="active"> -->
                 <a href="../timeline/indexAdmin.php">
@@ -99,5 +109,10 @@
     <script src="./JS/admin.js"></script> -->
     <script src="../model/js/indexAdmin-sidebar.js"></script>
     <link rel="stylesheet" href="./CSS/style.css">
+ <?php  } 
+ else{
+   header("Location:../Login.php");
+ }
+   ?>
 </body>
 </html>

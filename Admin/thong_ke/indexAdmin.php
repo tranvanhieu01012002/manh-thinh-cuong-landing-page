@@ -31,7 +31,10 @@
 
 </head>
 <body>
-    <div class="sidebar">
+   <?php 
+   session_start();
+   if(isset($_SESSION["login"])){?>
+        <div class="sidebar">
         <div class="logo-details">
             <!-- <i class='bx bxl-c-plus-plus bx-tada'></i> -->
             <span class="logo_name"><img src="./Img/logo.png" alt="" width="200px" height="100px"></span>
@@ -67,7 +70,8 @@
             <li>
                 <a href="../project/indexAdmin.php">
                     <i class='bx bx-pie-chart-alt-2'></i>
-                    <span class="links_name">House</span>
+                    <spa
+                    n class="links_name">House</spa>
                 </a>
             </li>
         </ul>
@@ -105,5 +109,10 @@
     <script src="./JS/productmrD.js"></script> 
     <script src="./JS/admin.js"></script> -->
     <link rel="stylesheet" href="./CSS/style.css">
+ <?php  } 
+ else{
+   header("Location:../Login.php");
+ }
+   ?>
 </body>
 </html>

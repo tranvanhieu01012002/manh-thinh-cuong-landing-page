@@ -44,34 +44,33 @@
                 <!-- <a href="#" class="active"> -->
                 <a href="../timeline/indexAdmin.php">
                     <i class='bx bx-grid-alt'></i>
-                    <span class="links_name">Statistical</span>
+                    <span class="links_name">Thống kê</span>
                 </a>
             </li>
             <li>
                 <!-- <a href="#" class="active"> -->
                 <a href="../timeline/indexAdmin.php">
                     <i class='bx bx-grid-alt'></i>
-                    <span class="links_name">Time_Line</span>
+                    <span class="links_name">Tháng</span>
                 </a>
             </li>
             <li>
                 <a href="../timeline_image/indexAdmin.php">
                     <i class='bx bx-box'></i>
-                    <span class="links_name">Time_Line_Image</span>
+                    <span class="links_name">Ảnh</span>
                 </a>
 
             </li>   
             <li>
                 <a href="../Customer/indexAdmin.php">
                     <i class='bx bx-list-ul'></i>
-                    <span class="links_name">CusTomer</span>
+                    <span class="links_name">Khách hàng</span>
                 </a>
             </li>
             <li>
                 <a href="../project/indexAdmin.php">
                     <i class='bx bx-pie-chart-alt-2'></i>
-                    <spa
-                    n class="links_name">House</spa>
+                    <span class="links_name">Nhà</span>
                 </a>
             </li>
         </ul>
@@ -102,7 +101,11 @@
         <?php
             include "timeline.php"
         ?>
+            <div class="header">
+  </div>
+
     </section>
+
    
    <!-- ---------------------------------JS------------------------------------------------------------- -->
     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>

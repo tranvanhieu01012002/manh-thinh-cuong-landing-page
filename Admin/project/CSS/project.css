@@ -1,9 +1,5 @@
-body {
-    font-family: 'lato', sans-serif;
-}
-
 .container {
-    max-width: 80%;
+    max-width: 120%;
     margin-left: 3%;
     /* margin-right: 10%; */
     /* padding-left: 10px;

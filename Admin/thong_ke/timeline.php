@@ -1,37 +1,30 @@
 <?php 
 include("../dph.php")?>
 <link rel="stylesheet" href="./CSS/timeline.css">
-<div class="container">
-  <h2>BẢNG Statistical</h2>
-  <div class="card">
-    <div class="title">
-      <h3>Số khách hàng</h3>
-    </div>
-    <div>
-    <?php 
+<div class="row1-container">
+    <div class="box box-down cyan">
+      <h2>Số khách hàng</h2>
+      <?php 
         $database = new dph();
         $row = $database -> get_list('select * from customers;')?>
         <?php $count = 0;?>
         <?php foreach($row as $value):?>
           <?php $count++; ?>
-        <?php endforeach ?>
-        <?php  echo $count;?>
+        <?php endforeach ?> 
+        <h5> <?php  echo $count;?></h5>
+      <img src="https://assets.codepen.io/2301174/icon-supervisor.svg" alt="">
     </div>
-  </div>
-  <div class="card">
-    <div class="title">
-      <h3>Số dự án</h3>
-    </div>
-    <div>
-    <?php 
+    <div class="box box-down blue">
+      <h2>Dự án</h2>
+      <?php 
         $database = new dph();
         $row = $database -> get_list('select * from project;')?>
         <?php $count = 0;?>
         <?php foreach($row as $value):?>
           <?php $count++; ?>
         <?php endforeach ?>
-        <?php  echo $count;?>
+      
+      <h5>  <?php  echo $count;?></h5>
+      <img src="https://assets.codepen.io/2301174/icon-calculator.svg" alt="">
     </div>
   </div>
-
-</div>

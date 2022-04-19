@@ -6,6 +6,7 @@
     $row = $database->get_row('select * from project where id_project = ' . $id . ' ;');
     $rowTimeLine = $database->get_row('select * from timeline where id = ' . $id . ' ;');
 ?>
+
 <div class="back">
     <img class="imgback"
         src="https://khudothivanphuc.giaodienbds.com/wp-content/uploads/2017/12/van-phuc-slide-3-1-1.jpg" alt="">
@@ -14,7 +15,7 @@
             <h1><?php echo $row['Description'] ?></h1>
         </div>
         <div class="display-project-info">
-            <table class="info-project">
+            <table id="<?php if(isset($_GET['id'])) echo $id ?>"  class="info-project">
                 <tbody>
                     <tr>
                         <td>

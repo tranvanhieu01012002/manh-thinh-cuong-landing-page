@@ -74,7 +74,7 @@ var removeAnimation = (text, animation) => {
 
 $(document).ready(() => {
     $("button").click(function() {
-        getInfoWithMonth($(this).val());
+        getInfoWithMonth($(this).val(),$("table.info-project").attr("id"));
         $(".text-monthly-des p").removeClass("animationMove");
         $(".text-monthly-des h4").removeClass("animationMoveLeft");
         $(".slider-img").removeClass("animationMoveRight")
@@ -88,9 +88,9 @@ $(document).ready(() => {
     });
 });
 // call ajax
-var getInfoWithMonth = (text) => {
+var getInfoWithMonth = (text,id_project) => {
         $.ajax({
-            url: "./php/call-ajax.php",
+            url: "./php/call-ajax.php?id="+id_project,
             type: "POST",
             dataType: "text",
             data: { data: text },

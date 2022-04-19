@@ -72,7 +72,8 @@ include("./Admin/dph.php");
             </form>
         </div>
     </div>
-    <div class="filter">
+    <form action="./danh-sach-du-an.php">
+            <div class="filter">
                 <div class="select_option">
                     <select name="" id="type">
                         <option selected disabled>Loại xây dựng</option>
@@ -95,10 +96,35 @@ include("./Admin/dph.php");
                         <option value="">Sơn Trà</option>
                         <option value="">Hải Châu</option>
                     </select>
-                    <input type="text" name="" placeholder="Tổng diện tích">
-                    <img  src="./model/img/funnel-fill.svg" alt="">
+                    <div class="filter-main">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div id="slider-range"></div>
+                            </div>
+                        </div>
+                        <div class="row slider-labels">
+                            <div class="col-xs-6 caption">
+                                <strong>Min:</strong> <span id="slider-range-value1"></span>
+                            </div>
+                            <div class="col-xs-6 text-right caption">
+                                <strong>|Max:</strong> <span id="slider-range-value2"></span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div >
+                                <!-- <form > -->
+                                    <input type="hidden" name="min-value" value="">
+                                    <input type="hidden" name="max-value" value="">
+                                <!-- </form> -->
+                            </div>
+                        </div>
+                    </div>  
+                  <div>
+                  <button>Lọc</button>
+                  </div>
                 </div>
             </div>
+        </form>
    </div>
     </div>
 	<div class="virtual-class"></div>
@@ -113,13 +139,15 @@ include("./Admin/dph.php");
 	
 
     //include("./Admin/processEmail.php");
-    // include("./php/Footer.php");
+    include("./php/Footer.php");
     ?>
     
     <script src="./model/js/header.js"></script>
     <script src="./model/js/banner.js"></script>
     <script src="./model/js/index.js"></script>
     <script src="./model/js/getUserInfo.js"></script>
+    <script src="./model/js/filter.js"></script>
+
 <img src="" alt="">
 
 </body>

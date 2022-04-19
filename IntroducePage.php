@@ -68,33 +68,6 @@ include("./Admin/dph.php");
                 </form>
             </div>
         </div>
-            <div class="filter">
-                <div class="select_option">
-                    <select name="" id="type">
-                        <option selected disabled>Loại xây dựng</option>
-                        <option value="">Loại 1</option>
-                        <option value="">Loại 2</option>
-                        <option value="">Loại 3</option>
-                        <option value="">Loại 4</option>
-                    </select>
-                    <select name="" id="year">
-                        <option selected disabled>Năm xây dựng</option>
-                        <option value="">2022</option>
-                        <option value="">2020 </option>
-                        <option value="">2019 </option>
-                        <option value="">2018 </option>
-                    </select>
-                    <select name="" id="district">
-                        <option selected disabled>Quận</option>
-                        <option value="">Hoà Khánh</option>
-                        <option value="">Liên Chiểu </option>
-                        <option value="">Sơn Trà</option>
-                        <option value="">Hải Châu</option>
-                    </select>
-                    <input type="text" name="" placeholder="Tổng diện tích">
-                    <img  src="./model/img/funnel-fill.svg" alt="">
-                </div>
-            </div>
     </div>
 </div>
     <div class="virtual-class"></div>
@@ -116,6 +89,8 @@ include("./Admin/dph.php");
  
     <!-- <script src="./model/js/index.js"></script> -->
     <script src="./model/js/animationIntro.js"></script>
+    <script src="./model/js/filter.js"></script>
+
 
     
 

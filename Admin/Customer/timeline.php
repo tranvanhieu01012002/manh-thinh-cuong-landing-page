@@ -2,14 +2,14 @@
 include("../dph.php")?>
 <link rel="stylesheet" href="./CSS/timeline.css">
 <div class="container">
-  <h2>BẢNG TIMELINE</h2>
+  <h2>KHÁCH HÀNG</h2>
   <ul class="responsive-table">
     <li class="table-header">
-      <div class="col col-2">Name</div>
+      <div class="col col-2">Tên</div>
       <div class="col col-5">Email</div>
-      <div class="col col-2">Phone</div>
-      <div class="col col-2">Request</div> 
-      <div class="col col-1">Xóa </div>
+      <div class="col col-2">Điện thoại</div>
+      <div class="col col-2">Yêu cầu</div> 
+      <div class="col col-1">Xóa</div>
     </li>
     <?php 
         $database = new dph();

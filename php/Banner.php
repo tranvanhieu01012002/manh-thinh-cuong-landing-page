@@ -1,20 +1,21 @@
 <div class="slideshow-container">
     <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
     <div class="mySlides fade">
-        <img src="https://hod.com.vn/pic/banner/1111_637072762250799097.jpg">
+        <!-- <img src="https://hod.com.vn/pic/banner/1111_637072762250799097.jpg"> -->
+        <img src="https://wallpaperaccess.com/full/2628065.jpg">
     </div>
     <div class="mySlides fade">
-        <img
-            src="https://iweb.tatthanh.com.vn/pic/18/banner/phoi-canh-mandarin-garden-1_a5bed9276abe4f10b4f6dbd8017316c9_ca6bc566a9d6475198c87987b086e4e2.jpg ">
-
+        <!-- <img src="https://iweb.tatthanh.com.vn/pic/18/banner/phoi-canh-mandarin-garden-1_a5bed9276abe4f10b4f6dbd8017316c9_ca6bc566a9d6475198c87987b086e4e2.jpg "> -->
+        <img src="https://wallpaperaccess.com/full/2628033.jpg">
     </div>
     <div class="mySlides fade">
-        <img src="https://iweb.tatthanh.com.vn/pic/18/banner/01.jpg">
+        <!-- <img src="https://iweb.tatthanh.com.vn/pic/18/banner/01.jpg"> -->
+        <img src="https://cdn.wallpapersafari.com/79/28/uiLjBr.jpg">
 
     </div>
     <div class="mySlides fade ">
-        <img src=" https://iweb.tatthanh.com.vn/pic/18/banner/congvienthanhphomoiBinhDuong401.jpg">
-
+        <!-- <img src=" https://iweb.tatthanh.com.vn/pic/18/banner/congvienthanhphomoiBinhDuong401.jpg"> -->
+        <img src="https://homemy.vn/wp-content/uploads/2019/11/mau-nha-%C4%91ep-3-tang-hinh-chu-L-2-min-1.jpg">
     </div>
 </div>
 <br>

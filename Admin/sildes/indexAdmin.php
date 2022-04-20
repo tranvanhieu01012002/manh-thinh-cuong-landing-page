@@ -40,15 +40,15 @@
             <li>
                 <!-- <a href="#" class="active"> -->
                 <a href="../timeline/indexAdmin.php">
-                    <i class='bx bx-grid-alt'></i>
-                    <span class="links_name">Thống kê</span>
+                    <i class=' bx bxs-calendar-check'></i>
+                    <span class="links_name">Mốc thời gian</span>
                 </a>
             </li>
             <li>
                 <!-- <a href="#" class="active"> -->
-                <a href="../timeline/indexAdmin.php">
+                <a href=" ">
                     <i class='bx bx-grid-alt'></i>
-                    <span class="links_name">Tháng</span>
+                    <span class="links_name">Mô tả theo tháng</span>
                 </a>
             </li>
             <li>
@@ -60,13 +60,15 @@
             </li>   
             <li>
                 <a href="../Customer/indexAdmin.php">
-                    <i class='bx bx-list-ul'></i>
+                 
+                    <i class=' bx bx-user'></i>
                     <span class="links_name">Khách hàng</span>
                 </a>
             </li>
             <li>
                 <a href="../project/indexAdmin.php">
-                    <i class='bx bx-pie-chart-alt-2'></i>
+                 
+                    <i class=' bx bx-home-alt'></i>
                     <span class="links_name">Nhà</span>
                 </a>
             </li>

@@ -4,7 +4,7 @@
     width: 320px;
     background: #ffcd00;
     transition: all 0.5s ease;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .sidebar .logo-details {
@@ -49,12 +49,12 @@
     transition: all 0.4s ease;
 }
 
-.sidebar .nav-links li a:active {
-    background: #eaeaea;
+.sidebar .nav-links li a:hover {
+    background: #d9dde5;
 }
 
-.sidebar .nav-links li a:hover {
-    background: #eaeaea;
+.nav-links li:hover {
+    background: #d9dde5;
 }
 
 .sidebar .nav-links li i {
@@ -63,21 +63,6 @@
     font-size: 150%;
     color: rgb(7, 7, 7);
 }
-
-
-/* .sidebar .nav-links li a i:hover {
-    min-width: 60px;
-    text-align: center;
-    font-size: 150%;
-    color: rgb(245, 242, 242);
-}
-
-.sidebar .nav-links li a span:hover {
-    min-width: 60px;
-    text-align: center;
-    font-size: 100%;
-    color: rgb(245, 242, 242);
-} */
 
 .sidebar .nav-links li a .links_name {
     color: rgb(7, 7, 7);

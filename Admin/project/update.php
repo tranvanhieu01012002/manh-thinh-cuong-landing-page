@@ -30,9 +30,9 @@ include("../dph.php") ?>
         <input type="text" value="<?php echo $row['land_area'] ?>" name="land_area" required>
         <label for="email"><b>Tổng diện tích xây dựng:</b></label>
         <input type="text" value="<?php echo $row['total_cons_area'] ?>" name="total_cons_area" required>
-        <label for="email"><b>Description</b></label>
+        <label for="email"><b>Mô tả</b></label>
         <input type="text"  name="des" value="<?php echo $row['Description']?>" required>
-        <label for="email"><b>Description detail</b></label>
+        <label for="email"><b>Mô tả chi tiết</b></label>
         <input type="text"  name="desdetail" value="<?php echo $row['Description_detail']?>" required>
         <input name="img" type="file">
         <label for="email"><b>Tên khách hàng:</b></label>

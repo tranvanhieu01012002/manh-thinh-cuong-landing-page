@@ -35,9 +35,10 @@ body {
 }
 
 .responsive-table .table-header {
-    background-color: #95A5A6;
+    /* background-color: #95A5A6; */
+    /* background-color: #00BFFF; */
+    background-color: #2697FF;
     font-size: 14px;
-    /* text-transform: uppercase; */
     letter-spacing: 0.03em;
 }
 

@@ -120,7 +120,7 @@ include("./Admin/dph.php");
                         </div>
                     </div>  
                   <div>
-                  <button>Lọc</button>
+                  <button type="submit">Lọc</button>
                   </div>
                 </div>
             </div>
@@ -139,7 +139,7 @@ include("./Admin/dph.php");
 	
 
     //include("./Admin/processEmail.php");
-    include("./php/Footer.php");
+    // include("./php/Footer.php");
     ?>
     
     <script src="./model/js/header.js"></script>

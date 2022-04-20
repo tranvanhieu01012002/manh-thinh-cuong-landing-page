@@ -18,7 +18,7 @@
                     <div class="box-slider">
                     <a href="./Du-An.php?id=<?php echo $value['id_project'] ?>">
                         <div class="slide-img">
-                            <img src="./Admin/img/<?php echo $value['img'] ?>" alt="">
+                            <img src="./Admin/upload/<?php echo $value['img'] ?>" alt="">
                         </div>
                         <div class="detail-box"><?php echo $value['Description'] ?></div>
                     </a>
@@ -40,7 +40,7 @@
             <div class=" box-slider ">
                 <a href=" ./Du-An.php?id=<?php echo $value['id_project'] ?>" >
                     <div class=" slide-img ">
-                        <img src=" ./Admin/img/<?php echo $value['img'] ?>">
+                        <img src=" ./Admin/upload/<?php echo $value['img'] ?>">
                     </div>
                     <div class=" detail-box ">
                         <div class=" detail-title "><?php echo $value['Description'] ?></div>
@@ -58,7 +58,7 @@
             <div class=" box-slider ">
                 <a href=" ./Du-An.php?id=<?php echo $value['id_project'] ?>" >
                     <div class=" slide-img ">
-                        <img src=" ./Admin/img/<?php echo $value['img'] ?>">
+                        <img src=" ./Admin/upload/<?php echo $value['img'] ?>">
                     </div>
                     <div class=" detail-box ">
                         <div class=" detail-title "><?php echo $value['Description'] ?></div>

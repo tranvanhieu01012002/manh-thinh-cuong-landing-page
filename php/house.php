@@ -11,7 +11,7 @@ if(isset($_GET['search'])){?>
             $row = $database->get_list('select * from project where Description LIKE "%'.$search.'%"  or Description LIKE "%'.$search.'%" or district LIKE "%'.$search.'%" or construc_type LIKE "%'.$search.'%" or outstanding	 LIKE "%'.$search.'%" ;') ?>
             <?php foreach ($row as $value) : ?>
 			<figure class="effect-bubba">
-			<img src="./Admin/img/<?php echo $value['img']?>" alt="img02"/>
+			<img src="./Admin/upload/<?php echo $value['img']?>" alt="img02"/>
 					<figcaption>
 						<h5><?php echo $value['Description']?></h5>
 						<div class="btn-root">
@@ -33,16 +33,13 @@ if(isset($_GET['search'])){?>
             $row = $database->get_list('select * from project;') ?>
             <?php foreach ($row as $value) : ?>
 			<figure class="effect-bubba">
-			<img src="./Admin/img/<?php echo $value['img']?>" alt="img02"/>
+			<img src="./Admin/upload/<?php echo $value['img']?>" alt="img02"/>
 					<figcaption>
 						<h5><?php echo $value['Description']?></h5>
 						<div class="btn-root">
 							<a href="./Du-An.php?id=<?php echo $value['id_project'] ?>">Xem thêm</a>
 							<span></span>
 						</div>
-
-
-						
 					</figcaption>			 
 		    </figure>
     <?php endforeach ?>

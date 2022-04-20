@@ -30,7 +30,7 @@ include("../dph.php")?>
     <div class=" "><?php echo $value['project_code'] ?></div>
     <div class=" "><?php echo $value['land_area'] ?></div>
     <div class=" "><?php echo $value['total_cons_area'] ?></div>
-    <div class=" "><img width="100%" src="../img/<?php echo $value['img'] ?>" alt=""></div>
+    <div class=" "><img width="100%" src="../upload/<?php echo $value['img'] ?>" alt=""></div>
     <div class=" "><?php echo $value['Description'] ?></div>
     <div class=" "><?php echo $value['Description_detail'] ?></div>
     <div class=" "><?php echo $value['name_cus'] ?></div>
@@ -46,3 +46,4 @@ include("../dph.php")?>
   </ul>
   <a href="../project/Form.php">Add Form</a>
 </div>
+<img src="" alt="">

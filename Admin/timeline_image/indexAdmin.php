@@ -106,7 +106,7 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="../logout.php">Logout</a>
                     </div>
-                </li>
+                </li>   
             </ul>
             </div>
         </nav>

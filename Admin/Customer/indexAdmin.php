@@ -122,7 +122,7 @@
  <?php  } 
  else{
    header("Location:../Login.php");
- }
+ }  
    ?>
 </body>
 </html>

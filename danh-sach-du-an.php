@@ -126,11 +126,7 @@ include("./Admin/dph.php");
                         </div>
                     </div>  
                   <div>
-<<<<<<< HEAD
-                  <button type="submit">Lọc</button>
-=======
                   <button style="margin:0px" class="btn-root">Lọc<span></span></button>
->>>>>>> d4d84671230c41af4b9951f5a1247fe1a0857d21
                   </div>
                 </div>
             </div>

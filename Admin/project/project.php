@@ -11,15 +11,15 @@ include("../dph.php")?>
       <th class="col ">Tổng diện tích xây dựng</div>
       <th class="col ">Ảnh</th>
       <th class="col ">Mô tả</th>
-      <th class="col " >Mô tả chi tiết</th>
+      <th class="col ">Mô tả chi tiết</th>
       <th class="col ">Tên khách hàng</th>
       <th class="col ">Địa chỉ</th>
       <th class="col ">Quận</th>
       <th class="col ">Loại xây dựng</th>
       <th class="col ">Ngày bắt đầu</th>
       <th class="col ">Ngày bàn giao</th>      
-      <th class="col">Sửa</th>
-      <th class="col">Xóa </th>
+      <th class="col ">Sửa</th>
+      <th class="col ">Xóa </th>
     </tr>
     <?php   
         $database = new dph();

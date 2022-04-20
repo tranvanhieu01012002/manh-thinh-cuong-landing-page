@@ -40,7 +40,7 @@
             <span class="logo_name"><img src="./Img/logo.png" alt="" width="200px" height="100px"></span>
         </div>
         <ul class="nav-links">
-        <li>
+            <li>
                 <!-- <a href="#" class="active"> -->
                 <a href="../thong_ke/indexAdmin.php">
                     <!-- <i class='bx bx-grid-alt'></i> -->
@@ -56,13 +56,7 @@
                     <span class="links_name">Mốc thời gian</span>
                 </a>
             </li>
-            <li>
-                <!-- <a href="#" class="active"> -->
-                <a href=" ">
-                    <i class='bx bx-grid-alt'></i>
-                    <span class="links_name">Mô tả theo tháng</span>
-                </a>
-            </li>
+    
             <li>
                 <a href="../timeline_image/indexAdmin.php">
                     <i class='bx bx-box'></i>

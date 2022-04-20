@@ -123,6 +123,7 @@
     <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="./JS/productmrD.js"></script> 
     <script src="./JS/admin.js"></script> -->
+    <script src="../model/js/indexAdmin-sidebar.js"></script>
     <link rel="stylesheet" href="./CSS/style.css">
  <?php  } 
  else{

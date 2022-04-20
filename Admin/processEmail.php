@@ -10,7 +10,6 @@ if(isset($_POST['add'])){
             'number' => $_POST['number'],
             'request' => $_POST['request']
         ));
-        //require ("./Admin/indexs.php");
         sendEmail();
         header("Location: ../Trang-Chu.php?check=1");
         

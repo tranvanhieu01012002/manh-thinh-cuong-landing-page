@@ -138,10 +138,11 @@ td:nth-child(odd) {
 .slider-img {
     position: relative;
     display: block;
-    width: 50em;
-    height: 40em;
+    width: 40em;
+    height: 35em;
     overflow: hidden;
     border-radius: 5px;
+    background-size: cover;
 }
 
 .slider-img:before,

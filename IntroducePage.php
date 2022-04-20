@@ -78,7 +78,7 @@ include("./Admin/dph.php");
         include "./php/introducePage.php";
    ?>
 
-<hr >
+
     <!-- footer -->
     <?php
 
@@ -90,11 +90,5 @@ include("./Admin/dph.php");
     <!-- <script src="./model/js/index.js"></script> -->
     <script src="./model/js/animationIntro.js"></script>
     <script src="./model/js/filter.js"></script>
-
-
-    
-
 </body>
-
-
 </html>

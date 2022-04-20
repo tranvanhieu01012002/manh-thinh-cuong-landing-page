@@ -39,6 +39,7 @@
                         </td>
                         <td>
                         <?php echo $row["land_area"] ?>
+                        m<sup>2</sup>
                         </td>
                     </tr>
                     <tr>
@@ -47,6 +48,7 @@
                         </td>
                         <td>
                         <?php echo $row["total_cons_area"] ?> 
+                        m<sup>2</sup>
                         </td>
                     </tr>
                     <tr>

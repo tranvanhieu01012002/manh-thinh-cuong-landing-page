@@ -244,10 +244,7 @@
      background: #C0F2D8;
  }
  
- #home-content .box .cart.three {
-     /* color: #ffcd00;
-    background: #ffcd00; */
- }
+ #home-content .box .cart.three {}
  
  #home-content .box .cart.four {
      color: #e05260;

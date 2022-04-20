@@ -37,7 +37,7 @@ include("./Admin/dph.php");
     ?>
     <!-- Header -->
    <div class="display-menu">
-   <div class="menu">
+        <div style="height:90px;" class="menu">
         <div class="logo-image">
            <a href="./Trang-Chu.php"><img src="./model/img/logo1.png" alt=""></a>
         </div>
@@ -76,7 +76,7 @@ include("./Admin/dph.php");
             <div class="filter">
                 <div class="select_option">
                     <select name="type" id="type">
-                        <option selected disabled>Loại xây dựng</option>
+                        <option value="nhao" selected disabled>Loại xây dựng</option>
                         <option value="Nhà ở">Nhà ở</option>
                         <option value="Biệt thự">Biệt thự</option>
                         <option value="Cao tầng">Nhà cao tầng</option>
@@ -85,7 +85,7 @@ include("./Admin/dph.php");
                         <option value="Nhà hồ bơi">Nhà có hồ bơi</option>
                     </select>
                     <select name="year" id="year">
-                        <option selected disabled>Năm xây dựng</option>
+                        <option value="2022" selected disabled>Năm xây dựng</option>
                         <option value="2022">2022</option>
                         <option value="2020">2020 </option>
                         <option value="2019">2019 </option>
@@ -94,7 +94,7 @@ include("./Admin/dph.php");
                         <option value="2016">2016 </option>
                     </select>
                     <select name="district" id="district">
-                        <option selected disabled>Quận</option>
+                        <option value="Thanh Khê" selected disabled>Quận</option>
                         <option value="Sơn Trà">Sơn Trà</option>
                         <option value="Liên Chiểu">Liên Chiểu</option>
                         <option value="Thanh Khê">Thanh Khê</option>
@@ -133,7 +133,7 @@ include("./Admin/dph.php");
         </form>
    </div>
     </div>
-	<div class="virtual-class"></div>
+	<!-- <div class="virtual-class"></div> -->
 	<?php
 
 	include "./php/house.php";

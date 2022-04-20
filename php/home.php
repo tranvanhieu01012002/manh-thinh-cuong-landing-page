@@ -131,16 +131,11 @@
             <?php
             $img = $database->get_row('select * from timeline_image where id = ' . $id . ' ;');
             ?>
-            <input checked type="radio" name="s" style="background-image: url(./Admin/upload/<?php echo $img['img_1'] ?>);"
-                title="Manh Thinh Cuong 1">
-            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_2'] ?>');"
-                title="Manh Thinh Cuong 2">
-            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_3'] ?>');"
-                title="Manh Thinh Cuong 3">
-            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_4'] ?>');"
-                title="Manh Thinh Cuong 4">
-            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_5'] ?>');"
-                title="Manh Thinh Cuong 5">
+            <input checked type="radio" name="s" style="background-image: url(./Admin/upload/<?php echo $img['img_1'] ?>);">
+            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_2'] ?>');">
+            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_3'] ?>');">
+            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_4'] ?>');">
+            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_5'] ?>');">
         </div>
         <div class="text-monthly-des">
             <h4><?php echo $row['Description'] ?></h4>

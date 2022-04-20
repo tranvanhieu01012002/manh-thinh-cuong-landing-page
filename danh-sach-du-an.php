@@ -37,7 +37,7 @@ include("./Admin/dph.php");
     ?>
     <!-- Header -->
    <div class="display-menu">
-   <div class="menu">
+        <div style="height:90px;" class="menu">
         <div class="logo-image">
            <a href="./Trang-Chu.php"><img src="./model/img/logo1.png" alt=""></a>
         </div>
@@ -126,18 +126,14 @@ include("./Admin/dph.php");
                         </div>
                     </div>  
                   <div>
-<<<<<<< HEAD
-                  <button type="submit">Lọc</button>
-=======
                   <button style="margin:0px" class="btn-root">Lọc<span></span></button>
->>>>>>> d4d84671230c41af4b9951f5a1247fe1a0857d21
                   </div>
                 </div>
             </div>
         </form>
    </div>
     </div>
-	<div class="virtual-class"></div>
+	<!-- <div class="virtual-class"></div> -->
 	<?php
 
 	include "./php/house.php";

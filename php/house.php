@@ -1,22 +1,23 @@
 
+<!-- <div class="virtual-class"></div> -->
 <?php
+
 if(isset($_GET['search'])){?>
 <?php $search = $_GET['search']; ?>
 	<div class="content">
-	<div class="virtual-class"></div>
-	<div class="virtual-class"></div>
 	<div class="content-oject">
 	<?php
             $database = new dph();
             $row = $database->get_list('select * from project where Description LIKE "%'.$search.'%"  or Description LIKE "%'.$search.'%" or district LIKE "%'.$search.'%" or construc_type LIKE "%'.$search.'%" or outstanding	 LIKE "%'.$search.'%" ;') ?>
-            <?php foreach ($row as $value) : ?>
+            <div class="virtual-class"></div>
+			<?php foreach ($row as $value) : ?>
 			<figure class="effect-bubba">
 			<img src="./Admin/upload/<?php echo $value['img']?>" alt="img02"/>
 					<figcaption>
 						<h5><?php echo $value['Description']?></h5>
 						<a href="./Du-An.php?id=<?php echo $value['id_project'] ?>">
 							<div style="padding: 20px 0px;" class="btn-root">
-								Xem thêm ne
+								Xem thêm
 								<span></span>
 							</div>
 						</a>
@@ -28,6 +29,7 @@ if(isset($_GET['search'])){?>
 <?php
 } else {
 	?> 
+<div class="virtual-class"></div>
 	<div class="content-l">
 	<div class="content-oject">
 	<?php

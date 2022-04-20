@@ -72,11 +72,11 @@ include("./Admin/dph.php");
             </form>
         </div>
     </div>
-    <form action="test.php" method = "POST">
+    <form action="./danh-sach-du-an.php" method = "POST">
             <div class="filter">
                 <div class="select_option">
                     <select name="type" id="type">
-                        <option selected disabled>Loại xây dựng</option>
+                        <option value="nhao" selected disabled>Loại xây dựng</option>
                         <option value="Nhà ở">Nhà ở</option>
                         <option value="Biệt thự">Biệt thự</option>
                         <option value="Cao tầng">Nhà cao tầng</option>
@@ -85,7 +85,7 @@ include("./Admin/dph.php");
                         <option value="Nhà hồ bơi">Nhà có hồ bơi</option>
                     </select>
                     <select name="year" id="year">
-                        <option selected disabled>Năm xây dựng</option>
+                        <option value="2022" selected disabled>Năm xây dựng</option>
                         <option value="2022">2022</option>
                         <option value="2020">2020 </option>
                         <option value="2019">2019 </option>
@@ -94,7 +94,7 @@ include("./Admin/dph.php");
                         <option value="2016">2016 </option>
                     </select>
                     <select name="district" id="district">
-                        <option selected disabled>Quận</option>
+                        <option value="Thanh Khê" selected disabled>Quận</option>
                         <option value="Sơn Trà">Sơn Trà</option>
                         <option value="Liên Chiểu">Liên Chiểu</option>
                         <option value="Thanh Khê">Thanh Khê</option>
@@ -126,7 +126,7 @@ include("./Admin/dph.php");
                         </div>
                     </div>  
                   <div>
-                  <button style="margin:0px" class="btn-root">Lọc<span></span></button>
+                  <button style="margin:0px" type="submit" name="search_house" class="btn-root">Lọc<span></span></button>
                   </div>
                 </div>
             </div>

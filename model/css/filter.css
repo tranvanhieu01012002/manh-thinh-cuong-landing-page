@@ -60,7 +60,7 @@
 .noUi-stacking .noUi-handle {
     /* This class is applied to the lower origin when
 its values is > 50%. */
-    z-index: 10;
+    z-index: 5;
 }
 
 .noUi-state-tap .noUi-origin {
@@ -162,4 +162,10 @@ its values is > 50%. */
 [disabled].noUi-origin,
 [disabled] .noUi-handle {
     cursor: not-allowed;
+}
+
+@media screen and (max-width: 992px) {
+    .filter {
+        display: none;
+    }
 }

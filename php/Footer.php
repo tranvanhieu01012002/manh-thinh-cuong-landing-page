@@ -1,5 +1,5 @@
 <?php
-require_once ("./Admin/dph.php");
+    require_once ("./Admin/dph.php");
 ?>
 
 <div class="container-fluid" id="footer">
@@ -36,8 +36,7 @@ require_once ("./Admin/dph.php");
                         Địa chỉ: 29 Phạm Quang Ảnh, Quận Sơn Trà, TP. Đà Nẵng
                     </div>
                     <div>Số điện thoại/FAX: (+84) 852 445 554</div>
-                    <div>Hotline: (+84) 905 22 33 64</div>
-
+                    <div><a href="https://www.facebook.com/manhthinhhcuong/">Facebook: Mạnh Thịnh Cường</a></div>
                 </div>
             
         </div>  

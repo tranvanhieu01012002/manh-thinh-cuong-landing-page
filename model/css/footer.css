@@ -3,6 +3,7 @@
     --height-right: 90%;
     --padding-form: 5px 0px;
     --font-size-contact: 15px;
+    --padding-contact: 10px 10px 13px 238px;
 }
 
 .map {
@@ -46,7 +47,7 @@
     display: grid;
     grid-template-columns: 40% 30% 30%;
     background-color: #ffcd00;
-    padding: 10px 10px 13px 238px;
+    padding: var(--padding-contact);
     margin-left: 5px;
     /* text-align: center; */
 }
@@ -73,6 +74,7 @@
 @media screen and (max-width:870px) {
      :root {
         --height-right: 80%;
+        --padding-contact: 0px 0px;
     }
     .r-cont-text {
         overflow: hidden;
@@ -86,6 +88,9 @@
 }
 
 @media screen and (max-width:1115px) {
+     :root {
+        --padding-contact: 0px 0px;
+    }
     .contact {
         display: grid;
         grid-template-columns: 50%;
@@ -98,7 +103,7 @@
 @media screen and (max-width:650px) {
      :root {
         --width-right: 50%;
-        margin-left: 0px;
+        --padding-contact: 0px 0px;
     }
 }
 

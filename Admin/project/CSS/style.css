@@ -2,8 +2,14 @@
     position: fixed;
     height: 100%;
     width: 320px;
-    background: #e6d691;
+    background: #ffcd00;
     transition: all 0.5s ease;
+}
+
+h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
 }
 
 .sidebar .logo-details {
@@ -48,12 +54,21 @@
     transition: all 0.4s ease;
 }
 
-.sidebar .nav-links li a.active {
-    background: #081D45;
+
+/* .sidebar .nav-links li a.active {
+    background: #d9dde5;
 }
 
 .sidebar .nav-links li a:hover {
-    background: #f3bc07;
+    background: #d9dde5;
+} */
+
+.sidebar .nav-links li a:hover {
+    background: #d9dde5;
+}
+
+.nav-links li:hover {
+    background: #d9dde5;
 }
 
 .sidebar .nav-links li i {

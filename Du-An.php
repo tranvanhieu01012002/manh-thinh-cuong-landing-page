@@ -57,7 +57,7 @@ include("./Admin/dph.php");
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <a href="./Trang-Chu.php">Trang chủ</a>
                 <a href="./IntroducePage.php">Giới thiệu</a>
-                <a href="./House.php">Nhà</a>
+                <a href="#">Nhà</a>
                 <a href="#footer">Liên hệ</a>
                 <form class="search-container" action="./danh-sach-du-an.php" method="GET">
                     <input type="text" name="search" class="searchTerm" placeholder="Tìm kiếm">

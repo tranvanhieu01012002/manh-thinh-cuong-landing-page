@@ -72,7 +72,7 @@ include("./Admin/dph.php");
             </form>
         </div>
     </div>
-    <form action="test.php" method = "POST">
+    <form action="./danh-sach-du-an.php" method = "POST">
             <div class="filter">
                 <div class="select_option">
                     <select name="type" id="type">
@@ -126,7 +126,7 @@ include("./Admin/dph.php");
                         </div>
                     </div>  
                   <div>
-                  <button style="margin:0px" class="btn-root">Lọc<span></span></button>
+                  <button style="margin:0px" type="submit" name="search_house" class="btn-root">Lọc<span></span></button>
                   </div>
                 </div>
             </div>

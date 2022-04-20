@@ -22,11 +22,11 @@ include("../dph.php") ?>
                 <h1>Nhập thông tin của Slides</h1>
                 <p>Xin hãy nhập biểu mẫu bên dưới.</p>
                 <hr>
-                <label for="email"><b>Content</b></label>
+                <label for="email"><b>Nội dung</b></label>
                 <input type="text" name="content" value="<?php echo $row['Content']?>" required>
-                <label for="email"><b>Description</b></label>
+                <label for="email"><b>Mô tả</b></label>
                 <input type="text"  name="des" value="<?php echo $row['Description']?>" required>
-                <label for="email"><b>Description detail</b></label>
+                <label for="email"><b>Mô tả chi tiết</b></label>
                 <input type="text"  name="desdetail" value="<?php echo $row['Description_detail']?>" required>
                 <input name="img" type="file">
                 <div class="clearfix">

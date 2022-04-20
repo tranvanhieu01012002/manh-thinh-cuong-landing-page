@@ -1,5 +1,5 @@
 #container {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 2rem;
     width: 100%;
 }
@@ -85,7 +85,7 @@
 @media only screen and (max-width: 400px) {
     /* -------------intro- */
     #container {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Open Sans", sans-serif;
         line-height: 2.0rem;
         font-size: small;
     }
@@ -138,7 +138,7 @@
 @media only screen and (min-width: 420px) and (max-width:600px) {
     /* -------------intro- */
     #container {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Open Sans", sans-serif;
         line-height: 2.0rem;
         font-size: small;
     }
@@ -171,10 +171,6 @@
         text-align: justify;
         width: 76%;
         margin: 0 auto;
-        /* text-align: justify;
-        width: 82%;
-        margin: 0 auto; */
-        /* margin-left: 13%; */
     }
     /* ------- gia trị-*/
     .content-row-large {
@@ -203,7 +199,7 @@
 @media only screen and (min-width: 620px) and (max-width:800px) {
     /* -------------intro- */
     #container {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Open Sans", sans-serif;
         line-height: 2.0rem;
         font-size: small;
     }
@@ -227,14 +223,8 @@
         padding-right: 4%;
     }
     .intr img {
-        /* top: 40%; */
-        /* padding: a; */
         margin-left: 34%;
         width: 34%;
-        /* display: flex;
-        justify-content: center;
-        margin: auto;
-        content: normal; */
     }
     .intr .text-intr p {
         text-align: justify;
@@ -243,7 +233,6 @@
     }
     .content-row-large {
         width: 84%;
-        /* margin-left: 3%; */
         margin-top: -10%;
     }
     .cont-layout {
@@ -280,7 +269,7 @@
 
 @media only screen and (min-width:800px) and (max-width: 1024px) {
     #container {
-        font-family: "Montserrat", sans-serif;
+        font-family: "Open Sans", sans-serif;
         line-height: 2.0rem;
         font-size: small;
     }

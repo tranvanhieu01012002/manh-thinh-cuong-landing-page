@@ -5,10 +5,10 @@ include("../dph.php")?>
   <h2>BẢNG TIMELINE</h2>
   <ul class="responsive-table">
     <li class="table-header">
-      <div class="col col-2">Content</div>
-      <div class="col col-2">Image</div>
-      <div class="col col-2">Description</div>
-      <div class="col col-2">Description detail</div> 
+      <div class="col col-2">Mô tả</div>
+      <div class="col col-2">Ảnh</div>
+      <div class="col col-2">Mô tả</div>
+      <div class="col col-2">Mô tả chi tiết</div> 
       <div class="col col-1">Sửa</div>
       <div class="col col-1">Xóa </div>
     </li>

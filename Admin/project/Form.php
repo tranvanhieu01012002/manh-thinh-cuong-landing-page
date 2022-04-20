@@ -21,11 +21,11 @@
     <input type="text" placeholder="Nhập diện tích đất" name="land_area" required>
     <label for="email"><b>Tổng diện tích xây dựng:</b></label>
     <input type="text" placeholder="Nhập tổng diện tích đất xây dựng" name="total_cons_area" required>
-    <label for="email"><b>Content</b></label>
+    <label for="email"><b>Nội dung</b></label>
     <input type="text" placeholder="Enter Content" name="content" required>
-    <label for="email"><b>Description</b></label>
+    <label for="email"><b>Mô tả</b></label>
     <input type="text" placeholder="Enter Description" name="des" required>
-    <label for="email"><b>Description detail</b></label>
+    <label for="email"><b>Mô tả chi tiết</b></label>
     <input type="text" placeholder="Enter description detail" name="desdetail" required>
     <input name="img" type="file">
     <label for="email"><b>Tên khách hàng:</b></label>

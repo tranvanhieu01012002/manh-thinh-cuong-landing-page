@@ -2,7 +2,7 @@
 include("../dph.php")?>
 <link rel="stylesheet" href="./CSS/timeline.css">
 <div class="container">
-  <h2>BẢNG TIMELINE</h2>
+  <h2>BẢNG TIMELINE ẢNH</h2>
   <ul class="responsive-table">
     <li class="table-header">
       <div class="col col-2">Img_1</div>

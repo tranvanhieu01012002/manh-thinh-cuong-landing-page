@@ -6,6 +6,7 @@
     $row = $database->get_row('select * from project where id_project = ' . $id . ' ;');
     $rowTimeLine = $database->get_row('select * from timeline where id = ' . $id . ' ;');
 ?>
+
 <div class="back">
     <img class="imgback"
         src="https://khudothivanphuc.giaodienbds.com/wp-content/uploads/2017/12/van-phuc-slide-3-1-1.jpg" alt="">
@@ -14,7 +15,7 @@
             <h1><?php echo $row['Description'] ?></h1>
         </div>
         <div class="display-project-info">
-            <table class="info-project">
+            <table id="<?php if(isset($_GET['id'])) echo $id ?>"  class="info-project">
                 <tbody>
                     <tr>
                         <td>
@@ -130,15 +131,15 @@
             <?php
             $img = $database->get_row('select * from timeline_image where id = ' . $id . ' ;');
             ?>
-            <input checked type="radio" name="s" style="background-image: url(./Admin/img/<?php echo $img['img_1'] ?>);"
+            <input checked type="radio" name="s" style="background-image: url(./Admin/upload/<?php echo $img['img_1'] ?>);"
                 title="Manh Thinh Cuong 1">
-            <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_2'] ?>');"
+            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_2'] ?>');"
                 title="Manh Thinh Cuong 2">
-            <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_3'] ?>');"
+            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_3'] ?>');"
                 title="Manh Thinh Cuong 3">
-            <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_4'] ?>');"
+            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_4'] ?>');"
                 title="Manh Thinh Cuong 4">
-            <input type="radio" name="s" style="background-image: url('./Admin/img/<?php echo $img['img_5'] ?>');"
+            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_5'] ?>');"
                 title="Manh Thinh Cuong 5">
         </div>
         <div class="text-monthly-des">
@@ -155,7 +156,9 @@
 <div class="page-container-slider">
     <div class="name-project">
         <div>
-            <h2>Quận</h2>
+            <h2><?php $district = $row["district"];
+            echo $district;
+            ?></h2>
         </div>
     </div>
     <div class="container-pr">
@@ -163,13 +166,13 @@
         <div class="container-slider">
             <?php
             $database = new dph();
-            $row = $database->get_list('select * from project;') ?>
-            <?php foreach ($row as $value) : ?>
+            $district__home = $database->get_list('select * from project where district= "'.$district.'";') ?>
+            <?php foreach ($district__home as $value) : ?>
 
             <div class="box-slider">
                 <a href="./Du-An.php?id=<?php echo $value['id_project'] ?>">
                     <div class="slide-img">
-                        <img src="./Admin/Img/<?php echo $value['img'] ?>" alt="">
+                        <img src="./Admin/upload/<?php echo $value['img'] ?>" alt="">
                     </div>
                     <div class="detail-box"><?php echo $value['Description'] ?></div>
                 </a>

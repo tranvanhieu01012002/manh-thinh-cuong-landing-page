@@ -85,6 +85,12 @@
                     <span class="links_name">Nhà</span>
                 </a>
             </li>
+            <li>
+                <a href="../timeline_text/indexAdmin.php">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">Nội dung</span>
+                </a>
+            </li>
         </ul>
     </div>
     <section class="home-section">

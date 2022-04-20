@@ -270,6 +270,7 @@ input[name="s"]:checked+input~input:before {
 
 .text-monthly-des h4 {
     padding: 0px 20px 20px 0px;
+    font-size: 33px;
 }
 
 .activeClick {

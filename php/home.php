@@ -134,10 +134,10 @@
             $img = $database->get_row('select * from timeline_image where id = ' . $id . ' ;');
             ?>
             <input checked type="radio" name="s" style="background-image: url(./Admin/upload/<?php echo $img['img_1'] ?>);">
-            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_2'] ?>');">
-            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_3'] ?>');">
-            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_4'] ?>');">
-            <input type="radio" name="s" style="background-image: url('./Admin/upload/<?php echo $img['img_5'] ?>');">
+            <input type="radio" name="s" style="object-fit: cover; background-image: url('./Admin/upload/<?php echo $img['img_2'] ?>');">
+            <input type="radio" name="s" style="object-fit: cover; background-image: url('./Admin/upload/<?php echo $img['img_3'] ?>');">
+            <input type="radio" name="s" style="object-fit: cover; background-image: url('./Admin/upload/<?php echo $img['img_4'] ?>');">
+            <input type="radio" name="s" style="object-fit: cover; background-image: url('./Admin/upload/<?php echo $img['img_5'] ?>');">
         </div>
         <div class="text-monthly-des">
             <h4><?php echo $row['Description'] ?></h4>

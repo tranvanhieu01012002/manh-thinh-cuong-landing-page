@@ -46,7 +46,7 @@ include("./Admin/dph.php");
                 <li><a href="./Trang-Chu.php" data-hover="Trang chủ">Trang chủ</a></li>
                 <li><a href="./IntroducePage.php" data-hover="Giới thiệu">Giới thiệu</a></li>
                 <li class="current"><a href="#" data-hover="Nhà">Nhà</a></li>
-                <li><a href="#footer" data-hover="Liên hệ">Liên hệ</a></li>
+                <li><a href="./Trang-Chu.php#footer" data-hover="Liên hệ">Liên hệ</a></li>
             </ul>
         </nav>
         <div class="responsive-header">

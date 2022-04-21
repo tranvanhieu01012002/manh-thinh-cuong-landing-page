@@ -54,12 +54,12 @@ include("../dph.php") ?>
         </select>
         <label for="email"><b>Loại xây dựng:</b></label>
         <select name="construc_type">
-          <option value="nhao">Nhà ở</option>
-          <option value="bietthu">Biệt thự</option>
-          <option value="caotang">Nhà cao tầng</option>
-          <option value="nhavuon">Nhà vườn</option>
-          <option value="chungcu">Chung cư</option>
-          <option value="nhahoboi">Nhà có hồ bơi</option>
+          <option value="Nhà ở">Nhà ở</option>
+          <option value="Biệt thự">Biệt thự</option>
+          <option value="Cao tầng">Nhà cao tầng</option>
+          <option value="Nhà vườn">Nhà vườn</option>
+          <option value="Chung cư">Chung cư</option>
+          <option value="Nhà hồ bơi">Nhà có hồ bơi</option>
         </select>
         <label for="email"><b>Dự án nổi bật</b></label>
         <select name="outstanding">

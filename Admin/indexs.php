@@ -3,21 +3,21 @@
         require "./PHPMailer-master/src/PHPMailer.php";
         require "./PHPMailer-master/src/Exception.php";
         require "./PHPMailer-master/src/SMTP.php";
-    $mail = new PHPMailer\PHPMailer\PHPMailer(true);//true:enables exceptions
+    $mail = new PHPMailer\PHPMailer\PHPMailer(true);
     try {
-        $mail->SMTPDebug = 0; //0,1,2: chế độ debug. khi chạy ngon thì chỉnh lại 0 nhé
+        $mail->SMTPDebug = 0;
         $mail->isSMTP();  
         $mail->CharSet  = "utf-8";
-        $mail->Host = 'smtp.gmail.com';  //SMTP servers
-        $mail->SMTPAuth = true; // Enable authentication
-        $mail->Username = 'dinhgiaquoc28@gmail.com'; // SMTP username
-        $mail->Password = 'mymy2002@1';   // SMTP password
-        $mail->SMTPSecure = 'ssl';  // encryption TLS/SSL 
-        $mail->Port = 465;  // port to connect to    587/465            
-        $mail->setFrom('dinhgiaquoc28@gmail.com', 'Đinh Thị Mỷ Tâm' ); 
-        $mail->addAddress('tam.dinh23@student.passerellesnumeriques.org','My Xin'); //mail và tên người nhận  
+        $mail->Host = 'smtp.gmail.com';  
+        $mail->SMTPAuth = true; 
+        $mail->Username = 'dinhgiaquoc28@gmail.com'; 
+        $mail->Password = 'mymy2002@1';  
+        $mail->SMTPSecure = 'ssl'; 
+        $mail->Port = 465;             
+        $mail->setFrom('dinhgiaquoc28@gmail.com', 'ManhThinh Cuong.com ' ); 
+        $mail->addAddress('tam.dinh23@student.passerellesnumeriques.org','Admin'); //mail và tên người nhận  manhthinhcuong@gmail.com  
         $mail->isHTML(true);  // Set email format to HTML
-        $mail->Subject = '[FORM CONTACT]';
+        $mail->Subject = '[FORM CONTACT from ManhThinhCuong.com]';
         $noidungthu = '
         <strong>Name: </strong> '.$_POST['name'].'<br/>
         <strong>Email: </strong> '.$_POST['email'].'<br/>

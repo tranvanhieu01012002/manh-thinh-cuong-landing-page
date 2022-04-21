@@ -33,7 +33,7 @@ if(isset($_POST['add_project'])){
             'Description_detail' => $_POST['desdetail'],
             'outstanding' => $_POST['outstanding']
         ));
-        // header("Location:./indexAdmin.php");
+        header("Location:./indexAdmin.php");
     }   
     
 }
